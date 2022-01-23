@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "TacticSans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/TacticSansLight/TacticSans.eot");
+  src: url("../fonts/TacticSansLight/TacticSans.eot?#iefix") format("embedded-opentype"), url("../fonts/TacticSansLight/TacticSans.woff") format("woff"), url("../fonts/TacticSansLight/TacticSans.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TacticSans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/TacticSansMedium/TacticSansM.eot");
+  src: url("../fonts/TacticSansMedium/TacticSansM.eot?#iefix") format("embedded-opentype"), url("../fonts/TacticSansMedium/TacticSansM.woff") format("woff"), url("../fonts/TacticSansMedium/TacticSansM.ttf") format("truetype");
+}
