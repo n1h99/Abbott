@@ -29,7 +29,7 @@
     <meta name="theme-color" content="#000" />
     <!-- Custom Browsers Color End -->
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
   <body>
@@ -41,17 +41,45 @@
         <div class="header__wrap">
 
           <a href="#" class="logo">
-            <img src="img/logo.svg" alt="Abbott">
+            <img src="img/logo-1.svg" alt="Abbott">
+            <img src="img/logo-2.svg" alt="Abbott">
           </a>
 
-          <div class="header__search">
-            <form>
-                <input type="text" placeholder="">
-                <button type="submit"></button>
-            </form>
+          <div class="header__items">
+            <a href="#">
+              РАЗДЕЛЫ
+              <span class="header__items-hover"></span>
+            </a>
+            <a href="#">
+              МЕРОПРИЯТИЯ
+              <span class="header__items-hover"></span>
+            </a>
+            <a href="#">
+              МАТЕРИАЛЫ
+              <span class="header__items-hover"></span>
+            </a>
+            <a href="#">
+              НОВОСТИ
+              <span class="header__items-hover"></span>
+            </a>
+            <a href="#">
+              О ПРОЕКТЕ
+              <span class="header__items-hover"></span>
+            </a>
           </div>
 
           <a class="btn__lk popup-with-form" href="#popup-form" >Войти</a>
+
+          <a href="#" class="logo__end">
+            <img src="img/logo-3.svg" alt="Pro">
+          </a>
+
+          <div class="header__burger">
+            <img src="img/header-burger.svg" alt="">
+          </div>
+          <div class="header__close">
+            <img src="img/header-menu-close.svg" alt="">
+          </div>
 
         </div>
 
@@ -77,8 +105,8 @@
 
           <div class="intro__wrap-btn">
 
-            <a class="intro__btn popup-with-form" href="#popup-form">Войти</a>
             <a class="intro__btn-reg" href="#">зарегистрироваться</a>
+            <a class="intro__btn popup-with-form" href="#popup-form">Войти</a>
 
           </div>
 
@@ -105,7 +133,7 @@
               <img src="img/opportunities__1.svg" alt="icon">
             </div>
             <p>
-              Видео-лекции отечественных и зарубежных специалистов
+              Видео-лекции
             </p>
           </div>
 
@@ -114,7 +142,7 @@
               <img src="img/opportunities__2.svg" alt="icon">
             </div>
             <p>
-              Калькуляторы расчета рисков и тяжести протекания заболевания
+              АКТУАЛЬНЫЕ МЕРОПРИЯТИЯ
             </p>
           </div>
 
@@ -123,7 +151,7 @@
               <img src="img/opportunities__3.svg" alt="icon">
             </div>
             <p>
-              Материалы по клиническим случаям
+              клиническиЕ случаИ
             </p>
           </div>
 
@@ -132,7 +160,7 @@
               <img src="img/opportunities__4.svg" alt="icon">
             </div>
             <p>
-              Информация по препаратам Abbott
+              Препараты Abbott
             </p>
           </div>
 
@@ -154,16 +182,18 @@
           <!-- directions__item -->
           <div class="directions__item">
 
-            <div class="directions__item-first" style="background-image: url(img/directions__img-1.jpg);">
-              <div class="directions__item-title">Неврология</div>
-              <img src="img/directions__icon-1.svg" alt="icon">
+            <div class="directions__item-first" style="background-image: url(img/directions__img-1.jpg)">
+              <div class="directions__item-inner">
+                <img src="img/directions__icon-1.svg" alt="icon">
+                <div class="directions__item-title">Неврология <br> Психиатрия</div>
+              </div>
             </div>
 
             <div class="directions__item-second" style="background: linear-gradient(161.59deg, #58BEC3 -22.4%, #1367A0 116.93%);">
 
               <div class="directions__item-title-wrap">
-                <img src="img/directions__icon-1.svg" alt="">
-                <div class="directions__item-title">Неврология/Психиатрия</div>
+                <img src="img/directions__hover-icon-1.svg" alt="">
+                <div class="directions__item-title-second">Неврология/Психиатрия</div>
               </div>
               <p>
                 Получите исчерпывающую информацию в области неврологии и психиатрии, а также данные по ведению и частых вопросах при коммуникации с пациентами
@@ -183,15 +213,17 @@
           <div class="directions__item">
 
             <div class="directions__item-first" style="background-image: url(img/directions__img-2.jpg);">
-              <div class="directions__item-title">Женское здоровье</div>
-              <img src="img/directions__icon-2.svg" alt="icon">
+              <div class="directions__item-inner">
+                <img src="img/directions__icon-2.svg" alt="icon">
+                <div class="directions__item-title">Женское здоровье</div>
+              </div>
             </div>
 
             <div class="directions__item-second" style="background: linear-gradient(161.59deg, #D380B5 -22.4%, #913F90 116.93%);">
 
               <div class="directions__item-title-wrap">
-                <img src="img/directions__icon-2.svg" alt="">
-                <div class="directions__item-title">Женское здоровье</div>
+                <img src="img/directions__hover-icon-2.svg" alt="">
+                <div class="directions__item-title-second">Женское здоровье</div>
               </div>
               <p>
                 Образовательные семинары, мастер-классы, обучающие статьи, брошюры и видео, посвященные женскому здоровью
@@ -211,15 +243,17 @@
           <div class="directions__item">
 
             <div class="directions__item-first" style="background-image: url(img/directions__img-3.jpg);">
-              <div class="directions__item-title">Гастроэнтерология</div>
-              <img src="img/directions__icon-3.svg" alt="icon">
+              <div class="directions__item-inner">
+                <img src="img/directions__icon-3.svg" alt="icon">
+                <div class="directions__item-title">Гастроэнтерология</div>
+              </div>
             </div>
 
             <div class="directions__item-second" style="background: linear-gradient(161.59deg, #F6CF2C -22.4%, #76A933 116.93%);">
 
               <div class="directions__item-title-wrap">
-                <img src="img/directions__icon-3.svg" alt="">
-                <div class="directions__item-title">Гастроэнтерология</div>
+                <img src="img/directions__hover-icon-3.svg" alt="">
+                <div class="directions__item-title-second">Гастроэнтерология</div>
               </div>
               <p>
                 Полезные статьи и материалы, записи вебинаров и информация о ближайщих семинарах и мероприятих посвященным проблемам гастроэнтерологии
@@ -239,15 +273,17 @@
           <div class="directions__item">
 
             <div class="directions__item-first" style="background-image: url(img/directions__img-4.jpg);">
-              <div class="directions__item-title">Кардиология</div>
-              <img src="img/directions__icon-4.svg" alt="icon">
+              <div class="directions__item-inner">
+                <img src="img/directions__icon-4.svg" alt="icon">
+                <div class="directions__item-title">Кардиология</div>
+              </div>
             </div>
 
             <div class="directions__item-second" style="background: linear-gradient(161.59deg, #C80533 -22.4%, #96193D 116.93%);">
 
               <div class="directions__item-title-wrap">
-                <img src="img/directions__icon-4.svg" alt="">
-                <div class="directions__item-title">Кардиология</div>
+                <img src="img/directions__hover-icon-4.svg" alt="">
+                <div class="directions__item-title-second">Кардиология</div>
               </div>
               <p>
                 Своевременная профилактика и лечение сердечно-сосудистых заболеваний в соответствии с научными данными и клиническими рекомендациями помогут сохранить здоровье  сердца
@@ -277,31 +313,23 @@
       <div class="container">
 
         <div class="article__header">
-          <h2>Статьи на важные темы</h2>
+          <h2>Статьи по направлениям</h2>
 
           <ul class="article__themes">
             <li>
-              <a href="#" class="btn__theme">Сердце</a>
+              <a href="#" class="btn__theme">Неврология</a>
             </li>
 
             <li>
-              <a href="#" class="btn__theme">Печень</a>
+              <a href="#" class="btn__theme">Кардиология</a>
             </li>
 
             <li>
-              <a href="#" class="btn__theme">Невролгия</a>
+              <a href="#" class="btn__theme">Женское здоровье</a>
             </li>
 
             <li>
-              <a href="#" class="btn__theme">Питание</a>
-            </li>
-
-            <li>
-              <a href="#" class="btn__theme">Распорядок дня</a>
-            </li>
-
-            <li>
-              <a href="#" class="btn__theme">Гигиена</a>
+              <a href="#" class="btn__theme">Гастроэнтерология</a>
             </li>
       
           </ul>
@@ -447,7 +475,7 @@
     <section class="lectures">
       <div class="container">
 
-        <h2>Лекции специалистов</h2>
+        <h2>ЗАПИСИ ВЕБИНАРОВ</h2>
 
         <!-- lectures__wrap -->
         <div class="lectures__wrap">
@@ -553,7 +581,7 @@
         <!-- lectures__wrap -->
 
         <div class="btn__wrap">
-          <a href="#" class="btn__all">Показать ещё</a>
+          <a href="#" class="btn__all">Смотреть все</a>
         </div>
 
       </div>
@@ -683,10 +711,9 @@
       </form>
 
     </div>
-    
-    
 
 
+    <script src="js/main.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
