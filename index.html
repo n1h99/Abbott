@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
-  
+
   <head>
     <meta charset="utf-8" />
 
     <title></title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
+
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="viewport"
@@ -26,7 +28,7 @@
     <!-- Custom Browsers Color Start -->
     <meta name="theme-color" content="#000" />
     <!-- Custom Browsers Color End -->
-
+    <link rel="stylesheet" href="css/fullcalendar.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
@@ -95,7 +97,7 @@
             <h1>
               Информационный портал для специалистов здравоохранения
             </h1>
-  
+
             <p>
               Наша цель — предоставить специалистам здравоохранения достоверную, своевременную и актуальную информацию.
             </p>
@@ -297,7 +299,7 @@
           </div>
           <!-- directions__item -->
 
-          
+
 
         </div>
 
@@ -329,9 +331,9 @@
             <li>
               <a href="#" class="btn__theme">Гастроэнтерология</a>
             </li>
-      
+
           </ul>
-            
+
         </div>
 
         <div class="article__wrap">
@@ -376,7 +378,7 @@
 
               <div class="article__others-title">
                 <h3>Гематолог</h3>
-  
+
                 <p>
                   Получите исчерпывающую информацию по гематологии, иммунологии, онкологии, психиатрии, а также данные по ведению пациентов с рассеянным склерозом, ЛАГ, ВИЧ и СМА
                 </p>
@@ -394,7 +396,7 @@
 
               <div class="article__others-title">
                 <h3>Гастроэнтеролог</h3>
-  
+
                 <p>
                   С помощью лечебной диеты и отказа от вредных привычек (курение и употребление алкоголя) можно значительно улучшить свое состояние при любых заболеваниях печени.
                 </p>
@@ -412,7 +414,7 @@
 
               <div class="article__others-title">
                 <h3>Диета при заболевании печени</h3>
-  
+
                 <p>
                   Если у вас диагностировано одно из острых или хронических заболеваний печени, не стоит рассчитывать, что она сама себя вылечит.
                 </p>
@@ -468,6 +470,14 @@
     </section>
     <!-- materials -->
 
+    <!--calendar-->
+    <section class="calendar">
+      <div class="container">
+          <div class="calendar__title">МЕРОПРИЯТИЯ</div>
+        <div id='calendar'></div>
+      </div>
+    </section>
+    <!--calendar-->
 
     <!-- lectures -->
     <section class="lectures">
@@ -498,7 +508,7 @@
 
               <a href="#" class="lectures__btn">Подробнее</a>
             </div>
-            
+
           </div>
           <!-- lectures__item -->
 
@@ -522,7 +532,7 @@
 
               <a href="#" class="lectures__btn">Подробнее</a>
             </div>
-            
+
           </div>
           <!-- lectures__item -->
 
@@ -546,7 +556,7 @@
 
               <a href="#" class="lectures__btn">Подробнее</a>
             </div>
-            
+
           </div>
           <!-- lectures__item -->
 
@@ -570,7 +580,7 @@
 
               <a href="#" class="lectures__btn">Подробнее</a>
             </div>
-            
+
           </div>
           <!-- lectures__item -->
 
@@ -608,19 +618,19 @@
           </div>
 
           <div class="footer__title">
-            
+
             <div class="footer__navigation">
               <ul>
                 <li><a href="#">О портале</a></li>
                 <li><a href="#">Регистрация</a></li>
               </ul>
-  
+
               <ul>
                 <li>
                   <a href="#" style="font-weight: 700;">ABBOTT GLOBAL</a>
                 </li>
               </ul>
-  
+
               <ul>
                 <li><a href="#">О нас </a></li>
                 <li><a href="#">Политика конфиденциальности </a></li>
@@ -659,22 +669,22 @@
     <!-- footer -->
 
 
-    
+
 
 
     <!-- form itself -->
     <div class="hidden">
 
       <form id="popup-form" class="white-popup-block mfp-hide popup__wrap">
-  
+
         <div class="popup__wrap-content">
 
           <span class="popup__wrap-title">Вход</span>
-                
+
           <label>
             <input id="email" name="email" type="email" placeholder="Email" required="">
           </label>
-    
+
           <div class="password">
             <label>
               <input type="password" id="password-input" placeholder="Пароль" name="password" required="">
@@ -689,28 +699,29 @@
               <input type="checkbox" class="custom-checkbox" id="checkbox" name="checkbox" value="yes">
               <label for="checkbox">Запомнить пароль</label>
             </div>
-    
+
             <a href="#">Забыли пароль?</a>
           </div>
 
-    
+
           <button type="submit" value="SUBMIT" class="btn btn-submit">
             Войти
           </button>
-          
-    
-          <div class="popup__wrap-bot">У вас ещё нет аккаунта? 
+
+
+          <div class="popup__wrap-bot">У вас ещё нет аккаунта?
              <a href="#"> Зарегистрироваться</a>
           </div>
 
         </div>
-  
-  
+
+
       </form>
 
     </div>
 
 
+    <script src='js/fullcalendar.js'></script>
     <script src="js/main.min.js"></script>
     <script src="js/script.js"></script>
   </body>

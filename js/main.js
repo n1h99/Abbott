@@ -14,3 +14,66 @@ menuClose.onclick = function () {
     menuBtn.style.display = "block"
     menuClose.style.display = "none"
 }
+
+
+// calendar
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        initialDate: '2021-11-01',
+        selectable: true,
+        locale: 'ru',
+        headerToolbar: {
+            right: 'dayGridMonth,timeGridWeek,timeGridDay'
+        },
+        events: [
+            {
+                title: 'Круглый стол',
+                start: '2021-11-05T12:00:00',
+            },
+            {
+                title: 'Круглый стол',
+                start: '2021-11-05T14:00:00',
+            },
+            {
+                title: 'Круглый стол',
+                start: '2021-11-05T16:00:00',
+            },
+            {
+                title: 'Круглый стол',
+                start: '2021-11-05T18:00:00',
+            },
+            {
+                title: 'Круглый стол',
+                start: '2021-11-09T12:00:00',
+            },
+            {
+                title: 'Круглый стол',
+                start: '2021-11-11T18:00:00',
+            },
+            {
+                title: 'Круглый стол',
+                start: '2021-11-15T12:00:00',
+            },
+            {
+                title: 'Круглый стол',
+                start: '2021-11-15T18:00:00',
+            },
+            {
+                title: 'Круглый стол',
+                start: '2021-11-26T12:00:00',
+            },
+            {
+                title: 'Круглый стол',
+                start: '2021-11-26T14:00:00',
+            },
+        ]
+    });
+
+    calendar.render();
+});
+
