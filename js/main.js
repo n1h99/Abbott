@@ -15,6 +15,21 @@ menuClose.onclick = function () {
     menuClose.style.display = "none"
 }
 
+// header accordion
+document.querySelectorAll('.header__menu').forEach((item) =>
+    item.addEventListener('click', () => {
+        const parent = item.parentNode;
+
+        if (parent.classList.contains('header-active')) {
+            parent.classList.remove('header-active');
+        }else {
+            document
+                .querySelectorAll('.header__items')
+                .forEach((child) => child.classList.remove('header-active'))
+            parent.classList.toggle('header-active');
+        }
+    })
+)
 
 // calendar
 
