@@ -2249,11 +2249,93 @@ template, [hidden] {
   }
 }
 
+
+
+
 .header {
   -webkit-box-shadow: -2px 0px 31px -25px #000000 inset;
   box-shadow: -2px 0px 31px -25px #000000 inset;
   &__btn-inner{
     display: none;
+  }
+  &__second-popup{
+    position: relative;
+  }
+  &__second-close{
+    display: none;
+    margin-right: -60px;
+    img{
+      border-radius: 75px;
+    }
+  }
+  &__second-btn {
+    margin-right: -60px;
+    img{
+      border-radius: 75px;
+    }
+    &-content {
+      display: none;
+      position: absolute;
+      width: 248px;
+      background-color: #FFFFFF;
+      left: -60px;
+      top: 65px;
+      cursor: pointer;
+      box-shadow: 0px 11.8125px 36.75px 10.5px rgba(0, 0, 0, 0.05), 0px 7.875px 21px rgba(0, 0, 0, 0.08), 0px 3.9375px 7.875px -5.25px rgba(0, 0, 0, 0.12);
+      a{
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 29px;
+        color: #000;
+        padding: 11.81px 0 11.81px 21px;
+      }
+      a:hover{
+        color: #FFFFFF;
+        background-color: #149BDC;
+      }
+    }
+  }
+  &__second{
+    &-search-content{
+      display: none;
+      position: absolute;
+      top: -8px;
+      z-index: 2;
+      left: 70px;
+      input{
+        width: 806px;
+        height: 57px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 13px;
+        letter-spacing: 0.02em;
+        color: #149BDC;
+        padding: 22px 20px;
+        border-radius: 60px;
+        border: 1px solid #149BDC;
+        font-family: 'Calibri';
+      }
+      input[type="search"]::placeholder {
+        color: #149BDC;
+      }
+      img{
+        position: absolute;
+        top: 20px;
+        right: 22px;
+      }
+    }
+    &-search{
+      position: relative;
+    }
+  }
+}
+
+.header__second-search-content{
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance:none;
   }
 }
 
@@ -4536,6 +4618,49 @@ select {
     color: #1A1A1A;
     text-transform: uppercase;
   }
+  &-form{
+    padding-top: 22px;
+    margin-bottom: 293px;
+    &__intro{
+      border: 2px solid #000000;
+    }
+    &__one{
+      display: flex;
+      border-bottom: 2px solid #000000;
+    }
+    &__one p:first-child{
+      width: 297px;
+    }
+    &__one p{
+      width: 212px;
+      border-right: 2px solid #000000;
+    }
+    &__one p:last-child{
+      border-right: none;
+    }
+    &__one p{
+      text-align: center;
+      padding: 16px 0;
+    }
+    &__two{
+      display: flex;
+      height: 59px;
+    }
+    &__two p:first-child{
+      width: 297px;
+    }
+    &__two p{
+      width: 212px;
+      border-right: 2px solid #000000;
+    }
+    &__two p:last-child{
+      border-right: none;
+    }
+    &__two p{
+      text-align: center;
+      padding-top: 16px;
+    }
+  }
 }
 
 
@@ -4824,11 +4949,19 @@ select {
   }
 }
 
-// slider 
+// slider
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
 .swiper-slide {
-  width: 454px!important;
-  height: 290.75px;
-  margin-right: 21px!important;
   position: relative;
 }
 .slider{
@@ -5856,15 +5989,12 @@ select {
 
 
 
-
-@media (min-width: 1440px) {
-  .swiper{
-    left: 17%;
+@media (max-width: 1400px){
+  .slider__inner-title{
+    width: inherit;
   }
-}
-@media (max-width: 1440px) {
-  .swiper{
-    left: 7%;
+  .slider__inner-text{
+    width: inherit;
   }
 }
 
@@ -5940,6 +6070,25 @@ select {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .header__second-btn {
+    margin-right: 0px;
+  }
+  .header__second-search-content input{
+    width: 600px;
+  }
+  .slider__inner-title{
+    width: inherit;
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  .slider__inner-text{
+    width: inherit;
+    font-size: 18px;
+  }
+  .slider__inner {
+    top: 10px;
+    left: 10px;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -5987,6 +6136,26 @@ select {
   }
   .info__basic{
     margin-bottom: 10px;
+  }
+
+}
+@media (max-width: 1070px){
+  .header__second-search-content input{
+    width: 560px;
+  }
+  .header__second-search-content{
+    left: 55px;
+  }
+  .slider__inner-title{
+    width: inherit;
+    font-size: 25px;
+    margin-bottom: 0;
+    line-height: 100%;
+  }
+  .slider__inner-text{
+    width: inherit;
+    font-size: 18px;
+    line-height: 20px;
   }
 }
 
@@ -6090,8 +6259,57 @@ select {
     width: 100%;
     margin-bottom: 20px;
   }
+  .header__wrap{
+    justify-content: center;
+  }
+  .header__second-search-btn{
+    margin: 0 15px;
+  }
+  .header__second-btn{
+    margin: 0 15px;
+  }
+  .header__second-search-content input{
+    width: 300px;
+    font-size: 17px;
+    height: 46px;
+  }
+  .header__second-search-content{
+    left: inherit;
+    right: -125px;
+    top: 55px;
+  }
+  .header__second-search-content img {
+    top: 17px;
+    right: 17px;
+    width: 12px;
+  }
+  .slider__inner-title{
+    width: inherit;
+    font-size: 18px;
+    margin-bottom: 5px;
+    line-height: 60%;
+  }
+  .slider__inner-text{
+    width: inherit;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .slider__inner {
+    top: 10px;
+    left: 5px;
+  }
 }
-
+@media (max-width: 810px){
+  .events__wrap{
+    justify-content: center;
+  }
+  .events__btn{
+    width: 100%;
+  }
+  .events__item{
+    height: inherit;
+  }
+}
 @media (max-width: 767.98px) {
   .header__search form {
     min-width: 30px;
@@ -6172,6 +6390,12 @@ select {
   }
   .new__item-image img{
     max-width: 500px;
+  }
+  .slider__inner {
+    display: none;
+  }
+  .about-form__one p{
+    font-size: 16px;
   }
 }
 
@@ -6329,7 +6553,18 @@ select {
   .event__btn-items input{
     margin-left: 0;
   }
-
+  .header__second-search-btn {
+    margin: 0 7px;
+  }
+  .header__second-btn {
+    margin: 0 7px 0 0;
+  }
+  .events__item-date{
+    display: block;
+  }
+  .about-form__one p{
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 340px) {
