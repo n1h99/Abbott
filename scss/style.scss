@@ -2274,6 +2274,7 @@ template, [hidden] {
       border-radius: 75px;
     }
     &-content {
+      z-index: 5;
       display: none;
       position: absolute;
       width: 248px;
@@ -3360,16 +3361,17 @@ template, [hidden] {
     margin: 0 auto;
     text-align: center;
     max-width: 607px;
-    height: 374px;
+    // min-height: 374px;
+    min-height: 332px;
     background: #FFFFFF;
     border: 1px solid #FFFFFF;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     &-two{
-      height: 401px;
+      min-height: 401px;
     }
     &-three{
-      height: 332px;
+      min-height: 332px;
     }
     &-img{
       margin-top: 0!important;
@@ -4683,6 +4685,8 @@ select {
   }
   &__icon img{
     margin-right: 9px;
+    max-width: 450px;
+    width: 100%;
   }
   &__top-text span{
     margin-right: 6px;
@@ -4708,6 +4712,7 @@ select {
   }
   &__info{
     display: flex;
+    flex-wrap: wrap;
   }
   &__text-two{
     max-width: 453px;
@@ -4963,9 +4968,15 @@ select {
 
 .swiper-slide {
   position: relative;
+  width: 38%;
 }
 .slider{
   margin-bottom: 132px;
+
+  &__container {
+    max-width: 1575px;
+    margin-left: auto;
+  }
   &__title{
     font-weight: 700;
     font-size: 30px;
@@ -5125,6 +5136,17 @@ select {
   &__inner{
     margin-bottom: 70px;
     display: flex;
+  }
+  &__inner-two{
+    position: relative;
+  }
+  &__inner-two:after{
+    content: "";
+    position: absolute;
+    border: 1px solid #149BDC;
+    max-width: 1238px;
+    width: 100%;
+    bottom: -30px;
   }
   &__pic{
     margin-right: 24px;
@@ -5539,6 +5561,7 @@ select {
   &__inner{
     width: 100%;
     min-height: 376px;
+    background-repeat: no-repeat;
     &-text{
       max-width: 1017px;
       font-weight: 700;
@@ -5642,13 +5665,17 @@ select {
   margin-bottom: 35px;
   &__inner{
     display: flex;
-    justify-content: space-between;
+    //justify-content: space-between;
     margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   &__items{
     max-width: 292px;
     border: 1px solid #D9D9D9;
     padding: 21px 23px 18px 23px;
+    margin-right: 17px;
+    margin-bottom: 15px;
   }
   &__title{
     font-weight: 700;
@@ -5987,7 +6014,20 @@ select {
   }
 }
 
-
+@media (max-width: 1440px){
+  .slider__container {
+    max-width: 1340px;
+  }
+  .swiper-slide {
+    width: 34%;
+  }
+  .slider__inner-title{
+    width: inherit;
+  }
+  .slider__inner-text{
+    width: inherit;
+  }
+}
 
 @media (max-width: 1400px){
   .slider__inner-title{
@@ -6089,6 +6129,26 @@ select {
     top: 10px;
     left: 10px;
   }
+  .calc__inner{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .calc__items{
+    margin-bottom: 10px;
+  }
+  .slider__inner-title{
+    width: inherit;
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  .slider__inner-text{
+    width: inherit;
+    font-size: 18px;
+  }
+  .slider__inner {
+    top: 10px;
+    left: 10px;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -6146,6 +6206,12 @@ select {
   .header__second-search-content{
     left: 55px;
   }
+  .slider__container {
+    max-width: 950px;
+  }
+  .swiper-slide {
+    width: 40%;
+  }
   .slider__inner-title{
     width: inherit;
     font-size: 25px;
@@ -6174,7 +6240,7 @@ select {
   .header__search form {
     min-width: 250px;
   }
-  .popup-with-form{
+  .btn__lk{
     display: none;
   }
   .header__btn{
@@ -6259,7 +6325,7 @@ select {
     width: 100%;
     margin-bottom: 20px;
   }
-  .header__wrap{
+  .header__wrap-second{
     justify-content: center;
   }
   .header__second-search-btn{
@@ -6308,6 +6374,26 @@ select {
   }
   .events__item{
     height: inherit;
+  }
+  .preps__top-intro{
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .preps__top-inner{
+    margin-right: 0;
+  }
+  .preps__top-info{
+    text-align: center;
+  }
+}
+@media (max-width: 768.98px) {
+  .slider__container {
+    max-width: 700px;
+  }
+  .swiper-slide {
+    width: 40%;
   }
 }
 @media (max-width: 767.98px) {
@@ -6391,11 +6477,102 @@ select {
   .new__item-image img{
     max-width: 500px;
   }
-  .slider__inner {
-    display: none;
-  }
   .about-form__one p{
     font-size: 16px;
+  }
+  .project__info{
+    display: block;
+  }
+  .detail__inner-btn {
+    margin-top: 20px;
+    text-align: center;
+    padding-left: 0;
+  }
+  .tab__check-item,
+  .tab__check-item-two{
+    display: grid;
+  }
+  .tab__check-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 630px){
+  // tab
+  .tab{
+    &__check{
+      //&-item {
+      //  display: block;
+      //  margin-bottom: 20px;
+      //  span {
+      //    max-width: 254px;
+      //    display: block;
+      //  }
+      //}
+      //&-item-two{
+      //  display: block;
+      //  margin-bottom: 20px;
+      //  span {
+      //    max-width: 254px;
+      //    display: block;
+      //  }
+      //}
+      &-item-three{
+        input{
+          width: 232px;
+        }
+      }
+      &-span{
+        display: none;
+      }
+      &-btn{
+        margin-top: 50px;
+        padding-bottom: 35px;
+        text-align: center;
+      }
+      &-btn a{
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        padding: 8px 84px;
+        background: #149BDC;
+        border-radius: 100px;
+        opacity: none;
+      }
+    }
+    &__info-text{
+      margin-bottom: 30px;
+    }
+    &__info-text-two{
+      margin-top: 0;
+      a{
+        font-size: 12px;
+      }
+    }
+    &__bottom{
+      margin-top: 40px;
+    }
+  }
+ .tab-two{
+   &__check-item-sec{
+     display: block;
+     span{
+       display: block;
+     }
+   }
+   &__inner-text{
+     span{
+       padding: 0 20px;
+       margin-left: 50px;
+     }
+   }
+ }
+  .detail__inner-text{
+    text-align: center;
+    font-size: 35px;
+    padding: 0;
   }
 }
 
@@ -6433,6 +6610,7 @@ select {
   .intro__btn-reg {
     padding: 12px 8px;
     border-radius: 100px;
+    margin-bottom: 10px;
   }
   .opportunities h3 {
     font-size: 18px;
@@ -6523,8 +6701,25 @@ select {
   .new__item-image img{
     max-width: 320px;
   }
+  .project__picture {
+    text-align: center;
+    img{
+      max-width: 100%;
+    }
+  }
+  .calc__items{
+    margin-right: 0;
+  }
 }
-
+@media (max-width: 450px) {
+  .slider__container {
+    max-width: 100%;
+    margin-left: 15px;
+  }
+  .swiper-slide {
+    width: 80%;
+  }
+}
 @media (max-width: 400px) {
   .calendar-wrapper{
     margin-top: 60px;
@@ -6564,6 +6759,9 @@ select {
   }
   .about-form__one p{
     font-size: 14px;
+  }
+  .detail__inner-text{
+    font-size: 30px;
   }
 }
 

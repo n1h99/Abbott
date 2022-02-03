@@ -30,12 +30,22 @@
 <header class="header">
     <div class="container">
 
-        <div class="header__wrap">
+        <div class="header__wrap header__wrap-second">
 
             <a href="#" class="logo">
                 <img src="img/logo-1.svg" alt="Abbott">
                 <img src="img/logo-2.svg" alt="Abbott">
             </a>
+
+            <div class="header__second-search">
+                <div class="header__second-search-btn">
+                    <img src="img/header-second-search.svg" alt="">
+                </div>
+                <div class="header__second-search-content">
+                    <input type="search" placeholder="Поиск материалов по сайту">
+                    <img class="header__second-search-close" src="img/header-search-close.svg" alt="">
+                </div>
+            </div>
 
             <div class="header__items">
                 <div class="header__menu">
@@ -108,7 +118,19 @@
                 </div>
             </div>
 
-            <a class="btn__lk popup-with-form" href="#popup-form">Войти</a>
+            <div class="header__second-popup">
+                <div class="header__second-btn">
+                    <img src="img/header-second-btn.svg" alt="">
+                </div>
+                <div class="header__second-close">
+                    <img src="img/header-second-btn.svg" alt="">
+                </div>
+                <div class="header__second-btn-content">
+                    <a>Личный кабинет</a>
+                    <a>Редактировать профиль</a>
+                    <a>Выйти</a>
+                </div>
+            </div>
 
             <a href="#" class="logo__end">
                 <img src="img/logo-3.svg" alt="Pro">
@@ -647,7 +669,8 @@
                     </div>
                     <div class="webinar__video new__item-video" style="background-image: url(img/new__item-img.jpg);">
 
-                        <a class="webinar-video__btn new__video-btn" data-fancybox="" href="https://youtu.be/McSTvIqDuso">
+                        <a class="webinar-video__btn new__video-btn" data-fancybox=""
+                           href="https://youtu.be/McSTvIqDuso">
                             <img src="img/video-img.svg">
                         </a>
 
@@ -675,7 +698,8 @@
                     </div>
                     <div class="webinar__video new__item-video" style="background-image: url(img/new__item-img.jpg);">
 
-                        <a class="webinar-video__btn new__video-btn" data-fancybox="" href="https://youtu.be/McSTvIqDuso">
+                        <a class="webinar-video__btn new__video-btn" data-fancybox=""
+                           href="https://youtu.be/McSTvIqDuso">
                             <img src="img/video-img.svg">
                         </a>
 
@@ -755,7 +779,8 @@
                             На пути к совершенству
                         </div>
                         <div class="slider__inner-text">
-                            Получите исчерпывающую информацию по гематологии, иммунологии, онкологии, психиатрии, а также данные
+                            Получите исчерпывающую информацию по гематологии, иммунологии, онкологии, психиатрии, а
+                            также данные
                             по ведению пациентов с рассеянным склерозом, ЛАГ, ВИЧ и СМА
                         </div>
                     </div>
@@ -767,7 +792,8 @@
                             Работа с возражениями пациента
                         </div>
                         <div class="slider__inner-text">
-                            Получите исчерпывающую информацию по гематологии, иммунологии, онкологии, психиатрии, а также данные
+                            Получите исчерпывающую информацию по гематологии, иммунологии, онкологии, психиатрии, а
+                            также данные
                             по ведению пациентов с рассеянным склерозом, ЛАГ, ВИЧ и СМА
                         </div>
                     </div>
@@ -789,6 +815,7 @@
     </div>
 </section>
 <!-- slider -->
+
 
 <!-- footer -->
 <footer class="footer">
@@ -930,9 +957,12 @@
     </form>
 
 </div>
+
+
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/fullcalendar.js"></script>
-<script src="js/main.min.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/header.js"></script>
 <script src="js/script.js"></script>
 </body>
 

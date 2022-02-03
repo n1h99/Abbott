@@ -1,49 +1,3 @@
-
-// header accordion
-document.querySelectorAll('.header__menu').forEach((item) =>
-    item.addEventListener('click', () => {
-        const parent = item.parentNode;
-
-        if (parent.classList.contains('header-active')) {
-            parent.classList.remove('header-active');
-        }else {
-            document
-                .querySelectorAll('.header__items')
-                .forEach((child) => child.classList.remove('header-active'))
-            parent.classList.toggle('header-active');
-        }
-    })
-)
-
-
-// header btn
-const headerSecondBtn = document.getElementsByClassName("header__second-btn")[0];
-const headerSecondContent = document.getElementsByClassName("header__second-btn-content")[0];
-const headerSecondClose = document.getElementsByClassName("header__second-close")[0];
-
-headerSecondBtn.onclick = function () {
-    headerSecondContent.style.display = "grid";
-    headerSecondBtn.style.display = "none";
-    headerSecondClose.style.display = "block";
-}
-headerSecondClose.onclick = function () {
-    headerSecondContent.style.display = "none";
-    headerSecondBtn.style.display = "block";
-    headerSecondClose.style.display = "none";
-}
-
-// header search
-const searchSecondBtn = document.getElementsByClassName("header__second-search-btn")[0];
-const searchSecondContent = document.getElementsByClassName("header__second-search-content")[0];
-const searchSecondClose = document.getElementsByClassName("header__second-search-close")[0];
-
-searchSecondBtn.onclick = function () {
-    searchSecondContent.style.display = "grid";
-}
-searchSecondClose.onclick = function () {
-    searchSecondContent.style.display = "none";
-}
-
 const stringToHTML = function (str, elementTag = 'div') {
     let dom = document.createElement(elementTag);
     dom.innerHTML = str;
@@ -216,41 +170,6 @@ calendarMonths.forEach(cm => {
     calendarMonthSelect.appendChild(option)
 })
 
-// preps accordion
-
-document.querySelectorAll('.preps__top-accordion').forEach((item) =>
-    item.addEventListener('click', () => {
-        const parent = item.parentNode;
-
-        if (parent.classList.contains('preps__top-active')) {
-            parent.classList.remove('preps__top-active');
-        }else {
-            document
-                .querySelectorAll('.preps__top-item')
-                .forEach((child) => child.classList.remove('preps__top-active'))
-            parent.classList.toggle('preps__top-active');
-        }
-    })
-)
-
-// docks accordion
-
-document.querySelectorAll('.docks__items').forEach((item) =>
-    item.addEventListener('click', () => {
-        const parent = item.parentNode;
-
-        if (parent.classList.contains('docks-active')) {
-            parent.classList.remove('docks-active');
-        }else {
-            document
-                .querySelectorAll('.docks__inner')
-                .forEach((child) => child.classList.remove('docks-active'))
-            parent.classList.toggle('docks-active');
-        }
-    })
-)
-
-
 // cal
 const activeSwitch = () => {
     const firstOption = document.querySelector('.switcher-option-one');
@@ -266,4 +185,3 @@ const activeSwitch = () => {
         fullCalendar.changeView('dayGridMonth')
     }
 }
-

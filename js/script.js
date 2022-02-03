@@ -79,15 +79,81 @@ $(function() {
 
 });
 
-// slider
-var swiper = new Swiper(".mySwiper", {
-	slidesPerView: 3,
-	spaceBetween: 10,
-	// centeredSlides: true,
-	pagination: {
-		el: ".swiper-pagination",
-		clickable: true,
-	},
-});
+
+// header accordion
+document.querySelectorAll('.header__menu').forEach((item) =>
+	item.addEventListener('click', () => {
+		const parentThree = item.parentNode;
+
+		if (parentThree.classList.contains('header-active')) {
+			parentThree.classList.remove('header-active');
+		}else {
+			document
+				.querySelectorAll('.header__items')
+				.forEach((child) => child.classList.remove('header-active'))
+			parentThree.classList.toggle('header-active');
+		}
+	})
+)
+
+
+// preps accordion
+
+document.querySelectorAll('.preps__top-accordion').forEach((item) =>
+	item.addEventListener('click', () => {
+		const parent = item.parentNode;
+
+		if (parent.classList.contains('preps__top-active')) {
+			parent.classList.remove('preps__top-active');
+		}else {
+			document
+				.querySelectorAll('.preps__top-item')
+				.forEach((child) => child.classList.remove('preps__top-active'))
+			parent.classList.toggle('preps__top-active');
+		}
+	})
+)
+
+// docks accordion
+
+document.querySelectorAll('.docks__items').forEach((item) =>
+	item.addEventListener('click', () => {
+		const parentTwo = item.parentNode;
+
+		if (parentTwo.classList.contains('docks-active')) {
+			parentTwo.classList.remove('docks-active');
+		}else {
+			document
+				.querySelectorAll('.docks__inner')
+				.forEach((child) => child.classList.remove('docks-active'))
+			parentTwo.classList.toggle('docks-active');
+		}
+	})
+)
+
+// registration three
+var modalFrut = document.getElementsByClassName("btn__further-modal")[0];
+
+var btnFrut = document.getElementsByClassName("btn__further")[0];
+
+var closeFrut = document.getElementsByClassName("btn__modal-close")[0];
+
+btnFrut.onclick = function() {
+	modalFrut.style.display = "block";
+}
+
+closeFrut.onclick = function() {
+	modalFrut.style.display = "none";
+}
+
+window.onclick = function(event) {
+	if (event.target == modalFrut) {
+		modalFrut.style.display = "none";
+	}
+}
+
+
+
+
 
 
