@@ -131,6 +131,24 @@ document.querySelectorAll('.docks__items').forEach((item) =>
 	})
 )
 
+// preps accordion
+
+document.querySelectorAll('.preps__top-info-btn').forEach((item) =>
+	item.addEventListener('click', () => {
+		const parentFour = item.parentNode;
+
+		if (parentFour.classList.contains('preps-active')) {
+			parentFour.classList.remove('preps-active');
+		}else {
+			document
+				.querySelectorAll('.preps__top-parent')
+				.forEach((child) => child.classList.remove('preps-active'))
+			parentFour.classList.toggle('preps-active');
+		}
+	})
+)
+
+
 // registration three
 var modalFrut = document.getElementsByClassName("btn__further-modal")[0];
 
@@ -151,8 +169,6 @@ window.onclick = function(event) {
 		modalFrut.style.display = "none";
 	}
 }
-
-
 
 
 

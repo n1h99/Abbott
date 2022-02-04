@@ -185,20 +185,24 @@
                         <div class="tab-two__check-item-polz">
                             <div class="tab-two__check-item-sec">
                                 <span>Рост (см)</span>
-                                <!-- <input type="range" min="1" max="100" value="50" class="slider" id="myRange"> -->
-                                <input id="range" name="range" type="range" min="140" max="560" value="140">
-                                <output id="ong" for="range">140</output>
+                                <!-- input -->
+                                <input id="rangeSlider" name="rangeSlider" type="range" value="0">
+
+                                <label class="rangeLabel" for="rangeSlider">140</label>
                             </div>
                         </div>
 
                         <div class="tab-two__check-item-polz">
                             <div class="tab-two__check-item-sec">
                                 <span>Вес (кг)</span>
-                                <!-- <input type="range" min="1" max="100" value="50" class="slider" id="myRange"> -->
-                                <input id="range" name="range" type="range" min="20" max="200" value="20">
-                                <output id="ong" for="range">20</output>
+                                <!-- input -->
+                                <input id="rangeSliderTwo" name="rangeSliderTwo" type="range" value="0">
+
+                                <label class="rangeLabelTwo" for="rangeSliderTwo">20</label>
                             </div>
                         </div>
+
+
 
                     </div>
                     <div class="tab-two__inner">
@@ -366,6 +370,7 @@
 
     </div>
 
+    <script src="js/range.js"></script>
     <script src="js/script.js"></script>
 </body>
 

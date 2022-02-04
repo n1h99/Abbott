@@ -5434,6 +5434,10 @@ select {
 .preps-all{
   margin-top: -27px;
 }
+.preps-active .preps__top-other{
+  display: block;
+}
+
 .preps{
   max-width: 1240px;
   margin-top: -17px;
@@ -5449,21 +5453,34 @@ select {
   &__top{
     background: #F6FBFF;
     margin-bottom: 47px;
+    padding: 30px 53px 38px 53px;
+    &-other{
+      padding-bottom: 0;
+      display: none;
+    }
     &-intro{
       display: flex;
-      padding: 30px 0 81px 84px;
+      margin-left: 31px;
+      margin-bottom: 35px;
     }
     &-inner{
-      margin-right: 90px;
       text-align: center;
-      min-height: 320px;
     }
     &-pic{
-      max-width: 321px;
-      height: 201px;
+      width: 242px;
+      height: 241px;
+      margin-right: 90px;
+    }
+    &-btn-inner{
+      display: flex;
+      margin-left: 44px;
     }
     &-btn {
-      margin-top: 29px;
+      background: #FFFFFF;
+      border: 1px solid #B2D4F0;
+      padding: 13px 30px;
+      border-radius: 40px;
+      margin-right: 114px;
     }
     &-btn a{
       font-weight: 700;
@@ -5471,13 +5488,16 @@ select {
       line-height: 27px;
       text-align: center;
       color: #009CDE;
-      background: #FFFFFF;
-      border: 1px solid #B2D4F0;
-      padding: 13px 30px;
-      border-radius: 40px;
     }
     &-info-btn{
-      margin-top: 26px;
+      background: #149BDC;
+      border: 1px solid #B2D4F0;
+      padding: 13px 62px;
+      border-radius: 40px;
+      text-align: center;
+      width: fit-content;
+      margin-top: -55px;
+      margin-left: 380px;
     }
     &-info-btn a{
       font-weight: 700;
@@ -5485,10 +5505,6 @@ select {
       line-height: 27px;
       text-align: center;
       color: #fff;
-      background: #149BDC;
-      border: 1px solid #B2D4F0;
-      padding: 13px 62px;
-      border-radius: 40px;
     }
     &-title{
       margin-bottom: 25px;
@@ -5509,15 +5525,15 @@ select {
       color: #000;
     }
     &-list{
-      margin: 0 10px 40px 54px;
-    }
-    &-list{
       font-weight: 700;
       font-size: 18px;
       line-height: 27px;
       color: #004F71;
       display: flex;
-      flex-wrap: wrap;
+      margin: 0 10px 40px 54px;
+      &-other{
+        margin: 0 0 40px;
+      }
     }
     &-list ul{
       max-width: 352px;
@@ -5528,10 +5544,14 @@ select {
     }
     &-items{
       margin-left: 54px;
+      &-other{
+        margin-left: 0;
+      }
     }
     &-item{
       font-family: "Georgia";
       margin-bottom: 20px;
+      cursor: pointer;
     }
     &-about {
       font-weight: 400;
@@ -5880,11 +5900,15 @@ select {
       line-height: 22px;
       color: #343A40;
       opacity: 0.5;
-
     }
     &-item-polz{
       input{
         width: 285px;
+        cursor: pointer;
+      }
+      label{
+        width: 30px;
+        text-align: center;
       }
       margin-bottom: 55px;
       margin-top: 40px;
@@ -6149,6 +6173,10 @@ select {
     top: 10px;
     left: 10px;
   }
+  .preps__top-list{
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -6380,12 +6408,40 @@ select {
     justify-content: center;
     padding: 0;
     margin-bottom: 30px;
+    margin-left: 0;
   }
   .preps__top-inner{
     margin-right: 0;
   }
   .preps__top-info{
     text-align: center;
+  }
+  .preps__top-list{
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+  .preps__top-list ul{
+    margin-right: 0;
+  }
+  .preps__top-pic{
+    margin-right: 0;
+  }
+  .preps__top-btn{
+    margin: 0 auto 10px;
+  }
+  .preps__top-btn-inner{
+    margin-left: 0;
+  }
+  .preps__top-info-btn{
+    margin: 0 auto;
+  }
+  .preps__top-item{
+    text-align: center;
+  }
+  .preps__top-items{
+    margin-left: 0;
   }
 }
 @media (max-width: 768.98px) {
@@ -6719,6 +6775,16 @@ select {
   .swiper-slide {
     width: 80%;
   }
+  .preps__top-info-btn{
+    padding: 13px 30px;
+  }
+  .preps__top{
+    padding: 15px 25px;
+  }
+  .preps__top-pic img{
+    width: 242px;
+    height: 241px;
+  }
 }
 @media (max-width: 400px) {
   .calendar-wrapper{
@@ -6762,6 +6828,9 @@ select {
   }
   .detail__inner-text{
     font-size: 30px;
+  }
+  .preps__top-word span{
+    font-size: 16px;
   }
 }
 
