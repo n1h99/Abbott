@@ -5,7 +5,7 @@ const stringToHTML = function (str, elementTag = 'div') {
 };
 
 // calendar
-const calendarEvents =  [
+const calendarEvents = [
     {
         title: '12:00 Круглый стол специа',
         start: '2021-11-05T12:00:00',
@@ -108,7 +108,7 @@ const calendarMonths = [
 ]
 
 var fullCalendar
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendar');
 
     fullCalendar = new FullCalendar.Calendar(calendarEl, {
@@ -124,17 +124,34 @@ document.addEventListener('DOMContentLoaded', function() {
         views: {
             year: {
                 type: 'listYear',
-                dateIncrement: { years: 1 },
-                slotDuration: { months: 1 },
+                dateIncrement: {years: 1},
+                slotDuration: {months: 1},
             }
         },
-        events: calendarEvents
+        events: calendarEvents,
+
+
+        eventClick: function (info) {
+            const event = calendarEvents.find(event => new Date(event.start).getTime() === info.event.start.getTime() && event.title === info.event.title)
+            myPopup(event)
+        }
     });
 
     fullCalendar.render();
     onSelectDate()
 });
 
+const myPopup = (event) => {
+    const modalCalendar = document.querySelector('.calendar__popup')
+    console.log(modalCalendar)
+    modalCalendar.classList.add('active-popup-calendar')
+    setTimeout(e => {
+        if (modalCalendar.classList.contains('active-popup-calendar')){
+            modalCalendar.classList.remove('active-popup-calendar')
+        }
+    },6000 )
+
+}
 
 const calendarYearSelect = document.querySelector('#calendarYearSelect')
 const calendarMonthSelect = document.querySelector('#calendarMonthSelect')
@@ -145,6 +162,7 @@ const onSelectDate = () => {
     const date = `${year}-${month < 10 ? `0${month}` : month}-01T00:00:00Z`
     fullCalendar.gotoDate(date)
 }
+
 
 [calendarYearSelect, calendarMonthSelect].forEach(element => {
     element.addEventListener('change', onSelectDate)
@@ -179,9 +197,10 @@ const activeSwitch = () => {
         firstOption.classList.remove('active')
         secondOption.classList.add('active')
         fullCalendar.changeView('year')
-    } else  {
+    } else {
         firstOption.classList.add('active')
         secondOption.classList.remove('active')
         fullCalendar.changeView('dayGridMonth')
     }
 }
+
