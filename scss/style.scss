@@ -2883,25 +2883,19 @@ template, [hidden] {
   z-index: 2;
   border-radius: 100px;
   background: #ffffff;
-  padding: 4px 6px;
+  padding: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  min-width: 156px;
 }
 
 .article__name img {
-  margin-right: 8px;
+
 }
 
-.article__name span {
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 700;
-}
 
 .article__others-item {
   display: -webkit-box;
@@ -2924,6 +2918,21 @@ template, [hidden] {
   width: 207px;
   height: 189px;
   margin-right: 34px;
+  position: relative;
+}
+.atricle__icons{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: #FFFFFF;
+  border-radius:100px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  img{
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .article__others-title {
@@ -4177,6 +4186,11 @@ select {
   &__themes{
     display: flex;
     margin-bottom: 34px;
+    &-centred{
+      justify-content: center;
+      margin-top: 27px;
+      margin-bottom: 36px;
+    }
   }
   &__themes li{
     margin-right: 20px;
@@ -6578,7 +6592,7 @@ select {
     display: block;
     text-align: center;
   }
-  .webinar__themes li{
+.webinar__themes li{
     margin-bottom: 10px;
   }
   .event__title-two{
