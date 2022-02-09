@@ -2363,7 +2363,8 @@ template, [hidden] {
   position: relative;
 }
 .header__menu{
-  margin-top: -20px;
+  // margin-top: -20px;
+  margin-top: -4px;
   display: flex;
 }
 .header__menu a{
@@ -2398,16 +2399,25 @@ template, [hidden] {
 .header__close{
   display: none;
 }
-
+.header__items:hover .header__content{
+  display: grid;
+}
 .header__content{
   display: none;
   position: absolute;
-  top: 30px;
+  top: 58px;
   left: -20px;
   width: 260px;
   background: #FFFFFF;
   z-index: 5;
   box-shadow: 0px 11.8125px 36.75px 10.5px rgba(0, 0, 0, 0.05), 0px 7.875px 21px rgba(0, 0, 0, 0.08), 0px 3.9375px 7.875px -5.25px rgba(0, 0, 0, 0.12);
+}
+.header__content::before{
+  content: "";
+  position: absolute;
+  top: -35px;
+  width: 260px;
+  height: 34px;
 }
 .header__content a{
   font-weight: normal;
@@ -2422,6 +2432,9 @@ template, [hidden] {
 }
 .header-active .header__content{
   display: grid;
+}
+.header__menu a:hover .header__content{
+  display: block;
 }
 
 //.header__search form {
@@ -2892,20 +2905,11 @@ template, [hidden] {
   align-items: center;
 }
 
-.article__name img {
-
-}
 
 
 .article__others-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+  align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 25px;
 }
@@ -2939,12 +2943,16 @@ template, [hidden] {
   max-width: 300px;
 }
 
-.article__others-title h3 {
+.article__others-title a {
   color: #149BDC;
   font-weight: 400;
   font-size: 24px;
   margin-bottom: 25px;
   max-width: 250px;
+  cursor: pointer;
+}
+.article__others-title a:hover{
+  color: #772481;
 }
 
 .article__others-title p {
@@ -4112,12 +4120,12 @@ select {
     height: 180px;
     width: 187px;
   }
-  &__others-title h3 {
+  &__others-title a {
     font-weight: 400;
     font-size: 24px;
     line-height: 25px;
     color: #772481;
-    margin-bottom: 10px;
+    cursor: pointer;
   }
   &__others-title p {
     font-weight: 400;
@@ -4125,6 +4133,7 @@ select {
     line-height: 18px;
     color: #000000;
     margin-bottom: 10px;
+    margin-top: 10px;
   }
   &__btn{
     font-size: 16px;
@@ -4464,8 +4473,9 @@ select {
   left: 0;
   z-index: 1;
 }
-.info__others-title-red h3{
+.info__others-title-red a{
   color: #851F40;
+  cursor: pointer;
 }
 .info__btn-red{
   color: #851F40;
@@ -4520,8 +4530,9 @@ select {
   left: 0;
   z-index: 1;
 }
-.info__others-title-blue h3{
+.info__others-title-blue a{
   color: #004B94;
+  cursor: pointer;
 }
 .info__btn-blue{
   color: #004B94;
@@ -4577,8 +4588,9 @@ select {
   left: 0;
   z-index: 1;
 }
-.info__others-title-green h3{
+.info__others-title-green a{
   color: #006748;
+  cursor: pointer;
 }
 .info__btn-green{
   color: #006748;
@@ -5575,17 +5587,21 @@ select {
       text-align: center;
       color: #009CDE;
     }
+    &-parent{
+      position: relative;
+    }
     &-info-btn{
+      position: absolute;
       background: #149BDC;
       border: 1px solid #B2D4F0;
       padding: 13px 62px;
       border-radius: 40px;
       text-align: center;
       width: fit-content;
-      margin-top: -55px;
-      margin-left: 380px;
+      top: -55px;
+      left: 380px;
     }
-    &-info-btn a{
+    &-info-btn span{
       font-weight: 700;
       font-size: 18px;
       line-height: 27px;
@@ -5659,6 +5675,9 @@ select {
       padding-bottom: 40px;
     }
   }
+}
+.preps-active .preps__top-info-btn{
+  margin-top: -60px;
 }
 
 // detail
