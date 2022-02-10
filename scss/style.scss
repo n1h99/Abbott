@@ -2387,9 +2387,41 @@ template, [hidden] {
   display: none;
   border: 1.38px solid #149BDC;
 }
+
+// новый хедер
+.header__items-hover-rose{
+  position: absolute;
+  width: 100%;
+  top: 55px;
+  left: 0;
+  display: none;
+  border: 1.38px solid #DFB2CD;
+}
+.header__items-hover-green{
+  position: absolute;
+  width: 100%;
+  top: 55px;
+  left: 0;
+  display: none;
+  border: 1.38px solid #00B140;
+}
+// новый хедер
+
+
 .header__menu a:hover{
   color: #149BDC;
 }
+
+// новый хедер
+.header__menu-rose a:hover{
+  color: #DFB2CD;
+}
+.header__menu-green a:hover{
+  color: #00B140;
+}
+// новый хедер
+
+
 .header__menu a:hover .header__items-hover{
   display: block;
 }
