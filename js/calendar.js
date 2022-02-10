@@ -9,42 +9,62 @@ const calendarEvents = [
     {
         title: '12:00 Круглый стол специа',
         start: '2021-11-05T12:00:00',
+        Color: '#009CDC',
+        className: ['fc__bg-blue']
     },
     {
         title: '14:00 Круглый стол специа',
         start: '2021-11-05T14:00:00',
+        color: ' #D40030',
+        className: ['fc__bg-red']
     },
     {
         title: '16:00 Круглый стол специа',
         start: '2021-11-05T16:00:00',
+        color: ' #D40030',
+        className: ['fc__bg-red']
     },
     {
         title: '18:00 Круглый стол специа',
         start: '2021-11-05T18:00:00',
+        color: '#009CDC',
+        className: ['fc__bg-blue']
     },
     {
         title: '12:00 Круглый стол специа',
         start: '2021-11-09T12:00:00',
+        color: '#509E38',
+        className: ['fc__bg-green']
     },
     {
         title: '18:00 Круглый стол специа',
         start: '2021-11-11T18:00:00',
+        color: '#509E38',
+        className: ['fc__bg-green']
     },
     {
         title: '12:00 Круглый стол специа',
         start: '2021-11-15T12:00:00',
+        color: '#D985B7',
+        className: ['fc__bg-purple']
     },
     {
         title: '18:00 Круглый стол специа',
         start: '2021-11-15T18:00:00',
+        color: '#509E38',
+        className: ['fc__bg-green']
     },
     {
         title: '12:00 Круглый стол специа',
         start: '2021-11-26T12:00:00',
+        color: '#D985B7',
+        className: ['fc__bg-purple']
     },
     {
         title: '14:00 Круглый стол специа',
         start: '2021-11-26T14:00:00',
+        color: '#009CDC',
+        className: ['fc__bg-blue']
     },
     {
         title: '12:00 Круглый стол специа',
@@ -140,18 +160,17 @@ document.addEventListener('DOMContentLoaded', function () {
     fullCalendar.render();
     onSelectDate()
 });
-
+const modalCalendar = document.querySelector('.calendar__popup')
 const myPopup = (event) => {
-    const modalCalendar = document.querySelector('.calendar__popup')
     console.log(modalCalendar)
     modalCalendar.classList.add('active-popup-calendar')
-    setTimeout(e => {
-        if (modalCalendar.classList.contains('active-popup-calendar')){
-            modalCalendar.classList.remove('active-popup-calendar')
-        }
-    },6000 )
 
 }
+const calendarBg = document.querySelector('.calendar__bg')
+calendarBg.addEventListener('click', ()=> {
+    modalCalendar.classList.remove('active-popup-calendar')
+})
+
 
 const calendarYearSelect = document.querySelector('#calendarYearSelect')
 const calendarMonthSelect = document.querySelector('#calendarMonthSelect')

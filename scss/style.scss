@@ -3817,7 +3817,23 @@ select {
   }
 }
 
-
+.switcher-option-wh.active{
+  color: #D985B7!important;
+  border: 1.14815px solid #D985B7!important;
+}
+.switcher-option-cardio.active{
+  color: #D40030!important;
+  border: 1.14815px solid #D40030!important;
+}
+.switcher-option-gastro.active{
+  color: #00B140!important;
+  border: 1.14815px solid #00B140!important;
+}
+.switcher-option-home.active,
+.switcher-option-nevro.active{
+  color: #009CDC!important;
+  border: 1.14815px solid #009CDC!important;
+}
 .switcher {
   display: flex;
   align-items: center;
@@ -3836,7 +3852,7 @@ select {
       border-radius: 114.815px 0 0 114.815px;
       &.active {
         border: 1.14815px solid #149BDC;
-        color: #149BDC;
+        color: #D985B7;
         border-radius: 114.815px 0 0 114.815px;
       }
     }
@@ -3850,6 +3866,69 @@ select {
       }
     }
   }
+}
+.calendar .fc-direction-ltr .fc-daygrid-event.fc-event-start .fc-daygrid-event-dot{
+  border-radius: 0;
+  height: 5px;
+  margin-right: 9px;
+  margin-left: 0;
+  border-color: #009CDC;
+}
+.calendar__gastro .fc-direction-ltr .fc-daygrid-event.fc-event-start{
+  background: rgba(0, 177, 64, 0.2);
+}
+.calendar__gastro .fc-direction-ltr .fc-daygrid-event.fc-event-start .fc-daygrid-event-dot{
+  border-radius: 0;
+  height: 5px;
+  margin-right: 9px;
+  margin-left: 0;
+  border-color: #00B140!important;
+}
+.calendar__cardio .fc-direction-ltr .fc-daygrid-event.fc-event-start{
+  background: rgba(212, 0, 48, 0.2);
+}
+.calendar__cardio .fc-direction-ltr .fc-daygrid-event.fc-event-start .fc-daygrid-event-dot{
+  border-radius: 0;
+  height: 5px;
+  margin-right: 9px;
+  margin-left: 0;
+  border-color: #D40030!important;
+}
+.calendar__nevro .fc-direction-ltr .fc-daygrid-event.fc-event-start{
+  background: rgba(0, 156, 220, 0.2);
+}
+.calendar__nevro .fc-direction-ltr .fc-daygrid-event.fc-event-start .fc-daygrid-event-dot{
+  border-radius: 0;
+  height: 5px;
+  margin-right: 9px;
+  margin-left: 0;
+  border-color: #009CDC!important;
+}
+.calendar__wh .fc-direction-ltr .fc-daygrid-event.fc-event-start{
+  background: rgba(217, 133, 183, 0.16);
+}
+.calendar__wh .fc-direction-ltr .fc-daygrid-event.fc-event-start .fc-daygrid-event-dot{
+  border-radius: 0;
+  height: 5px;
+  margin-right: 9px;
+  margin-left: 0;
+  border-color: #9F0666!important;
+}
+
+.calendar__wh .fc .fc-highlight{
+  background: rgba(217, 133, 183, 0.16);
+}
+.calendar__cardio .fc .fc-highlight{
+  background: rgba(212, 0, 48, 0.2);
+}
+.calendar__nevro .fc .fc-highlight{
+  background: rgba(0, 156, 220, 0.2);
+}
+.calendar__gastro .fc .fc-highlight{
+  background: rgba(0, 177, 64, 0.2);
+}
+.calendar .fc .fc-highlight{
+  background: rgba(0, 156, 220, 0.2);
 }
 
 .fc-scrollgrid-sync-inner{
@@ -3875,11 +3954,8 @@ select {
 .fc .fc-scrollgrid-section-liquid > td {
   border: none;
 }
-.fc .fc-daygrid-day-frame {
-  justify-content: inherit;
-  min-height: 102px;
-  max-width: 170px;
-  text-align: end;
+.fc .fc-daygrid-day{
+  height: 120px;
 }
 .fc-scrollgrid-sync-inner {
   display: block;
@@ -3898,21 +3974,23 @@ select {
 .fc-event-time{
   display: none;
 }
-.fc-daygrid-event-dot{
-  border-radius: 0;
-  border: 1px solid #009CDC;
-  height: 10px;
-  width: 5px;
-  background: #009CDC;
-  margin-right: 9px;
-}
 .fc-direction-ltr .fc-daygrid-event.fc-event-start{
   margin-left: 7px;
-  background: rgba(0, 156, 220, 0.2);
 }
 .fc .fc-daygrid-event-harness {
-
   margin-bottom: 3px;
+}
+.fc__bg-blue{
+  background: rgba(0, 156, 220, 0.2);
+}
+.fc__bg-red{
+  background: rgba(212, 0, 48, 0.2);
+}
+.fc__bg-green{
+  background: rgba(80, 158, 56, 0.2);
+}
+.fc__bg-purple{
+  background: rgba(217, 133, 183, 0.2);
 }
 
 .calendar__title{
@@ -3938,6 +4016,15 @@ select {
   z-index: 5;
   display: none;
 }
+.calendar__bg{
+  background: rgba(0, 0, 0, .5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
 .active-popup-calendar{
   display: block;
 }
@@ -3949,6 +4036,8 @@ select {
   border: 3px solid #009CDC;
   padding: 18px 14px 28px 38px;
   background: #FFFFFF;
+  z-index: 2;
+  position: relative;
 }
 .calendar__popup-title{
   font-weight: 700;
