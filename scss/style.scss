@@ -4240,12 +4240,13 @@ select {
     margin-right: 24px;
     height: 180px;
     width: 187px;
+    position: relative;
   }
   &__others-title a {
     font-weight: 400;
     font-size: 24px;
     line-height: 25px;
-    color: #772481;
+    color: #149CDD;
     cursor: pointer;
   }
   &__others-title p {
@@ -4257,11 +4258,12 @@ select {
     margin-top: 10px;
   }
   &__btn{
-    font-size: 16px;
+    font-size: 16px !important;
+    line-height: 24px !important;
     font-weight: 400;
     display: inline-block;
     white-space: nowrap;
-    padding: 10px 16px 11px;
+    padding: 8px 16px;
     transition: all .3s ease;
     box-shadow: none;
     border: none;
@@ -4285,7 +4287,7 @@ select {
     font-weight: 400;
     display: inline-block;
     white-space: nowrap;
-    padding: 10px 16px 11px;
+    padding: 8px 16px;
     transition: all .3s ease;
     box-shadow: none;
     border: none;
@@ -4473,9 +4475,16 @@ select {
     box-sizing: border-box;
     border-radius: 2.45px;
     min-height: 382px;
+    width: 294px;
   }
   &__pic{
     margin-bottom: 30px;
+    img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    }
   }
   &__text{
     padding: 0 30px 30px 30px;
@@ -4598,6 +4607,9 @@ select {
   color: #851F40;
   cursor: pointer;
 }
+.info__others-title-red a:hover{
+  color: #772481;
+}
 .info__btn-red{
   color: #851F40;
 }
@@ -4655,6 +4667,9 @@ select {
   color: #004B94;
   cursor: pointer;
 }
+.info__others-title-blue a:hover{
+  color: #772481;
+}
 .info__btn-blue{
   color: #004B94;
 }
@@ -4666,7 +4681,9 @@ select {
   color: #009CDC;
 }
 
-
+.info__others-title a:hover{
+  color: #772481;
+}
 // health-green
 .health-green{
   padding: 51px 0 9px 98px;
@@ -4712,6 +4729,12 @@ select {
 .info__others-title-green a{
   color: #006748;
   cursor: pointer;
+}
+.info__others-title-green a:hover{
+  color: #772481;
+}
+.info__others-title-wh a{
+  color: #772481;
 }
 .info__btn-green{
   color: #006748;
@@ -5721,6 +5744,7 @@ select {
       width: fit-content;
       top: -55px;
       left: 380px;
+      cursor: pointer;
     }
     &-info-btn span{
       font-weight: 700;
@@ -6991,6 +7015,9 @@ select {
   }
   .calc__items{
     margin-right: 0;
+  }
+  .atricle__icons{
+    top: -159px;
   }
 }
 @media (max-width: 450px) {
