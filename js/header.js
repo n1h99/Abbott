@@ -14,14 +14,48 @@ headerSecondClose.onclick = function () {
 	headerSecondClose.style.display = "none";
 }
 
-// header search
-const searchSecondBtn = document.getElementsByClassName("header__second-search-btn")[0];
-const searchSecondContent = document.getElementsByClassName("header__second-search-content")[0];
-const searchSecondClose = document.getElementsByClassName("header__second-search-close")[0];
+const headerBurger = document.getElementsByClassName("header__burger")[0];
+const headerBurgerContent = document.getElementsByClassName('header__items-inner')[0];
+const headerBurgerClose = document.getElementsByClassName("header__close")[0];
 
-searchSecondBtn.onclick = function () {
-	searchSecondContent.style.display = "grid";
+headerBurger.onclick = function () {
+	headerBurgerContent.style.display = "block";
+	headerBurger.style.display = "none";
+	headerBurgerClose.style.display = "block";
 }
-searchSecondClose.onclick = function () {
-	searchSecondContent.style.display = "none";
+headerBurgerClose.onclick = function () {
+	headerBurgerContent.style.display = "none";
+	headerBurger.style.display = "block";
+	headerBurgerClose.style.display = "none";
 }
+
+
+document.querySelectorAll('.header__second-search-btn').forEach((item) =>
+	item.addEventListener('click', () => {
+		const parentThree = item.parentNode;
+
+		if (parentThree.classList.contains('header-active-search')) {
+			parentThree.classList.remove('header-active-search');
+		}else {
+			document
+				.querySelectorAll('.header__second-search')
+				.forEach((child) => child.classList.remove('header-active-search'))
+			parentThree.classList.toggle('header-active-search');
+		}
+	})
+)
+
+document.querySelectorAll('.header__third-btn').forEach((item) =>
+	item.addEventListener('click', () => {
+		const parentThree = item.parentNode;
+
+		if (parentThree.classList.contains('header-active-third')) {
+			parentThree.classList.remove('header-active-third');
+		}else {
+			document
+				.querySelectorAll('.header__second-search-mobile')
+				.forEach((child) => child.classList.remove('header-active-third'))
+			parentThree.classList.toggle('header-active-third');
+		}
+	})
+)

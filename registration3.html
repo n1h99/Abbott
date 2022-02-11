@@ -172,16 +172,19 @@
 
                 <div class="information__findings information__basic">
 
-                    <label class="input__field">
-                        <input id="name" name="name" type="name" placeholder="Имя">
+                    <label class="input__field input-name">
+                        <input name="name" type="name" placeholder="Имя">
+                        <span class="name-error">*</span>
                     </label>
 
-                    <label class="input__field">
-                        <input id="surname" name="surname" type="surname" placeholder="Фамилия">
+                    <label class="input__field input-surname">
+                        <input name="surname" type="surname" placeholder="Фамилия">
+                        <span class="surname-error">*</span>
                     </label>
 
-                    <label class="input__field">
-                        <input id="middle-name" name="middle-name" type="middle-name" placeholder="Отчество">
+                    <label class="input__field input-middle">
+                        <input name="middle-name" type="middle-name" placeholder="Отчество">
+                        <span class="middle-error">*</span>
                     </label>
 
                     <label class="input__field">
@@ -206,8 +209,9 @@
                     <div class="information__findings information__basic">
 
 
-                        <label class="input__field">
+                        <label class="input__field input-email">
                             <input id="email" name="email" type="email" placeholder="E-mail/Логин">
+                            <span class="email-error">*</span>
                         </label>
 
                         <label class="input__field">
@@ -219,13 +223,15 @@
                     </div>
 
                     <div class="information__block">
-                        <label class="input__field-width">
+                        <label class="input__field-width input-password">
                             <input id="password" name="password" type="password" placeholder="Пароль">
+                            <span class="password-error">*</span>
                         </label>
 
-                        <label class="input__field-width">
+                        <label class="input__field-width input-confirm-password">
                             <input id="confirm-password" name="confirm-password" type="password"
                                    placeholder="Подтвердите пароль">
+                            <span class="confirm-password-error">*</span>
                         </label>
                     </div>
 
@@ -242,15 +248,16 @@
                 </div>
 
                 <div class="input__field-wrap-width">
-                    <label class="input__field-width">
+                    <label class="input__field-width input-company">
                         <input id="company-address" name="company-address" type="company-address"
                                placeholder="Адрес компании">
+                        <span class="company-error">*</span>
                     </label>
 
                     <div class="information__findings information__basic">
 
 
-                        <select class="input__field select" name="work-adress" id="work-adress">
+                        <select class="input__field select select-work" name="work-adress" id="work-adress" style="color: #343A40;">
                             <option value="">Выберите место работы</option>
                             <option value="">2</option>
                             <option value="">2</option>
@@ -266,14 +273,14 @@
                         </label>
 
 
-                        <select class="input__field select" name="current-position" id="current-position">
+                        <select class="input__field select" name="current-position" id="current-position" style="color: #343A40;">
                             <option value="">Занимаемая должность</option>
                             <option value="">2</option>
                             <option value="">2</option>
                         </select>
 
 
-                        <select class="input__field select" name="specialization" id="specialization">
+                        <select class="input__field select select-speciality" name="specialization" id="specialization" style="color: #343A40;">
                             <option value="">Специальность</option>
                             <option value="">2</option>
                             <option value="">2</option>
@@ -330,7 +337,7 @@
 
                 <div class="input__field-wrap-width">
 
-                    <select class="input__field select information__block" name="specialization" id="specialization">
+                    <select class="input__field select information__block" name="specialization" >
                         <option value="">Случайно</option>
                         <option value="">2</option>
                         <option value="">2</option>
@@ -633,7 +640,7 @@
 
 </div>
 
-
+<script src="js/validation.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
