@@ -7,12 +7,12 @@ headerSecondBtn.onclick = function () {
 	headerSecondContent.style.display = "grid";
 	headerSecondBtn.style.display = "none";
 	headerSecondClose.style.display = "block";
-}
+};
 headerSecondClose.onclick = function () {
 	headerSecondContent.style.display = "none";
 	headerSecondBtn.style.display = "block";
 	headerSecondClose.style.display = "none";
-}
+};
 
 const headerBurger = document.getElementsByClassName("header__burger")[0];
 const headerBurgerContent = document.getElementsByClassName('header__items-inner')[0];
@@ -22,12 +22,12 @@ headerBurger.onclick = function () {
 	headerBurgerContent.style.display = "block";
 	headerBurger.style.display = "none";
 	headerBurgerClose.style.display = "block";
-}
+};
 headerBurgerClose.onclick = function () {
 	headerBurgerContent.style.display = "none";
 	headerBurger.style.display = "block";
 	headerBurgerClose.style.display = "none";
-}
+};
 
 
 document.querySelectorAll('.header__second-search-btn').forEach((item) =>
