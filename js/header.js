@@ -30,32 +30,29 @@ headerBurgerClose.onclick = function () {
 };
 
 
-document.querySelectorAll('.header__second-search-btn').forEach((item) =>
-	item.addEventListener('click', () => {
-		const parentThree = item.parentNode;
 
-		if (parentThree.classList.contains('header-active-search')) {
-			parentThree.classList.remove('header-active-search');
-		}else {
-			document
-				.querySelectorAll('.header__second-search')
-				.forEach((child) => child.classList.remove('header-active-search'))
-			parentThree.classList.toggle('header-active-search');
-		}
-	})
-)
+const headerSearchBtn = document.querySelector('.header__second-search-btn')
+const headerSearchClose = document.querySelector('.header__second-search-close')
+const headerSearchContent = document.querySelector('.header__second-search-content')
 
-document.querySelectorAll('.header__third-btn').forEach((item) =>
-	item.addEventListener('click', () => {
-		const parentThree = item.parentNode;
+headerSearchBtn.onclick = function() {
+	headerSearchContent.style.display = 'block'
+}
 
-		if (parentThree.classList.contains('header-active-third')) {
-			parentThree.classList.remove('header-active-third');
-		}else {
-			document
-				.querySelectorAll('.header__second-search-mobile')
-				.forEach((child) => child.classList.remove('header-active-third'))
-			parentThree.classList.toggle('header-active-third');
-		}
-	})
-)
+headerSearchClose.onclick = function() {
+	headerSearchContent.style.display = 'none'
+
+}
+
+const headerSearchBtnMobile = document.querySelector('.header__third-btn')
+const headerSearchCloseMobile = document.querySelector('.header__third-search-close')
+const headerSearchContentMobile = document.querySelector('.header__third-content')
+
+headerSearchBtnMobile.onclick = function() {
+	headerSearchContentMobile.style.display = 'block'
+}
+
+headerSearchCloseMobile.onclick = function() {
+	headerSearchContentMobile.style.display = 'none'
+
+}
