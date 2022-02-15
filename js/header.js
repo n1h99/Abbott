@@ -52,6 +52,6 @@ headerSearchBtnMobile.onclick = function() {
 }
 
 headerSearchCloseMobile.onclick = function() {
-	headerSearchContentMobile.style.display = 'block'
+	headerSearchContentMobile.style.display = 'none'
 }
 
