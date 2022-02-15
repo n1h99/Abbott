@@ -4568,6 +4568,7 @@ select {
   &__themes{
     display: flex;
     margin-bottom: 34px;
+    flex-wrap: wrap;
     &-centred{
       justify-content: center;
       margin-top: 27px;
@@ -5396,6 +5397,15 @@ select {
 
 
 // new
+.new__item::after{
+  content: "";
+  position: absolute;
+  border: 1px solid #149BDC;
+  width: 100%;
+  left: 0;
+  bottom: -10px;
+}
+
 .new{
   margin-bottom: 28px;
   &__title{
@@ -5417,6 +5427,7 @@ select {
     margin-right: 24px;
     margin-bottom: 30px;
     width: 608px;
+    position: relative;
     &-date{
       display: flex;
       margin-bottom: 20px;
@@ -5484,14 +5495,7 @@ select {
         color: #149BDC;
       }
     }
-    &-btn::after{
-      content: "";
-      position: absolute;
-      border: 1px solid #149BDC;
-      width: 600px;
-      left: 0;
-      bottom: -30px;
-    }
+
     &-video{
       position: relative;
       min-height: 256px;
@@ -5509,14 +5513,6 @@ select {
       position: relative;
       max-width: inherit;
       margin-bottom: 60px;
-    }
-    &-line::after{
-      content: "";
-      position: absolute;
-      border: 1px solid #149BDC;
-      width: 100%;
-      left: 0;
-      bottom: -60px;
     }
   }
   &__video-btn{
@@ -5865,7 +5861,15 @@ select {
     margin-top: -43px;
   }
 }
-
+.event-info__item::after{
+  content: "";
+  position: absolute;
+  border: 1px solid #149BDC;
+  //max-width: 608px;
+  width: 100%;
+  left: 0;
+  bottom: -10px;
+}
 .event-info{
   &__items{
     display: flex;
@@ -5877,6 +5881,7 @@ select {
     max-width: 608px;
     margin-bottom: 30px;
     width: 100%;
+    position: relative;
     &-date{
       display: flex;
       margin-bottom: 20px;
@@ -5920,15 +5925,6 @@ select {
       max-width: 608px;
       margin-bottom: 20px;
       position: relative;
-    }
-    &-text::after{
-      content: "";
-      position: absolute;
-      border: 1px solid #149BDC;
-      max-width: 608px;
-      width: 100%;
-      left: 0;
-      bottom: -30px;
     }
   }
   &__video{
@@ -6009,14 +6005,6 @@ select {
     p span{
       font-weight: 700;
     }
-  }
-  &__text::after{
-    content: "";
-    position: absolute;
-    border: 1px solid #149bdc;
-    width: 100%;
-    left: 0;
-    bottom: -30px;
   }
   &__item-title{
     max-width: 605px;
@@ -7456,12 +7444,21 @@ select {
     display: none;
     position: absolute;
     top: 60px;
-    left: 138px;
+    left: 0px;
     background: #FFFFFF;
-    width: 180px;
+    width: 100%;
+    box-shadow: 0px 11.8125px 36.75px 10.5px rgba(0, 0, 0, 0.05), 0px 7.875px 21px rgba(0, 0, 0, 0.08), 0px 3.9375px 7.875px -5.25px rgba(0, 0, 0, 0.12);
+  }
+  .header__menu a:hover .header__items-hover{
+    display: none;
+  }
+  .header__menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .header__items{
-    padding: 11px 0 11px 21px;
+    padding: 11px 0 11px 0;
   }
   .header__content{
     left: 70px;
@@ -7655,9 +7652,6 @@ select {
   .header__second-search-content{
     left: 130px;
   }
-  .header__items-inner{
-    left: 104px;
-  }
   .events__item {
     width: 335px;
     margin-right: 0px;
@@ -7704,9 +7698,6 @@ select {
   }
   .header__second-search-content{
     left: 80px;
-  }
-  .header__items-inner{
-    left: 30px;
   }
   .event__pic{
     max-width: 334px;
@@ -7775,9 +7766,6 @@ select {
   }
   .header__second-search-content{
     left: 45px;
-  }
-  .header__items-inner{
-    left: 20px;
   }
   .webinar__item {
     width: 335px;
@@ -7865,9 +7853,6 @@ select {
   }
   .header__second-search-content{
     left: 25px;
-  }
-  .header__items-inner{
-    left: 10px;
   }
   .logo__none-reg{
     margin-right: 15px;
