@@ -3332,15 +3332,16 @@ template, [hidden] {
 }
 
 .registration__title {
-  margin-bottom: 51px;
+  margin-bottom: 60px;
 }
 
 .registration__title p {
  max-width: 765px;
+  line-height: 30px;
 }
 
 .main__direction {
-  padding-bottom: 100px;
+  padding-bottom: 95px;
 }
 
 .main__direction h2 {
@@ -3349,6 +3350,7 @@ template, [hidden] {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 30px;
+  line-height: 130%;
 }
 
 .main__direction-wrap {
@@ -3374,8 +3376,12 @@ template, [hidden] {
   -ms-flex-align: center;
   align-items: center;
   max-width: 330px;
+  width: 100%;
   padding: 11px 12px;
   cursor: pointer;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
 }
 
 .main__direction-item:hover {
@@ -7208,6 +7214,14 @@ select {
   .project__text-two{
     max-width: 353px;
   }
+  .main__direction-wrap{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: inherit;
+  }
+  .main__direction-item:last-child{
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 767.98px) {
   .header__search form {
@@ -7622,11 +7636,8 @@ select {
   .lectures__title {
     min-height: 155px;
   }
-  .main__direction, .registration__questions {
+  .registration__questions {
     padding-bottom: 50px;
-  }
-  .registration__title {
-    margin-bottom: 30px;
   }
   .directions__item-title-wrap{
     display: block;
@@ -7863,6 +7874,25 @@ select {
   }
   .directions__item-first{
     padding: 10px 10px;
+  }
+  .section__title-second{
+    font-size: 24px;
+    line-height: 135%;
+    margin-bottom: 15px;
+  }
+  .registration__title p{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+  }
+  .registration__title{
+    margin-bottom: 40px;
+  }
+  .main__direction h2{
+    margin-bottom: 20px;
+  }
+  .main__direction{
+    padding-bottom: 70px;
   }
 }
 
