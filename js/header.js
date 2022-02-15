@@ -41,7 +41,6 @@ headerSearchBtn.onclick = function() {
 
 headerSearchClose.onclick = function() {
 	headerSearchContent.style.display = 'none'
-
 }
 
 const headerSearchBtnMobile = document.querySelector('.header__third-btn')
@@ -53,6 +52,6 @@ headerSearchBtnMobile.onclick = function() {
 }
 
 headerSearchCloseMobile.onclick = function() {
-	headerSearchContentMobile.style.display = 'none'
-
+	headerSearchContentMobile.style.display = 'block'
 }
+

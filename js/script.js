@@ -4412,6 +4412,22 @@ document.querySelectorAll('.preps__top-info-btn').forEach((item) =>
     })
 )
 
+// filter
+document.querySelectorAll('.event__select-mobile-btn').forEach((item) =>
+    item.addEventListener('click', () => {
+        const parentFour = item.parentNode;
+
+        if (parentFour.classList.contains('filter-active')) {
+            parentFour.classList.remove('filter-active');
+        } else {
+            document
+                .querySelectorAll('.event__mobile-inner')
+                .forEach((child) => child.classList.remove('filter-active'))
+            parentFour.classList.toggle('filter-active');
+        }
+    })
+)
+
 
 // registration three
 var modalFrut = document.getElementsByClassName("btn__further-modal")[0];
@@ -4465,6 +4481,8 @@ form.addEventListener('input', e =>
 
 form.addEventListener('select', e =>
     e.target.parentNode.classList.remove('label__error'))
+
+
 
 
 

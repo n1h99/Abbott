@@ -3432,7 +3432,7 @@ template, [hidden] {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 221px;
+  padding-top: 100px;
   left: 0;
   top: 0;
   width: 100%;
@@ -4128,6 +4128,7 @@ select {
         border: 1.14815px solid #149BDC;
         color: #D985B7;
         border-radius: 114.815px 0 0 114.815px;
+        box-shadow: none;
       }
     }
     &-two {
@@ -4137,6 +4138,7 @@ select {
         border: 1.14815px solid #149BDC;
         border-radius: 0 114.815px 114.815px 0;
         color: #149BDC;
+        box-shadow: none;
       }
     }
   }
@@ -5230,8 +5232,13 @@ select {
 
 
 //events lk
+
+
 .events{
   margin-bottom: 49px;
+  &__item-hover{
+    display: none;
+  }
   &__btn{
     margin: 0 auto;
     margin-top: 8px;
@@ -5256,6 +5263,7 @@ select {
     filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.15));
     padding: 20px 20.98px 12px 23.31px;
     margin-bottom: 20px;
+    position: relative;
     margin-right: 15px;
     &-date{
       display: flex;
@@ -5327,6 +5335,65 @@ select {
     }
   }
 }
+
+.events__item-hover{
+  position: absolute;
+  background: #149BDC;
+  border: 1px solid #009CDE;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+  width: 394px;
+  height: 335px;
+  padding: 20px 20.98px 12px 23.31px;
+  top: 0;
+  left: 0;
+}
+.events__item-date-hover p{
+  color: #FFFFFF;
+}
+.events__item-date-hover span{
+  color: #FFFFFF!important;
+}
+.events__item-title-hover{
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+.events__item-location-hover{
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+}
+.events__item-btn-hover{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #009CDE;
+  padding: 8px 16px;
+  background: #FFFFFF;
+  border-radius: 100px;
+  border: none;
+  margin-top: 44px;
+  height: 40px;
+  margin-right: 55px;
+  margin-bottom: 31px;
+}
+.events__item-btn-hover-two{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #009CDE;
+  padding: 8px 16px;
+  background: #FFFFFF;
+  border-radius: 100px;
+  border: none;
+  margin-top: 44px;
+  margin-bottom: 31px;
+  height: 40px;
+}
+.events__item:hover .events__item-hover{
+  display: block;
+}
+
 
 // new
 .new{
@@ -5583,6 +5650,19 @@ select {
       height: 0px;
       font-size: 0;
     }
+    &-mobile-btn{
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
+      text-align: center;
+      color: #009CDE;
+      padding: 7px 15px 6px 14px;
+      display: none;
+      background: #FFFFFF;
+      border: 1px solid #B2D4F0;
+      box-shadow: 0px 4px 10px rgba(178, 212, 240, 0.4);
+      border-radius: 100px;
+    }
   }
   &__calendar{
     font-weight: 400;
@@ -5699,6 +5779,10 @@ select {
     min-height: 362px;
     display: flex;
     justify-content: space-between;
+    max-width: 726px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   &__pic-btn{
     padding: 22px 0 0 22px;
@@ -6144,6 +6228,8 @@ select {
     width: 100%;
     min-height: 376px;
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     &-text{
       max-width: 1017px;
       font-weight: 700;
@@ -6155,6 +6241,7 @@ select {
     &-btn{
       padding-left: 105px;
       margin-top: 70px;
+      height: 53px;
     }
     &-btn a{
       font-weight: 700;
@@ -6854,8 +6941,11 @@ select {
   .event__select-items {
     margin-right: 10px;
   }
+  .event__calendar{
+    margin-right: 10px;
+  }
   .event__btn-items input{
-    margin-left: 10px;
+    margin-left: 0px;
   }
 }
 
@@ -7016,6 +7106,9 @@ select {
     width: 10px;
   }
 }
+
+
+
 @media (max-width: 810px){
   .events__wrap{
     justify-content: center;
@@ -7099,6 +7192,10 @@ select {
   .events__item {
     width: 354px;
     margin-right: 10px;
+  }
+  .events__item-hover{
+    width: 354px;
+    height: -webkit-fill-available;
   }
   .new{
     &__item{
@@ -7566,6 +7663,9 @@ select {
     margin-right: 0px;
     padding-left: 10px;
   }
+  .events__item-hover{
+    width: 335px;
+  }
   .events__item-date p {
     font-size: 16px;
     line-height: 23px;
@@ -7692,7 +7792,36 @@ select {
     width: 335px;
   }
   .webinar__favorites{
+    display: inline-flex;
+  }
+  .event-info__favorites img {
+    margin: 0 5px 15px 0;
+  }
+  .event-info__item-date span{
+    margin-right: 20px;
+    font-size: 18px;
+  }
+  .event-info__item-date p{
+    margin-right: 0;
+    font-size: 18px;
+  }
+  .event-info__item-date span::after{
+    height: 25px;
+    right: -11px;
+    top: 5px;
+  }
+}
+@media (max-width: 375px) {
+  .event__select-mobile-btn{
     display: block;
+    max-width: 193px;
+    margin-bottom: 40px;
+  }
+  .event__mobile-content{
+    display: none;
+  }
+  .filter-active .event__mobile-content{
+    display: flex;
   }
 }
 
