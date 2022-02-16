@@ -4428,20 +4428,42 @@ document.querySelectorAll('.event__select-mobile-btn').forEach((item) =>
     })
 )
 
+let calendarInput = document.querySelector(".event__calendar-input")
+let calendarDate = document.querySelector(".event__calendar-span")
 
-// registration three
-var modalFrut = document.getElementsByClassName("btn__further-modal")[0];
-
-var btnFrut = document.getElementsByClassName("btn__further")[0];
-
-var closeFrut = document.getElementsByClassName("btn__modal-close")[0];
-
-btnFrut.onclick = function () {
-    modalFrut.style.display = "block";
+if (!!calendarInput) {
+    calendarInput.addEventListener("change", (e) => {
+        e = calendarInput.value
+        calendarDate.innerHTML = e
+        calendarDate.style.color = "#000000"
+    })
 }
 
-closeFrut.onclick = function () {
-    modalFrut.style.display = "none";
+// registration three
+let modalFrut = document.getElementsByClassName("btn__further-modal")[0];
+
+let btnFrut = document.getElementsByClassName("btn__further")[0];
+
+let btnSvg = document.querySelector('.btn__modal-content--svg')
+
+let closeFrut = document.getElementsByClassName("btn__modal-close")[0];
+
+if (!!btnFrut) {
+    btnFrut.onclick = function () {
+        modalFrut.style.display = "block";
+    }
+}
+
+if (!!btnSvg) {
+    btnSvg.onclick = function () {
+        modalFrut.style.display = "none";
+    }
+}
+
+if (!!closeFrut) {
+    closeFrut.onclick = function () {
+        modalFrut.style.display = "none";
+    }
 }
 
 window.onclick = function (event) {
@@ -4456,33 +4478,30 @@ const inputs = document.querySelectorAll('.validation__element')
 const selects = document.querySelectorAll('.validation__select')
 const form = document.querySelector('.information')
 
-form.addEventListener('submit', e => {
-    e.preventDefault()
+if (!!form) {
+    form.addEventListener('submit', e => {
+        e.preventDefault()
 
-    inputs.forEach(item => {
-        if (item.value.length < 1)
-            item.parentNode.classList.add('label__error')
+        inputs.forEach(item => {
+            if (item.value.length < 1)
+                item.parentNode.classList.add('label__error')
 
-        else
-            item.parentNode.classList.remove('label__error')
+            else
+                item.parentNode.classList.remove('label__error')
 
+        })
+
+        selects.forEach(select => {
+            if (select.value == '')
+                select.parentNode.classList.add('label__error')
+            else
+                select.parentNode.classList.remove('label__error')
+        })
     })
 
-    selects.forEach(select => {
-        if (select.value == '')
-            select.parentNode.classList.add('label__error')
-        else
-            select.parentNode.classList.remove('label__error')
-    })
-})
+    form.addEventListener('input', e =>
+        e.target.parentNode.classList.remove('label__error'))
 
-form.addEventListener('input', e =>
-    e.target.parentNode.classList.remove('label__error'))
-
-form.addEventListener('select', e =>
-    e.target.parentNode.classList.remove('label__error'))
-
-
-
-
-
+    form.addEventListener('select', e =>
+        e.target.parentNode.classList.remove('label__error'))
+}
