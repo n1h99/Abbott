@@ -38,9 +38,10 @@ const headerSearchContent = document.querySelector('.header__second-search-conte
 headerSearchBtn.onclick = function() {
 	headerSearchContent.style.display = 'block'
 }
-
-headerSearchClose.onclick = function() {
-	headerSearchContent.style.display = 'none'
+if (!!headerSearchClose !== null && headerSearchClose !== undefined) {
+	headerSearchClose.onclick = function() {
+		headerSearchContent.style.display = 'none'
+	}
 }
 
 const headerSearchBtnMobile = document.querySelector('.header__third-btn')
@@ -51,7 +52,8 @@ headerSearchBtnMobile.onclick = function() {
 	headerSearchContentMobile.style.display = 'block'
 }
 
-headerSearchCloseMobile.onclick = function() {
-	headerSearchContentMobile.style.display = 'none'
+if (!!headerSearchCloseMobile) {
+	headerSearchCloseMobile.onclick = function() {
+		headerSearchContentMobile.style.display = 'none'
+	}
 }
-
