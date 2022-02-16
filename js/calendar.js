@@ -4,6 +4,33 @@ const stringToHTML = function (str, elementTag = 'div') {
     return dom;
 };
 
+var fullCalendar
+const calendarYearSelect = document.querySelector('#calendarYearSelect')
+const calendarMonthSelect = document.querySelector('#calendarMonthSelect')
+
+
+const onSelectDate = () => {
+    const year = calendarYearSelect.value
+    const month = calendarMonthSelect.value
+    const date = `${year}-${month < 10 ? `0${month}` : month}-01T00:00:00Z`
+    fullCalendar.gotoDate(date)
+}
+
+const activeSwitch = () => {
+    const firstOption = document.querySelector('.switcher-option-one');
+    const secondOption = document.querySelector('.switcher-option-two');
+
+    if (firstOption.classList.contains('active')) {
+        firstOption.classList.remove('active')
+        secondOption.classList.add('active')
+        fullCalendar.changeView('year')
+    } else {
+        firstOption.classList.add('active')
+        secondOption.classList.remove('active')
+        fullCalendar.changeView('dayGridMonth')
+    }
+}
+
 // calendar
 const calendarEvents = [
     {
@@ -127,7 +154,6 @@ const calendarMonths = [
     }
 ]
 
-var fullCalendar
 document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendar');
 
@@ -167,23 +193,13 @@ const myPopup = (event) => {
 
 }
 const calendarBg = document.querySelector('.calendar__bg')
-calendarBg.addEventListener('click', ()=> {
+calendarBg.addEventListener('click', () => {
     modalCalendar.classList.remove('active-popup-calendar')
 })
 
 
-const calendarYearSelect = document.querySelector('#calendarYearSelect')
-const calendarMonthSelect = document.querySelector('#calendarMonthSelect')
 
-const onSelectDate = () => {
-    const year = calendarYearSelect.value
-    const month = calendarMonthSelect.value
-    const date = `${year}-${month < 10 ? `0${month}` : month}-01T00:00:00Z`
-    fullCalendar.gotoDate(date)
-}
-
-
-[calendarYearSelect, calendarMonthSelect].forEach(element => {
+    [calendarYearSelect, calendarMonthSelect].forEach(element => {
     element.addEventListener('change', onSelectDate)
 })
 
@@ -208,18 +224,4 @@ calendarMonths.forEach(cm => {
 })
 
 // cal
-const activeSwitch = () => {
-    const firstOption = document.querySelector('.switcher-option-one');
-    const secondOption = document.querySelector('.switcher-option-two');
-
-    if (firstOption.classList.contains('active')) {
-        firstOption.classList.remove('active')
-        secondOption.classList.add('active')
-        fullCalendar.changeView('year')
-    } else {
-        firstOption.classList.add('active')
-        secondOption.classList.remove('active')
-        fullCalendar.changeView('dayGridMonth')
-    }
-}
 
