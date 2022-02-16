@@ -31,6 +31,10 @@ const activeSwitch = () => {
     }
 }
 
+[calendarYearSelect, calendarMonthSelect].forEach(element => {
+    element.addEventListener('change', onSelectDate)
+})
+
 // calendar
 const calendarEvents = [
     {
@@ -197,11 +201,6 @@ calendarBg.addEventListener('click', () => {
     modalCalendar.classList.remove('active-popup-calendar')
 })
 
-
-
-    [calendarYearSelect, calendarMonthSelect].forEach(element => {
-    element.addEventListener('change', onSelectDate)
-})
 
 const addedYears = {}
 calendarEvents.forEach(ce => {
