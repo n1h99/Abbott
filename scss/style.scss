@@ -8367,6 +8367,21 @@ select {
     left: -100px;
     top: 40px;
   }
+ .directions__item-inner {
+   max-width: 200px !important;
+   padding: 6px !important;
+   img {
+     padding: 0 !important;
+     width: 33px !important;
+     height: 33px !important;
+   }
+ }
+  .directions__item-title {
+    font-weight: bold;
+    margin-left: 15px !important;
+    font-size: 16px !important;
+    line-height: 120% !important;
+  }
   .header__second-btn-content a {
     font-size: 17px;
     padding: 7px 0 7px 15px;
@@ -8781,12 +8796,6 @@ select {
   .directions__item-first img {
     width: 55px;
     padding: 6px 15px 6px 7px;
-  }
-  .directions__item-title {
-    font-size: 16px;
-  }
-  .directions__item-inner {
-    max-width: 201px;
   }
   .directions__item-title-second {
     font-size: 25px;
