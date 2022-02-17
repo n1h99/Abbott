@@ -4376,7 +4376,7 @@ select {
   text-align: center;
   text-transform: uppercase;
   color: #343A40;
-  margin: 72px 0 60px;
+  margin: 72px 0 20px;
 }
 
 .calendar__title-red{
@@ -5334,7 +5334,6 @@ select {
 
 .events{
   margin-bottom: 49px;
-  padding: 0 10px;
   &__item-hover{
     display: none;
   }
@@ -5506,7 +5505,6 @@ select {
 
 .new{
   margin-bottom: 28px;
-  padding: 0 10px;
   &__title{
     font-weight: 700;
     font-size: 30px;
@@ -6365,7 +6363,6 @@ select {
 .docks{
   &__inner{
     margin-bottom: 10px;
-    padding: 0 10px;
   }
   &__items{
     background: #FFFFFF;
@@ -6392,7 +6389,7 @@ select {
     border-radius: 4px;
     padding: 14px 22px 13px 38px;
     display: none;
-    a{
+    span{
       font-weight: 400;
       font-size: 16px;
       line-height: 150%;
@@ -7031,7 +7028,6 @@ select {
   }
   .info__basic{
     margin-bottom: 40px;
-    margin-right: 0;
   }
 
 }
@@ -7434,7 +7430,7 @@ select {
     width: 352px;
   }
   .info{
-    padding: 24px 10px 40px;
+    padding: 24px 0 40px;
   }
   .project__text-two{
     max-width: 353px;
@@ -7925,7 +7921,6 @@ select {
   .directions h2 {
     font-size: 24px;
     margin-bottom: 25px;
-    line-height: 135%;
   }
   .directions__item-title {
     font-size: 24px;
