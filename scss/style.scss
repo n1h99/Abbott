@@ -8163,7 +8163,12 @@ select {
   .calc__inner {
     grid-template-columns: repeat(1, auto);
   }
-
+  .header_container-mob {
+    padding: 0 !important;
+  }
+  .header__items-inner {
+    top: 84px;
+  }
   .swiper-vertical {
     width: 100%;
     max-height: 780px;
@@ -8303,7 +8308,6 @@ select {
   .header__items-inner {
     display: none;
     position: absolute;
-    top: 60px;
     left: 0px;
     background: #FFFFFF;
     width: 100%;
@@ -8331,6 +8335,7 @@ select {
   }
   .header__close {
     margin-right: 19px;
+    padding-top: 5px;
     width: 13px;
   }
   .header__wrap-second {
