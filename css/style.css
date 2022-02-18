@@ -2081,7 +2081,7 @@ template, [hidden] {
 	top: 55px;
 	left: 0;
 	display: none;
-	border: 1.38px solid #149bdc;
+	border-bottom: 1.38px solid #149bdc;
 }
 .header__items-hover-rose {
 	position: absolute;
@@ -2089,7 +2089,7 @@ template, [hidden] {
 	top: 55px;
 	left: 0;
 	display: none;
-	border: 1.38px solid #dfb2cd;
+	border-bottom: 1.38px solid #dfb2cd;
 }
 .header__items-hover-green {
 	position: absolute;
@@ -2097,7 +2097,7 @@ template, [hidden] {
 	top: 55px;
 	left: 0;
 	display: none;
-	border: 1.38px solid #00b140;
+	border-bottom: 1.38px solid #00b140;
 }
 .header__menu a:hover {
 	color: #149bdc;
@@ -5300,7 +5300,7 @@ select {
 	font-size: 30px;
 	line-height: 35px;
 	letter-spacing: 0.02em;
-	color: #149bdc;
+	color: #149bdc !important;
 	margin-bottom: 20px;
 }
 .event-info__item-text {
@@ -7089,6 +7089,7 @@ select {
 	.preparation__wrap {
 		grid-template-columns: repeat(1, auto);
 	}
+
 	.new .second__container {
 		padding: 0 20px;
 	}
@@ -7284,6 +7285,7 @@ select {
 		max-width: 100%;
 		margin-left: 15px;
 	}
+
 	.event__title {
 		padding-left: 17px;
 		margin-bottom: 15px;
@@ -7437,6 +7439,9 @@ select {
 		display: block;
 		max-width: 193px;
 		margin-bottom: 40px;
+	}
+	.event .webinar__themes {
+		padding-left: 0;
 	}
 	.event__mobile-content {
 		display: none;
