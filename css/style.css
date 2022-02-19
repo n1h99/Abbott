@@ -4010,7 +4010,7 @@ select {
 .webinar__themes {
 	display: flex;
 	margin-bottom: 48px;
-	flex-wrap: wrap;
+	/*flex-wrap: wrap;*/
 }
 .webinar__themes-centred {
 	justify-content: center;
@@ -5022,9 +5022,13 @@ select {
 	-moz-appearance: none;
 }
 .event__select-inner {
-	display: flex;
+	display: grid;
 	margin-bottom: 36px;
+	grid-template-rows: 1fr;
+	grid-row-gap: 36px;
+	grid-column-gap: 30px;
 	max-width: 1240px;
+	grid-template-columns: 190px 190px 190px 142px 191px;
 }
 .event__select-items {
 	margin-right: 30px;
@@ -6231,6 +6235,15 @@ select {
 		max-width: inherit;
 		width: 50%;
 		margin-bottom: 35px;
+	}
+	.event__select-inner {
+		display: flex;
+		margin-bottom: 36px;
+		max-width: 1240px;
+		flex-wrap: wrap;
+	}
+	.webinar__themes {
+		margin-top: 35px;
 	}
 	.opportunities__item p {
 		max-width: 230px;
