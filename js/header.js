@@ -43,14 +43,22 @@ const headerSearchBtn = document.querySelector('.header__second-search-btn')
 const headerSearchClose = document.querySelector('.header__second-search-close')
 const headerSearchContent = document.querySelector('.header__second-search-content')
 
-headerSearchBtn.onclick = function () {
-    headerSearchContent.style.display = 'block'
+if (!!headerSearchBtn) {
+    headerSearchBtn.addEventListener("click", function () {
+        headerSearchContent.style.display = 'block'
+    });
 }
-if (!!headerSearchClose !== null && headerSearchClose !== undefined) {
-    headerSearchClose.onclick = function () {
+
+if (!!headerSearchClose) {
+    headerSearchClose.addEventListener("click",function () {
         headerSearchContent.style.display = 'none'
-    }
+    })
 }
+// window.addEventListener("click", function(event) {
+//     if (event.target !== headerSearchContent && event.target !== headerSearchBtn) {
+//         headerSearchContent.style.display = "none";
+//     }
+// });
 
 const headerSearchBtnMobile = document.querySelector('.header__third-btn')
 const headerSearchCloseMobile = document.querySelector('.header__third-search-close')

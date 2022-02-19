@@ -2024,7 +2024,46 @@ template, [hidden] {
 .header__second-search-content img {
 	position: absolute;
 	top: 20px;
+	cursor: pointer;
 	right: 22px;
+}
+.header-dropdown {
+	padding: 20px 22px 24px 20px;
+	width: 100%;
+	background: rgba(20, 155, 220, 0.4);
+	backdrop-filter: blur(20px);
+	border-radius: 10px;
+	margin-top: 5px;
+}
+.header-dropdown-item {
+	padding: 12px;
+	background: #FFFFFF;
+	border-radius: 10px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.header-dropdown-title {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	margin-bottom: 5px;
+	line-height: 13px;
+	letter-spacing: 0.02em;
+	color: #149BDC;
+}
+.header-dropdown-text {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	max-width: 512px;
+	letter-spacing: 0.02em;
+	color: #000000;
+}
+.header-dropdown-container {
+	display: flex;
+	flex-direction: column;
+	justify-items: flex-start;
 }
 .header__second-search {
 	position: relative;
@@ -4006,6 +4045,9 @@ select {
 .webinar__top-info {
 	margin: 21px 0;
 	display: flex;
+}
+.header__second-search-btn {
+	cursor: pointer;
 }
 .webinar__themes {
 	display: flex;
