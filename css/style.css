@@ -6241,6 +6241,8 @@ select {
 		margin-bottom: 36px;
 		max-width: 1240px;
 		flex-wrap: wrap;
+		grid-row-gap: 0;
+		grid-column-gap: 0;
 	}
 	.webinar__themes {
 		margin-top: 35px;
