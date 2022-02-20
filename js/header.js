@@ -58,7 +58,7 @@ if (!!headerSearchClose) {
 //     if (event.target !== headerSearchContent && event.target !== headerSearchBtn) {
 //         headerSearchContent.style.display = "none";
 //     }
-// });
+// });-
 
 const headerSearchBtnMobile = document.querySelector('.header__third-btn')
 const headerSearchCloseMobile = document.querySelector('.header__third-search-close')
