@@ -2120,8 +2120,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     fullCalendar.render();
-    onSelectDate()
     updateCalendarToolBar()
+    onSelectDate()
 });
 
 
