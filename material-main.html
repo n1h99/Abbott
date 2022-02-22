@@ -19,6 +19,7 @@
     <!-- Custom Browsers Color Start -->
     <meta name="theme-color" content="#000" />
     <!-- Custom Browsers Color End -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="stylesheet" href="css/fullcalendar.css">
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -202,7 +203,7 @@
 
                     <div class="event__calendar">
                         <span class="event__calendar-span">Дата</span>
-                        <input class="event__calendar-input" value="" type="date">
+                        <input name="dates" class="event__calendar-input" value="" type="text">
                         <img src="img/calendar-event.svg" alt="">
                     </div>
 
@@ -626,8 +627,16 @@
         </form>
 
     </div>
-
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script type="text/javascript">
+        $('input[name="dates"]').daterangepicker();
+        $('input[name="dates"]').on('apply.daterangepicker', function(ev, picker) {
+            document.querySelector(".event__calendar-span").style.color = "#000000"
+            document.querySelector(".event__calendar-span").innerHTML = `${picker.startDate.format('YYYY-MM-DD')} - ${picker.endDate.format('YYYY-MM-DD')}`
+        });
+    </script>
     <script src="js/header.js"></script>
     <script src="js/script.js"></script>
 </body>
