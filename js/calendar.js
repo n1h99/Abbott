@@ -2098,6 +2098,9 @@ document.addEventListener('DOMContentLoaded', function () {
         initialDate: getCurrentDate(),
         selectable: true,
         locale: 'ru',
+        fixedWeekCount: false,
+        showNonCurrentDates: true,
+        firstDay: 1,
         headerToolbar: {
             right: '',
             left: '',

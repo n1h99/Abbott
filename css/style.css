@@ -2027,6 +2027,9 @@ template, [hidden] {
 	cursor: pointer;
 	right: 22px;
 }
+.fc-day-disabled {
+	visibility:hidden;
+}
 .header-dropdown {
 	padding: 20px 22px 24px 20px;
 	width: 100%;
