@@ -7393,6 +7393,10 @@ select {
 	.event__calendar {
 		margin-bottom: 10px;
 	}
+	.calendar .container {
+		padding: 0;
+	}
+
 	.preps__top-btn {
 		margin-top: 286px;
 	}

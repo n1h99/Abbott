@@ -38,7 +38,9 @@ const activeSwitch = () => {
     }
 }
 
-const calendarEvents = [{
+
+const calendarEvents = [
+    {
     "title": "\u041d\u0435\u0430\u043b\u043a\u043e\u0433\u043e\u043b\u044c\u043d\u0430\u044f \u0436\u0438\u0440\u043e\u0432\u0430\u044f \u0431\u043e\u043b\u0435\u0437\u043d\u044c \u043f\u0435\u0447\u0435\u043d\u0438 \u043a\u0430\u043a \u043c\u0435\u0436\u0434\u0438\u0441\u0446\u0438\u043f\u043b\u0438\u043d\u0430\u0440\u043d\u0430\u044f \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0430",
     "start": "2021-04-21T17:00:00",
     "color": "#009a17",
@@ -2125,6 +2127,9 @@ document.addEventListener('DOMContentLoaded', function () {
     fullCalendar.render();
     updateCalendarToolBar()
     onSelectDate()
+    if (window.innerWidth < 500) {
+        fullCalendar.changeView("year")
+    }
 });
 
 
