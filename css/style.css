@@ -4223,6 +4223,7 @@ select {
 	align-items: center;
 	justify-content: center;
 	margin: 0 auto;
+	object-fit: contain;
 	max-width: 354px;
 	width: 100%;
 	height: 257px;
