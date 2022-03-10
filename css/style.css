@@ -5506,9 +5506,9 @@ select {
 	margin-left: 31px;
 	margin-bottom: 35px;
 }
-.preps__top-inner {
-	text-align: center;
-}
+/*.preps__top-inner {*/
+/*	text-align: center;*/
+/*}*/
 .preps__top-pic {
 	width: 242px;
 	height: 241px;
@@ -5527,7 +5527,9 @@ select {
 	background: #fff;
 	border: 1px solid #b2d4f0;
 	padding: 13px 30px;
+	margin-top: 40px;
 	border-radius: 40px;
+	text-align: center;
 }
 .preps__top-btn a {
 	font-weight: 700;
@@ -7389,6 +7391,9 @@ select {
 @media (max-width: 500px) {
 	.event__calendar {
 		margin-bottom: 10px;
+	}
+	.preps__top-btn {
+		margin-top: 286px;
 	}
 }
 @media (max-width: 450px) {
