@@ -4507,10 +4507,11 @@ if (!!form) {
 }
 
 if (!!document.querySelector('#UF_WHERE_LEARN')) {
-    if (document.querySelector('#UF_WHERE_LEARN').value === 'контактное лицо Эбботт') {
-        document.querySelector('#inputHidden').style.display = "block"
-    }
+    document.querySelector('#UF_WHERE_LEARN').addEventListener('change',(e) =>  {
+        if (e.value === 'контактное лицо Эбботт') {
+            document.querySelector('#inputHidden').style.display = "block"
+        }
+    })
 }
-
 console.log(document.querySelector('#UF_WHERE_LEARN'))
 console.log(document.querySelector('#inputHidden'))
