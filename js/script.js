@@ -4505,3 +4505,9 @@ if (!!form) {
     form.addEventListener('select', e =>
         e.target.parentNode.classList.remove('label__error'))
 }
+
+if (!!document.querySelector('#UF_WHERE_LEARN')) {
+    if (document.querySelector('#UF_WHERE_LEARN').value = "контактное лицо Эбботт") {
+        document.querySelector('#inputHidden').style.display = "block"
+    }
+}
