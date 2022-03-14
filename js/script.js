@@ -4515,6 +4515,6 @@ if (!!document.querySelector('#UF_WHERE_LEARN')) {
 }
 if (!!document.querySelector('.event-info__favorites')) {
     document.querySelector('.event-info__favorites').addEventListener('click', () => {
-        document.querySelector('.webinar__favorites--icon').classList.toggle("webinar__favorites--icon-active")
+        document.querySelector('.event-info__favorites').classList.toggle('event-info__favorites--checked')
     })
 }
