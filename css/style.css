@@ -5296,7 +5296,8 @@ select {
 	box-shadow: 0px 4px 10px rgba(178, 212, 240, 0.4);
 	border-radius: 40px;
 }
-.event-info__favorites img {
+
+.webinar__favorites--icon {
 	margin: 0 20px 15px 0;
 }
 .event__video-title {
@@ -5427,6 +5428,10 @@ select {
 	text-align: center;
 	display: inline-block;
 	padding-top: 15%;
+}
+.webinar__favorites--icon-active,svg{
+	fill: #149bdc;
+	stroke: #149bdc;
 }
 .material-btn a {
 	background: #fff;
@@ -7534,7 +7539,7 @@ select {
 	.webinar__favorites {
 		display: inline-flex;
 	}
-	.event-info__favorites img {
+	.webinar__favorites--icon {
 		margin: 0 5px 15px 0;
 	}
 	.event-info__item-date span {

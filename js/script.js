@@ -4513,5 +4513,8 @@ if (!!document.querySelector('#UF_WHERE_LEARN')) {
         }
     })
 }
-console.log(document.querySelector('#UF_WHERE_LEARN'))
-console.log(document.querySelector('#inputHidden'))
+if (!!document.querySelector('.event-info__favorites')) {
+    document.querySelector('.event-info__favorites').addEventListener('click', () => {
+        document.querySelector('.webinar__favorites--icon').classList.toggle("webinar__favorites--icon-active")
+    })
+}
