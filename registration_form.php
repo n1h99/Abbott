@@ -289,9 +289,9 @@ foreach ($countriesTmp['reference_id'] as $item => $id) {
                     Откуда Вы узнали о сайте?
                 </div>
 
-                <div class="input__field-wrap-width">
+                <div class="information__findings">
 
-                    <select id="UF_WHERE_LEARN" class="input__field select information__block" name="UF_WHERE_LEARN">
+                    <select id="UF_WHERE_LEARN" class="input__field select information__block information__block--select" name="UF_WHERE_LEARN">
                         <option disabled selected value>&nbsp;</option>
                         <option>контактное лицо Эбботт</option>
                         <option>Мероприятие</option>

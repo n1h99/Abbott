@@ -3143,6 +3143,10 @@ template, [hidden] {
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	max-width: 900px;
+	width: 900px;
+}
+.information__block--select {
+	width: 50%;
 }
 .information__block {
 	max-width: 440px;
