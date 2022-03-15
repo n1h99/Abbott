@@ -4448,7 +4448,7 @@ let btnSvg = document.querySelector('.btn__modal-content--svg')
 
 let closeFrut = document.getElementsByClassName("btn__modal-close")[0];
 
-if (!!btnFrut) {
+if (!!btnFrut && !!modalFrut) {
     btnFrut.onclick = function () {
         modalFrut.style.display = "block";
     }
