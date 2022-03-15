@@ -4454,21 +4454,23 @@ if (!!btnFrut) {
     }
 }
 
-if (!!btnSvg) {
+if (!!btnSvg && !!modalFrut) {
     btnSvg.onclick = function () {
         modalFrut.style.display = "none";
     }
 }
 
-if (!!closeFrut) {
+if (!!closeFrut && !!modalFrut) {
     closeFrut.onclick = function () {
         modalFrut.style.display = "none";
     }
 }
 
-window.onclick = function (event) {
-    if (event.target == modalFrut) {
-        modalFrut.style.display = "none";
+if (!!modalFrut) {
+    window.onclick = function (event) {
+        if (event.target == modalFrut) {
+            modalFrut.style.display = "none";
+        }
     }
 }
 
