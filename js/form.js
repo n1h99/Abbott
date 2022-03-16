@@ -34,7 +34,7 @@ if (!!form) {
 
 if (!!document.querySelector('#UF_WHERE_LEARN')) {
     document.querySelector('#UF_WHERE_LEARN').addEventListener('change',(e) =>  {
-        if (e.value === 'контактное лицо Эбботт') {
+        if (e.target.value === 'контактное лицо Эбботт') {
             document.querySelector('#inputHidden').style.display = "block"
         }
     })
