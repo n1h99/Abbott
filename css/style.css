@@ -3319,6 +3319,70 @@ template, [hidden] {
 .label__error .middle-span {
 	display: block;
 }
+.calculator-total {
+	padding: 30px;
+}
+.calculator-result {
+	padding: 50px 0 0;
+	margin-bottom: 20px;
+}
+.point-total {
+	font-size: 30px;
+	line-height: 1.2;
+	color: #009CDE;
+	margin-bottom: 25px;
+}
+.field-item {
+	display: flex;
+	margin-top: 25px;
+	align-items: center;
+}
+.field-item .label {
+	font-size: 14px;
+	line-height: 1.2;
+	max-width: 300px;
+	width: 100%;
+}
+.result-label {
+	line-height: 1.2;
+	font-weight: 700;
+	color: #004F71;
+	font-size: 30px;
+}
+.btn-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.btn-light{
+	background: #fff;
+	color: #009CDE;
+	border: 1px solid #B2D4F0;
+	min-width: 252px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: bold;
+	padding: 13px 30px;
+	cursor: pointer;
+	text-decoration: none;
+	border-radius: 40px;
+	align-items: center;
+	box-shadow: 0 4px 10px rgb(178 212 240 / 40%);
+}
+.calculator-result {
+	position: relative;
+}
+.calculator-result:before {
+	content: ' ';
+	position: absolute;
+	top: 15px;
+	left: 0;
+	right: 0;
+	border-top: 1px solid #EBEAEA;
+}
 .email-span {
 	display: none;
 	position: absolute;
@@ -7427,6 +7491,11 @@ select {
 
 	.preps__top-btn {
 		margin-top: 286px;
+	}
+	.field-item {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
 	}
 }
 @media (max-width: 450px) {
