@@ -135,6 +135,9 @@ ul {
 	min-width: 127px;
 	text-transform: uppercase;
 }
+.preps__top-active .docks__content {
+	display: block !important;
+}
 .btn__lk img {
 	width: 14.43px;
 	height: 15.27px;
