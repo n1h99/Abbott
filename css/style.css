@@ -118,7 +118,9 @@ ul {
 	position: relative;
 	font-size: 18px;
 	font-weight: 400;
-	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	white-space: nowrap;
 	padding: 8.53px 17.05px;
 	transition: all 0.3s ease;
@@ -2093,7 +2095,7 @@ template, [hidden] {
 	position: relative;
 }
 .logo img {
-	padding: 0 0 8px 7px;
+	padding: 0 0 0 7px;
 }
 .logo img:first-child {
 	padding: 0;
