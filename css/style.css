@@ -4919,6 +4919,7 @@ select {
 .events__item-btn-hover-two {
 	font-weight: 400;
 	font-size: 16px;
+	white-space: nowrap;
 	line-height: 24px;
 	color: #009cde;
 	padding: 8px 16px;
