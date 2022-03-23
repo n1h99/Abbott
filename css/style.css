@@ -4813,7 +4813,7 @@ select {
 	align-items: center;
 }
 .events__item-date-btn {
-	background: #d40030;
+	background: #FFFFFF;
 	mix-blend-mode: normal;
 	backdrop-filter: blur(40px);
 	border-radius: 100px;
@@ -4822,6 +4822,9 @@ select {
 	line-height: 26px;
 	color: #fff;
 	padding: 0 10px;
+}
+.events__item-hover a {
+	color: #0d95e8 !important;
 }
 .events__item-date p {
 	font-weight: 700;
