@@ -4479,3 +4479,22 @@ if (!!document.querySelector('.event-info__favorites')) {
         document.querySelector('.event-info__favorites').classList.toggle('event-info__favorites--checked')
     })
 }
+
+const eventsButtons = document.querySelectorAll('.events__item-date-btn')
+
+if (!!eventsButtons) {
+    eventsButtons.forEach((button) => {
+        if (button.innerText === 'Женское здоровье') {
+            button.style.background = '#d985b7'
+        }
+        if (button.innerText === 'Неврология и психиатрия') {
+            button.style.background = '#009cdc'
+        }
+        if (button.innerText === 'Кардиология') {
+            button.style.background = '#d40030'
+        }
+        if (button.innerText === 'Гастроэнтерология') {
+            button.style.background = '#00b140'
+        }
+    })
+}
