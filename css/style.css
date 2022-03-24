@@ -4667,6 +4667,13 @@ select {
 	color: #1a1a1a;
 	text-transform: uppercase;
 }
+.detail__text td {
+	padding: 15px;
+	border: 1px solid;
+}
+.detail__text tr {
+	padding: 15px;
+}
 .about-form {
 	padding-top: 22px;
 	margin-bottom: 293px;
