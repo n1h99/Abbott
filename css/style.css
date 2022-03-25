@@ -7460,7 +7460,7 @@ select {
 		flex-direction: column;
 	}
 	.webinar__wrap {
-		grid-template-rows: repeat(2, 390px);
+		grid-template-rows: repeat(2, auto);
 	}
 	.preps__top-title {
 		padding-top: 100px  ;
