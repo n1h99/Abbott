@@ -2962,7 +2962,16 @@ template, [hidden] {
 	background-color: #e5e5e5;
 	background-color: rgba(229, 229, 229, 0.4);
 }
-
+.information__code-checkbox--link {
+	display: contents;
+}
+.information__code-checkbox--link:hover {
+	color: #000000;
+}
+.undertext-article {
+	font-size: 14px;
+	font-family: "Georgia", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+}
 .text-page {
 	margin-top: 50px !important;
 }
