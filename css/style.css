@@ -2966,6 +2966,10 @@ template, [hidden] {
 .text-page {
 	margin-top: 50px !important;
 }
+.text-page p {
+	margin-bottom: 20px;
+	max-width: 922px;
+}
 
 .btn__modal-content {
 	margin: 0 auto;
