@@ -2965,6 +2965,10 @@ template, [hidden] {
 .information__code-checkbox--link {
 	display: contents;
 }
+.text-page .about__title{
+	display: inline-block;
+	max-width: 922px;
+}
 .information__code-checkbox--link:hover {
 	color: #000000;
 }
@@ -4624,6 +4628,7 @@ select {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 27px;
+	max-width: 922px;
 	color: #1a1a1a;
 	margin: 26px 0 26px 0;
 	font-family: "Georgia";
