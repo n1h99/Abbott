@@ -391,6 +391,9 @@ ul {
 	text-align: left;
 	color: #149bdc;
 }
+.registration .section__title {
+	margin-bottom: 20px !important;
+}
 .section__title-second {
 	font-size: 36px;
 	font-weight: 700;
@@ -1463,6 +1466,9 @@ img.mfp-img {
 /* The shadow behind the image */
 .mfp-figure {
 	line-height: 0;
+}
+ol {
+	list-style: auto !important;
 }
 .mfp-figure:after {
 	content: '';
