@@ -6381,7 +6381,7 @@ select {
 	margin-left: 0;
 }
 .detail__text--table {
-	overflow: scroll;
+
 }
 .detail__text--mob {
 	font-family: 'Calibri';
@@ -7554,6 +7554,7 @@ select {
 	}
 	.detail__text--table {
 		padding-bottom: 40px;
+		overflow: scroll;
 	}
 	.detail__text h1 {
 		font-size: 20px;
