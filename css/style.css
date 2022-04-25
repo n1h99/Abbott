@@ -6313,6 +6313,16 @@ select {
 	padding-bottom: 40px;
 	border-bottom: 1px solid #149BDC;;
 }
+.detail__text--top a {
+	display: block;
+	width: 100%;
+	font-family: 'Calibri';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 140%;
+	color: #149BDC;
+}
 .detail__text--background {
 	font-family: 'Calibri';
 	font-style: normal;
