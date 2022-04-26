@@ -34,8 +34,11 @@ if (!!form) {
 
 if (!!document.querySelector('#UF_WHERE_LEARN')) {
     document.querySelector('#UF_WHERE_LEARN').addEventListener('change',(e) =>  {
-        if (e.target.value === 'контактное лицо Эбботт') {
+        if (e.target.value === 'контактное лицо Abbott') {
             document.querySelector('#inputHidden').style.display = "block"
+        }
+        else {
+            document.querySelector('#inputHidden').style.display = "none"
         }
     })
 }

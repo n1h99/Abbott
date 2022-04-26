@@ -4498,3 +4498,23 @@ if (!!eventsButtons) {
         }
     })
 }
+
+const cookiesPolicy = document.querySelector('.cookie-policy')
+
+if(window.localStorage.getItem('accepted-cookies') !== 'true') {
+    document.querySelector('.cookie-policy')
+    if (cookiesPolicy) {
+        cookiesPolicy.style.display = 'block'
+    }
+} else {
+    if (cookiesPolicy) {
+        cookiesPolicy.style.display = 'none'
+    }
+}
+
+const AcceptCookies = () => {
+    window.localStorage.setItem('accepted-cookies','true')
+    if (cookiesPolicy) {
+        cookiesPolicy.style.display = 'none'
+    }
+}
