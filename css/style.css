@@ -2320,6 +2320,11 @@ template, [hidden] {
 	-ms-grid-columns: 1fr 1fr;
 	grid-template-columns: 1fr 1fr;
 }
+
+.directions__item:last-child {
+	grid-column: 1 / -1;
+}
+
 .directions__item-first {
 	border-radius: 4px;
 	padding: 20px 20px;
