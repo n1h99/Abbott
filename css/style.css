@@ -6077,6 +6077,11 @@ select {
 	color: #65767c;
 	margin-bottom: 17px;
 }
+.docks__content a {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
 .docks-active .docks__content {
 	display: grid;
 }
