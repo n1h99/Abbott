@@ -5879,6 +5879,7 @@ select {
 	margin-top: 40px;
 	border-radius: 40px;
 	text-align: center;
+	max-width: 220px;
 }
 .preps__top-btn a {
 	font-weight: 700;
@@ -5886,6 +5887,7 @@ select {
 	line-height: 27px;
 	text-align: center;
 	color: #009cde;
+	white-space: nowrap;
 }
 .preps__top-btn-two {
 	background: #fff;
