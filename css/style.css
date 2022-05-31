@@ -2202,16 +2202,16 @@ template, [hidden] {
 	position: relative;
 	z-index: 2;
 }
-.intro::after {
-	position: absolute;
-	content: '';
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background: -webkit-gradient(linear, left top, right top, from(rgba(32, 161, 215, 0.6)), to(rgba(107, 202, 191, 0.6)));
-	background: linear-gradient(90deg, rgba(32, 161, 215, 0.6) 0%, rgba(107, 202, 191, 0.6) 100%);
-}
+/*.intro::after {*/
+/*	position: absolute;*/
+/*	content: '';*/
+/*	width: 100%;*/
+/*	height: 100%;*/
+/*	top: 0;*/
+/*	left: 0;*/
+/*	background: -webkit-gradient(linear, left top, right top, from(rgba(32, 161, 215, 0.6)), to(rgba(107, 202, 191, 0.6)));*/
+/*	background: linear-gradient(90deg, rgba(32, 161, 215, 0.6) 0%, rgba(107, 202, 191, 0.6) 100%);*/
+/*}*/
 .intro__title {
 	color: #fff;
 	z-index: 2;
@@ -5556,6 +5556,167 @@ select {
 	margin-bottom: 20px;
 	position: relative;
 }
+
+.wh .event-info__video {
+	border: 18px solid #C572AD;
+}
+.event-info__video svg path {
+	fill: #FFFFFF;
+}
+.event-info__video svg circle {
+	fill: #FFFFFF;
+}
+.wh svg path {
+	fill: #C572AD;
+}
+.cardio svg path {
+	fill: #D40030;
+}
+.nevro svg path {
+	fill: #149BDC;
+}
+.gastro svg path {
+	fill: #76A933;
+}
+.pulmo svg path{
+	fill: #004B94;
+}
+.wh svg circle {
+	fill: #C572AD;
+}
+.cardio svg circle {
+	fill: #D40030;
+}
+.nevro svg circle {
+	fill: #149BDC;
+}
+.gastro svg circle {
+	fill: #76A933;
+}
+.pulmo svg circle {
+	fill: #004B94;
+}
+.event-info__video {
+	position: relative;
+}
+
+.wh-b svg path {
+	fill: #C572AD;
+}
+.cardio-b svg path {
+	fill: #D40030;
+}
+.nevro-b svg path {
+	fill: #149BDC;
+}
+.gastro-b svg path {
+	fill: #76A933;
+}
+.pulmo-b svg path{
+	fill: #004B94;
+}
+.wh-b svg circle {
+	fill: #C572AD;
+}
+.cardio-b svg circle {
+	fill: #D40030;
+}
+.nevro-b svg circle {
+	fill: #149BDC;
+}
+.gastro-b svg circle {
+	fill: #76A933;
+}
+.pulmo-b svg {
+	width: 244px;
+	height: 244px;
+}
+.wh-b svg {
+	width: 244px;
+	height: 244px;
+}
+.cardio-b svg {
+	width: 244px;
+	height: 244px;
+}
+.nevro-b svg {
+	width: 244px;
+	height: 244px;
+}
+.gastro-b svg {
+	width: 244px;
+	height: 244px;
+}
+.pulmo-b svg {
+	width: 244px;
+	height: 244px;
+}
+.event-info__video-icon {
+	position: absolute;
+	content: "";
+	background-repeat: no-repeat;
+	bottom: 15px;
+	left: 15px;
+	width: 60px;
+	height: 60px;
+}
+.event-info__video-icon img {
+	width: 100%;
+	height: 100%;
+}
+.wh-b .event-info__video-icon {
+	width: 125px;
+	height: 125px;
+}
+.cardio-b .event-info__video-icon {
+	width: 125px;
+	height: 125px;
+}
+.nevro-b .event-info__video-icon {
+	width: 125px;
+	height: 125px;
+}
+.pulmo-b .event-info__video-icon {
+	width: 125px;
+	height: 125px;
+}
+.gastro-b .event-info__video-icon {
+	width: 125px;
+	height: 125px;
+}
+
+.cardio .event-info__video {
+	border: 18px solid #D40030;
+}
+
+.nevro .event-info__video {
+	border: 18px solid #149BDC;
+}
+
+.gastro .event-info__video {
+	border: 18px solid #76A933;
+}
+
+.pulmo-b .event-info__video {
+	border: 30px solid #004B94;
+}
+
+.wh-b .event-info__video {
+	border: 30px solid #C572AD;
+}
+
+.cardio-b .event-info__video {
+	border: 30px solid #D40030;
+}
+
+.nevro-b .event-info__video {
+	border: 30px solid #149BDC;
+}
+
+.gastro-b .event-info__video {
+	border: 30px solid #76A933;
+}
+
 .event-info__video {
 	max-width: 608px;
 	background-size: cover;
