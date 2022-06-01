@@ -5697,6 +5697,10 @@ select {
 	border: 18px solid #76A933;
 }
 
+.pulmo .event-info__video {
+	border: 18px solid #004B94;
+}
+
 .pulmo-b .event-info__video {
 	border: 30px solid #004B94;
 }
