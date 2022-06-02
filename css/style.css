@@ -2426,6 +2426,33 @@ template, [hidden] {
 	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
+
+.nevro-background:hover .directions__item-second{
+	background-image: url("/img/nevro-background.svg") ;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.wh-background:hover .directions__item-second{
+	background-image: url("/img/wh-background.svg") ;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.gasto-background:hover .directions__item-second{
+	background-image: url("/img/gastro-background.svg") ;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.cardio-background:hover .directions__item-second{
+	background-image: url("/img/cardio-background.svg") ;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.pulmo-background:hover .directions__item-second{
+	background-image: url("/img/pulmo-background.svg") ;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .article {
 	padding: 36px 0 60px;
 	background: #f6fbff;
