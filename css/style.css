@@ -4121,8 +4121,10 @@ select {
 	content: '';
 	width: 100%;
 	height: 100%;
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(42.19%, rgba(0, 79, 113, 0)), to(#004f71));
-	background: linear-gradient(180deg, rgba(119, 36, 129, 0) 42.19%, #772481 100%);
+	/*background: -webkit-gradient(linear, left top, left bottom, color-stop(42.19%, rgba(0, 79, 113, 0)), to(#004f71));*/
+	background-image: url("/img/wh-background-home.svg");
+	background-repeat: no-repeat;
+	background-position: bottom;
 	bottom: 0;
 	left: 0;
 	z-index: 1;
@@ -4513,7 +4515,9 @@ select {
 	content: '';
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(180deg, rgba(133, 31, 64, 0) 42.19%, #851f40 100%);
+	background-image: url("/img/cardio-background-home.svg");
+	background-repeat: no-repeat;
+	background-position: bottom;
 	bottom: 0;
 	left: 0;
 	z-index: 1;
@@ -4576,8 +4580,9 @@ select {
 	content: '';
 	width: 100%;
 	height: 100%;
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(42.19%, rgba(0, 79, 113, 0)), to(#004f71));
-	background: linear-gradient(180deg, rgba(0, 75, 148, 0) 42.19%, #004b94 100%);
+	background-image: url("/img/nevro-background-home.svg");
+	background-repeat: no-repeat;
+	background-position: bottom;
 	bottom: 0;
 	left: 0;
 	z-index: 1;
@@ -4636,8 +4641,11 @@ select {
 	content: '';
 	width: 100%;
 	height: 100%;
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(42.19%, rgba(0, 79, 113, 0)), to(#004f71));
-	background: linear-gradient(180deg, rgba(0, 103, 72, 0) 42.19%, #006748 100%);
+	/*background: -webkit-gradient(linear, left top, left bottom, color-stop(42.19%, rgba(0, 79, 113, 0)), to(#004f71));*/
+	/*background: linear-gradient(180deg, rgba(0, 103, 72, 0) 42.19%, #006748 100%);*/
+	background-image: url("/img/gastro-background-home.svg");
+	background-repeat: no-repeat;
+	background-position: bottom;
 	bottom: 0;
 	left: 0;
 	z-index: 1;
@@ -6116,7 +6124,7 @@ select {
 	justify-content: space-between;
 }
 .docks-active .docks__content {
-	display: grid;
+	display: block;
 }
 .docks-active .docks__items span {
 	color: #149bdc;
