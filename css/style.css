@@ -4122,7 +4122,7 @@ select {
 	width: 100%;
 	height: 100%;
 	/*background: -webkit-gradient(linear, left top, left bottom, color-stop(42.19%, rgba(0, 79, 113, 0)), to(#004f71));*/
-	background-image: url("/img/wh-background-home.svg");
+	background-image: url("/local/build/img/wh-background-home.svg");
 	background-repeat: no-repeat;
 	background-position: bottom;
 	bottom: 0;
@@ -4515,7 +4515,7 @@ select {
 	content: '';
 	width: 100%;
 	height: 100%;
-	background-image: url("/img/cardio-background-home.svg");
+	background-image: url("/local/build/img/cardio-background-home.svg");
 	background-repeat: no-repeat;
 	background-position: bottom;
 	bottom: 0;
@@ -4580,7 +4580,7 @@ select {
 	content: '';
 	width: 100%;
 	height: 100%;
-	background-image: url("/img/nevro-background-home.svg");
+	background-image: url("/local/build/img/nevro-background-home.svg");
 	background-repeat: no-repeat;
 	background-position: bottom;
 	bottom: 0;
@@ -4643,7 +4643,7 @@ select {
 	height: 100%;
 	/*background: -webkit-gradient(linear, left top, left bottom, color-stop(42.19%, rgba(0, 79, 113, 0)), to(#004f71));*/
 	/*background: linear-gradient(180deg, rgba(0, 103, 72, 0) 42.19%, #006748 100%);*/
-	background-image: url("/img/gastro-background-home.svg");
+	background-image: url("/local/build/img/gastro-background-home.svg");
 	background-repeat: no-repeat;
 	background-position: bottom;
 	bottom: 0;
