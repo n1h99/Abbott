@@ -6684,7 +6684,7 @@ select {
 	line-height: 140%;
 	color: #000000;
 	align-items: center;
-	display: flex;
+	/*display: flex;*/
 	/*position: relative;*/
 }
 
@@ -6713,11 +6713,11 @@ select {
 	display: block;
 	margin-right: 16px;
 	background: url("../img/ListCircle.svg") no-repeat center;
-	top: 0;
-	left: 0;
+	top: 9px;
+	left: -16px;
 	width: 8px;
 	height: 8px;
-	/*position: absolute;*/
+	position: absolute;
 }
 .detail__text th {
 	background: #149BDC;
