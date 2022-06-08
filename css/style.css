@@ -4106,7 +4106,6 @@ select {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	padding: 0 29px 27px;
 	height: 600px;
 	max-width: 608px;
 	width: 100%;
@@ -4116,8 +4115,14 @@ select {
 	flex-direction: column;
 	justify-content: flex-end;
 }
-.info__basic::after {
+
+.info__article {
+	padding: 0 29px 27px;
+}
+
+.info__article::after {
 	position: absolute;
+	background-size: cover;
 	content: '';
 	width: 100%;
 	height: 100%;
@@ -4510,9 +4515,10 @@ select {
 	left: 0;
 	z-index: 1;
 }
-.info__basic-red::after {
+.info__basic-red .info__article::after {
 	position: absolute;
 	content: '';
+	background-size: cover;
 	width: 100%;
 	height: 100%;
 	background-image: url("/local/build/img/cardio-background-home.svg");
@@ -4575,9 +4581,10 @@ select {
 	left: 0;
 	z-index: 1;
 }
-.info__basic-blue::after {
+.info__basic-blue .info__article::after {
 	position: absolute;
 	content: '';
+	background-size: cover;
 	width: 100%;
 	height: 100%;
 	background-image: url("/local/build/img/nevro-background-home.svg");
@@ -4636,11 +4643,12 @@ select {
 .info__others-item-green {
 	margin-bottom: 24px;
 }
-.info__basic-green::after {
+.info__basic-green .info__article::after {
 	position: absolute;
 	content: '';
 	width: 100%;
 	height: 100%;
+	background-size: cover;
 	/*background: -webkit-gradient(linear, left top, left bottom, color-stop(42.19%, rgba(0, 79, 113, 0)), to(#004f71));*/
 	/*background: linear-gradient(180deg, rgba(0, 103, 72, 0) 42.19%, #006748 100%);*/
 	background-image: url("/local/build/img/gastro-background-home.svg");
@@ -4650,6 +4658,11 @@ select {
 	left: 0;
 	z-index: 1;
 }
+
+.info__article {
+	position: relative;
+}
+
 .info__others-title-green a {
 	color: #006748;
 	cursor: pointer;
