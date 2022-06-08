@@ -6698,7 +6698,7 @@ select {
 	color: #000000;
 	align-items: center;
 	/*display: flex;*/
-	/*position: relative;*/
+	position: relative;
 }
 
 .detail__text ol {
