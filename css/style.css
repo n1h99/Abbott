@@ -6501,6 +6501,7 @@ select {
 
 .detail__text {
 	max-width: 1028px;
+	font-family: 'Calibri';
 	margin: 50px auto 0;
 }
 .detail__text h3{
