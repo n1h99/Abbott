@@ -4138,6 +4138,7 @@ select {
 	font-weight: 700;
 	font-size: 35px;
 	line-height: 120%;
+	position: relative;
 	color: #fff;
 	max-width: 475px;
 	margin-bottom: 10px;
@@ -4146,6 +4147,7 @@ select {
 .info__article-name {
 	max-width: 474px;
 	font-weight: 400;
+	position: relative;
 	font-size: 20px;
 	line-height: 24px;
 	color: #fff;
@@ -8311,7 +8313,7 @@ select {
 		padding-left: 19px;
 		padding-bottom: 20px;
 	}
-	.info__basic {
+	.info__article {
 		padding: 0 15px 27px;
 	}
 	.info__others-title h3 {
