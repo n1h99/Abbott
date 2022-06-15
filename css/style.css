@@ -6821,6 +6821,9 @@ select {
 	justify-content: space-between;
 	margin-bottom: 20px;
 }
+.detail__text--flex p {
+	margin-bottom: 0;
+}
 .detail__text--image {
 	margin-left: 24px;
 }
