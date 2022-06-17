@@ -6986,6 +6986,7 @@ select {
 }
 .calc-oks_table th:last-of-type {
 	text-align: center;
+	color: #761734;
 	width: 13%;
 }
 .calc-oks_table td {
@@ -6993,7 +6994,7 @@ select {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 25px;
-	color: #000000;
+	color: #761734;
 	padding: 8px 17px;
 	border-bottom: 1.12782px solid #DBDCDB;
 }
