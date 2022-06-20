@@ -2321,9 +2321,9 @@ template, [hidden] {
 	grid-template-columns: 1fr 1fr;
 }
 
-.directions__item:last-child {
-	grid-column: 1 / -1;
-}
+/*.directions__item:last-child {*/
+/*	grid-column: 1 / -1;*/
+/*}*/
 
 .directions__item-first {
 	border-radius: 4px;
