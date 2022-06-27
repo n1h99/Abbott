@@ -6658,8 +6658,8 @@ select {
 	font-family: 'Calibri';
 	font-style: normal;
 	font-weight: 400;
-	font-size: 18px;
-	line-height: 140%;
+	font-size: 24px;
+	line-height: 36px;
 	color: #149BDC;
 }
 .detail__text--background {
@@ -6675,13 +6675,13 @@ select {
 	margin-bottom: 24px;
 }
 
-.detail__text--link {
+.detail__text a {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	border-bottom: 1px solid #149BDC;
 }
-.detail__text--link:after {
+.detail__text a:after {
 	content: '';
 	display: block;
 	background-image: url("../img/LinkIcon.svg");
@@ -6704,6 +6704,10 @@ select {
 	position: relative;
 }
 
+.detail__text ul {
+	padding-left: 16px;
+}
+
 .detail__text ol {
 	font-family: 'Calibri';
 	font-style: normal;
@@ -6712,6 +6716,7 @@ select {
 	line-height: 140%;
 	list-style: auto;!important;
 	color: #000000;
+	padding-left: 16px;
 }
 
 .detail__text ol li {
