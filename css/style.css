@@ -6506,6 +6506,13 @@ select {
 	font-family: 'Calibri';
 	margin: 50px auto 0;
 }
+
+.detail__text--wrapper {
+	max-width: 1028px;
+	font-family: 'Calibri';
+	margin: 50px auto 0;
+}
+
 .detail__text h3{
 	font-family: 'Calibri';
 	font-style: normal;
@@ -8887,4 +8894,6 @@ select {
 	top: -6px;
 	width: 100%;
 	opacity: 0;
+	display: block;
+	min-width: 100%;
 }
