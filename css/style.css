@@ -6521,7 +6521,7 @@ select {
 	line-height: 140%;
 	color: #149BDC;
 }
-.detail__text h1 {
+.detail__text--wrapper h1 {
 	font-family: 'Calibri';
 	font-style: normal;
 	font-weight: 700;
@@ -8257,7 +8257,7 @@ select {
 		padding-bottom: 40px;
 		overflow: scroll;
 	}
-	.detail__text h1 {
+	.detail__text-wrapper h1 {
 		font-size: 20px;
 		line-height: 130%;
 	}
