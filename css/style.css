@@ -6977,15 +6977,15 @@ select {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 25px;
-	color: #000000;
 	text-align: left;
+	color: #761734;
 	width: 77%;
 	padding: 20px 16px 16px;
 }
 
 .calc-oks_total {
 	font-weight: 700;
-	font-size: 40px;
+	font-size: 30px;
 	line-height: 25px;
 	color: #FFFFFF;
 	background: #761734;
@@ -6995,13 +6995,12 @@ select {
 }
 .calc-oks_table th:last-of-type {
 	text-align: center;
-	color: #761734;
 	width: 13%;
 }
 .calc-oks_table td {
 	font-style: normal;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 25px;
 	color: #761734;
 	padding: 8px 17px;
@@ -7009,6 +7008,7 @@ select {
 }
 .calc-oks-result {
 	text-align: center;
+	font-weight: 700 !important;
 	border-left: 1.12782px solid #DBDCDB;
 }
 
@@ -8232,6 +8232,43 @@ select {
 	}
 }
 @media (max-width: 600px) {
+
+	.calc-oks_rec_box {
+		flex-direction: column;
+		align-items: center;
+		margin: 40px -20px 0;
+		padding: 26px 13px 0;
+	}
+	.calc-oks_rec_btn {
+		margin: 23px auto 0;
+	}
+	.calc-oks_rec_text {
+		margin-right: 0;
+		margin-bottom: 40px;
+	}
+	.calc-oks_rec_quar {
+		margin-top: 40px;
+	}
+	.calc-oks_title {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 121.5%;
+	}
+	.calc-oks_question_title {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 121.5%;
+	}
+	.calc-oks_rec_item {
+		flex-direction: column;
+		padding-bottom: 40px;
+	}
+
+	.calc-oks_rec_item img {
+		width: 271px;
+		height: 202px;
+		margin: 0 auto;
+	}
 
 	.cookie-policy_inner {
 		flex-direction: column;
