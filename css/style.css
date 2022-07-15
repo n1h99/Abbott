@@ -4230,6 +4230,38 @@ select {
 	background: #fff;
 	color: #d985b7;
 }
+
+.clin_btn {
+	padding: 8px 32px;
+	background: #FFFFFF;
+	border: 1.75px solid #D9D9D9;
+	border-radius: 175px;
+	font-family: 'Calibri';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 42px;
+	color: #149BDC;
+	margin-bottom: 30px;
+	display: inline-block;
+}
+
+.clin-sp {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+.clin-sp span {
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	text-align: right;
+	color: #000000;
+	opacity: 0.5;
+}
 .webinar {
 	margin-bottom: 40px;
 }
@@ -5410,6 +5442,12 @@ select {
 }
 .event__top li {
 	margin-right: 25px;
+	font-family: 'Calibri';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 135%;
+	color: #191919;
 }
 .event__top-active a {
 	color: #191919;
