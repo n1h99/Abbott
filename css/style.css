@@ -2690,9 +2690,9 @@ template, [hidden] {
   grid-template-columns: 1fr 1fr;
 }
 
-/*.directions__item:last-child {*/
-/*	grid-column: 1 / -1;*/
-/*}*/
+.directions__item:last-child {
+	grid-column: 1 / -1;
+}
 
 .directions__item-first {
   border-radius: 4px;
@@ -2810,31 +2810,31 @@ template, [hidden] {
 }
 
 .nevro-background:hover .directions__item-second {
-  background-image: url("/local/build/img/nevro-background.png") !important;
+  background-image: url("/img/nevro-background.png") !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
 }
 
 .wh-background:hover .directions__item-second {
-  background-image: url("/local/build/img/wh-background.png") !important;
+  background-image: url("/img/wh-background.png") !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
 }
 
 .gasto-background:hover .directions__item-second {
-  background-image: url("/local/build/img/gastro-background.png") !important;
+  background-image: url("/img/gastro-background.png") !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
 }
 
 .cardio-background:hover .directions__item-second {
-  background-image: url("/local/build/img/cardio-background.png") !important;
+  background-image: url("/img/cardio-background.png") !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
 }
 
 .pulmo-background:hover .directions__item-second {
-  background-image: url("/local/build/img/pulmo-background.png") !important;
+  background-image: url("/img/pulmo-background.png") !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
 }
