@@ -7837,6 +7837,7 @@ select {
   position: fixed;
   bottom: 0;
   left: 0;
+  z-index: 100001;
   background: #149BDC;
   width: 100%;
   backdrop-filter: blur(20px);
@@ -8406,6 +8407,16 @@ select {
 
 .calc-oks_rec_item {
   display: flex;
+}
+
+.calc-oks_rec_item img {
+  object-fit: contain;
+}
+
+.calc-oks_rec--span {
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 5px;
 }
 
 .calc-oks_rec_text {
@@ -9833,7 +9844,11 @@ select {
     flex-direction: column;
     align-items: center;
     margin: 40px -20px 0;
-    padding: 26px 13px 0;
+    padding: 26px 0 0;
+  }
+
+  .calc-oks_rec_inner {
+    padding: 40px 20px;
   }
 
   .calc-oks_rec_btn {
