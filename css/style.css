@@ -10716,3 +10716,259 @@ select {
   display: block;
   min-width: 100%;
 }
+
+.calc-farm__wrapper {
+  margin-top: 25px;
+}
+
+.calc-farm__title {
+  font-size: 40px;
+  line-height: 121.5%;
+  color: #149BDC;
+}
+
+.calc-farm__container {
+  margin-top: 37px;
+}
+
+.calc-farm__subtitle {
+  font-size: 32px;
+  line-height: 130%;
+  color: #149bdc;
+  max-width: 295px;
+  font-weight: 700;
+  width: 30%;
+  margin-top: 37px;
+}
+
+.calc-farm__btn {
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+  display: inline-block;
+  white-space: nowrap;
+  padding: 16px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  cursor: pointer;
+  background-color: #149bdc;
+  color: #fff;
+  text-align: center;
+  line-height: normal;
+  width: 293px;
+  height: 60px;
+  border-radius: 100px;
+  text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  border: 1px solid #149bdc;
+}
+
+.calc-farm__btn:hover {
+  color: #149bdc;
+  background-color: #fff;
+  border: 1px solid #149bdc;
+}
+
+.calc-farm__docks__item {
+  max-width: 989px;
+  margin-top: 68px;
+}
+
+.calc-farm__docks__content {
+  max-width: 989px;
+}
+
+.calc-farm__container {
+  max-width: 1260px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.calc-farm__table_tb {
+  height: 54px;
+  width: 1200px;
+  left: 0;
+  top: 77px;
+  border-bottom: 2px solid #F0F0F0;
+}
+
+.calc-farm__table table {
+  border-collapse: collapse;
+  border: 2px solid #F0F0F0;
+  width: 1200px;
+  font-size: 16px;
+  margin-top: 37px;
+}
+
+
+.calc-farm__table thead {
+  border-bottom: 2px solid #F0F0F0;
+}
+
+.calc-farm__table th {
+  height: 76px;
+  width: 20%;
+  left: 240px;
+  top: 0;
+  padding-left: 16px;
+  text-align: left;
+}
+
+.calc-farm__table thead th{
+  background: #B2D4F0;
+}
+
+.calc-farm__table thead th:first-child{
+  background: white;
+}
+
+.calc-farm__table tfoot {
+  background: #B2D4F0;
+}
+
+.calc-farm__table_tb td {
+  height: 54px;
+  left: 240px;
+  top: 0;
+  padding: 16px;
+}
+
+.calc-farm__table_tb {
+  height: 54px;
+  left: 0;
+  top: 77px;
+  border-bottom: 2px solid #F0F0F0;
+}
+
+.calc-farm__second__table table {
+  border-collapse: collapse;
+  border: 2px solid #F0F0F0;
+  width: 1200px;
+  font-size: 16px;
+  margin-top: 37px;
+}
+
+
+.calc-farm__second__table thead {
+  border-bottom: 2px solid #F0F0F0;
+}
+
+.calc-farm__second__table th {
+  height: 76px;
+  padding-left: 16px;
+  text-align: left;
+}
+
+.calc-farm__second__table thead th:first-child{
+  background: white;
+}
+
+.calc-farm__second__table_tb td {
+  height: 38px;
+  padding-left: 16px;
+  width: 25%;
+  border-bottom: 2px solid #F0F0F0;
+  border-right: 2px solid #F0F0F0;
+}
+
+.calc-farm__second__table_text {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  align-items: center;
+  color: #000000;
+}
+
+.calc-farm__bottom__title {
+  margin: 81px 0 37px 0;
+  max-width: 1043px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.calc-farm__second__blue {
+  background: #B2D4F0;
+  height: 34px;
+  width: 256px;
+  padding-left: 12px;
+  margin-left: -16px;
+  padding-top: 5px;
+}
+
+.blue-second {
+  width: 160px;
+}
+
+.blue-third {
+  width: 254px;
+}
+
+.calc-farm__second__pink {
+  background: #D985B7;
+  height: 34px;
+  width: 166px;
+  padding-left: 12px;
+  margin-left: -16px;
+  padding-top: 5px;
+}
+
+.pink-second {
+  width: 264px;
+}
+
+.pink-third {
+  width: 78px;
+}
+
+.calc-farm__bottom-btn {
+  background-color: white;
+  color: #149bdc;
+  font-size: 17px;
+  margin-left: 39px;
+}
+
+@media (max-width: 670px) {
+  .calc-farm__title {
+    font-size: 24px;
+    line-height: 29.16px;
+    color: #149BDC;
+  }
+
+  .calc-farm__container {
+    max-width: 1260px;
+    padding: 0 6px;
+    margin: 0 auto;
+  }
+
+  .input__field input {
+    font-size: 16px;
+  }
+
+  .select {
+    font-size: 16px;
+  }
+
+  .calc-farm__subtitle {
+    margin: 37px auto;
+    max-width: 152px;
+    width: 100%;
+  }
+
+  .calc-farm__bottom-btn {
+    margin-top: 0;
+  }
+
+  .calc-farm__bottom__title {
+    padding: 0 16px 0 16px;
+  }
+
+  .calc-farm__btn {
+    margin-left: 55px;
+    margin-bottom: 15px;
+  }
+}
