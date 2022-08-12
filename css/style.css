@@ -10970,8 +10970,8 @@ select {
 .calc-skf__title {
   font-size: 40px;
   line-height: 121.5%;
-  padding-left: 18px;
   color: #149BDC;
+  font-weight: 700;
   margin-bottom: 40px;
 }
 
@@ -10981,7 +10981,6 @@ select {
   font-size: 20px;
   line-height: 24px;
   color: #000000;
-  padding-left: 18px;
   margin-bottom: 47px;
 }
 
@@ -11002,7 +11001,6 @@ select {
 .calc-skf__subtitle {
   font-weight: 700;
   font-size: 30px;
-  padding-left: 18px;
   line-height: 121.5%;
   margin-top: 39px;
   color: #000000;
@@ -11122,16 +11120,14 @@ select {
 .calc-skf__bottom__text-bold {
   font-weight: 700;
   display: inline-block;
-
 }
 
 .calc-skf__bottom__text {
+  word-break: break-word;
   display: block;
   color: #65767C;
-  opacity: 0.8;
   margin-bottom: 20px;
-  word-break: break-word;
-
+  font-weight: 400;
 }
 
 .calc-skf-second {
