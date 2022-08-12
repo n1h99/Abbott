@@ -2904,17 +2904,6 @@ template, [hidden] {
   justify-content: end;
 }
 
-.article__basic::after {
-  position: absolute;
-  content: '';
-  width: 100%;
-  height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(42.19%, rgba(0, 79, 113, 0)), to(#004f71));
-  background: linear-gradient(180deg, rgba(0, 79, 113, 0) 42.19%, #004f71 100%);
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-}
 
 .article__basic-description {
   position: relative;
@@ -2928,12 +2917,15 @@ template, [hidden] {
   font-size: 20px;
   line-height: 24px;
   max-width: 444px;
+  position: relative;
+  z-index: 100;
 }
 
 .article__basic-title {
   margin-bottom: 25px;
   position: relative;
   max-width: 490px;
+  z-index: 100;
 }
 
 .article__basic-title a {
@@ -2967,7 +2959,7 @@ template, [hidden] {
   position: absolute;
   top: 15px;
   left: 15px;
-  z-index: 2;
+  z-index: 100;
   border-radius: 100px;
   background: #fff;
   padding: 15px;
@@ -11121,17 +11113,16 @@ select {
 }
 
 .calc-skf__bottom__wrapper {
-  font-weight: 700;
   font-size: 16px;
   line-height: 150%;
-  max-width: 960px;
+  max-width: 925px;
   display: block;
 }
 
 .calc-skf__bottom__text-bold {
-  color: black;
+  font-weight: 700;
   display: inline-block;
-  opacity: 1;
+
 }
 
 .calc-skf__bottom__text {
@@ -11139,6 +11130,7 @@ select {
   color: #65767C;
   opacity: 0.8;
   margin-bottom: 20px;
+  word-break: break-word;
 
 }
 
@@ -11237,6 +11229,36 @@ select {
   white-space: normal;
   -webkit-line-clamp: 3;
   word-break: break-word;
+}
+
+.article__basic-description::after {
+  content: "";
+  left: -30px;
+  bottom: -30px;
+  position: absolute;
+  width: calc(60px + 100%);
+  height: calc(60px + 100%);
+}
+
+.article__basic-description.nevro__gradient::after {
+  background: rgb(27,78,148);
+  background: linear-gradient(160deg, rgba(27,78,148,1) 35%, rgba(233,139,55,1) 100%);
+}
+.article__basic-description.wh__gradient::after {
+  background: rgb(154,82,144);
+  background: linear-gradient(160deg, rgba(154,82,144,1) 48%, rgba(87,46,175,1) 100%);
+}
+.article__basic-description.gastro__gradient::after {
+  background: rgb(64,143,86);
+  background: linear-gradient(118deg, rgba(64,143,86,1) 0%, rgba(247,210,72,1) 100%);
+}
+.article__basic-description.cardio__gradient::after {
+  background: rgb(211,79,48);
+  background: linear-gradient(160deg, rgba(211,79,48,1) 60%, rgba(209,44,52,1) 100%);
+}
+.article__basic-description.pulmo__gradient::after {
+  background: rgb(15,50,123);
+  background: linear-gradient(90deg, rgba(15,50,123,1) 41%, rgba(125,145,82,1) 74%, rgba(225,203,73,1) 94%);
 }
 
 @media (max-width: 1199.99px) {
