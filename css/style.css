@@ -11258,6 +11258,21 @@ select {
   background: linear-gradient(90deg, rgba(15,50,123,1) 41%, rgba(125,145,82,1) 74%, rgba(225,203,73,1) 94%);
 }
 
+.intro_pharm-btn {
+  max-width: 560px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.intro_pharm-btn {
+  margin-top: 20px;
+}
+
+.intro_pharm-wrapper{
+  display: block;
+  max-width: 560px;
+}
+
 @media (max-width: 1199.99px) {
   .calc-farm__information {
     max-width: 800px;
@@ -11276,6 +11291,14 @@ select {
 @media (max-width: 780px) {
   .calc-farm__information {
     max-width: 682px;
+  }
+
+  .intro__btn-reg {
+    min-width: 180px;
+  }
+
+  .intro__btn-reg:nth-child(2) {
+    margin-left: 15px;
   }
 }
 
@@ -11450,6 +11473,21 @@ select {
     padding-top: 20px;
   }
 
+}
+
+@media (max-width: 540px) {
+  .intro_pharm-btn {
+    max-width: 287px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+  }
+  .intro__btn-reg:nth-child(2) {
+    margin-left: 0;
+  }
+  .intro_pharm-btn {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 370px) {
