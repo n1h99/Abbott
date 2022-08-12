@@ -6288,7 +6288,8 @@ select {
   text-transform: uppercase;
   font-weight: 700;
   line-height: 120%;
-  margin: 35px 0;
+  margin: 44px 0 35px;
+  text-align: center;
 }
 
 .event__title-two {
@@ -9250,7 +9251,7 @@ select {
   }
 
   .event__title {
-    margin: 35px 0 20px;
+    margin: 35px 0 35px;
   }
 
   .events__item-hover {
