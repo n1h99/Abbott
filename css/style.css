@@ -10719,6 +10719,7 @@ select {
 .calc-farm__title {
   font-size: 40px;
   line-height: 121.5%;
+  font-weight: 700;
   color: #149BDC;
 }
 
