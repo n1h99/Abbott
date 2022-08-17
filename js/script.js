@@ -4518,3 +4518,28 @@ const AcceptCookies = () => {
         cookiesPolicy.style.display = 'none'
     }
 }
+
+const kokButtons = document.querySelectorAll('.test-kok-second__content_box')
+
+
+kokButtons.forEach(kokButton => {
+    kokButton.addEventListener('click', (el) => {
+        kokButtons.forEach(kokButton2 => {
+            kokButton2.classList.remove('test-kok-second__content_box--active');
+        })
+        kokButton.classList.toggle('test-kok-second__content_box--active');
+    });
+})
+
+const kokButtons24 = document.querySelectorAll('.test-kok-24__content_box')
+
+kokButtons24.forEach(kokButton => {
+    kokButton.addEventListener('click', (el) => {
+        kokButtons24.forEach(kokButton2 => {
+            kokButton2.classList.remove('test-kok-24__content_box--active');
+        })
+        kokButton.classList.toggle('test-kok-24__content_box--active');
+    });
+})
+
+
