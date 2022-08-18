@@ -11504,7 +11504,8 @@ select {
 }
 
 .test-kok-24__content_box {
-  min-width: 340px;
+  max-width: 340px;
+  width: 100%;
   min-height: 100px;
   background: #FFFFFF;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
@@ -11846,6 +11847,10 @@ select {
   }
 
   .test-kok-112__content_box {
+    max-width: 100%;
+  }
+
+  .test-kok-24__content_box {
     max-width: 100%;
   }
 
