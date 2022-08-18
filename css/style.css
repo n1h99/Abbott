@@ -11741,6 +11741,22 @@ select {
   color: #000000;
 }
 
+.test-kok-111_text {
+  max-width: 854px;
+}
+
+.test-kok-111__content_box {
+  min-width: 256px;
+}
+
+.test-kok-111__content_box:nth-child(4) {
+  margin: 0 11px;
+}
+
+.test-kok-111__content_btn {
+  padding-right: 60px;
+}
+
 @media (max-width: 1199.99px) {
   .calc-farm__information {
     max-width: 800px;
@@ -11765,6 +11781,11 @@ select {
   .test-kok-24__content_box:nth-child(2) {
     margin: 10px 0 10px 0;
   }
+
+  .test-kok-111__content_box:nth-child(4) {
+    margin: 10px 0 10px 0;
+  }
+
 
   .test-kok_25__bottom_content {
     flex-direction: column;
@@ -11812,6 +11833,10 @@ select {
 @media (max-width: 780px) {
   .calc-farm__information {
     max-width: 682px;
+  }
+
+  .test-kok-111__container_content {
+    margin-top: 22px;
   }
 
   .intro__btn-reg {
