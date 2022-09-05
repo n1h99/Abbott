@@ -11797,13 +11797,26 @@ select {
   margin: 70px 0 76px;
 }
 
-.test-kok__preparats {
+.test-kok__pills__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.test-kok__pills {
   font-weight: 400;
   text-decoration-skip-ink: none;
   font-size: 21px;
   line-height: 110%;
   text-decoration-line: underline;
   color: #9F4FA4;
+}
+
+.test-kok__pills:nth-child(2n) {
+  margin-top: 29px;
+}
+
+.test-kok__pills:last-child {
+  margin-top: 0;
 }
 
 @media (max-width: 1199.99px) {
