@@ -11468,6 +11468,13 @@ select {
 
 }
 
+.test-kok-second__content_box:hover {
+  background: #149BDC;
+  box-shadow: 0px 2px 8px rgb(0 0 0 / 20%);
+  border-radius: 30px;
+  color: white !important;
+}
+
 .test-kok-second__content_box:nth-child(5) {
   margin-bottom: 131px;
 }
@@ -11528,7 +11535,7 @@ select {
   margin: 0 11px;
 }
 
-.test-kok-24__content_box--active {
+.test-kok-24__content_box:hover {
   background: #149BDC;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
@@ -11767,6 +11774,13 @@ select {
 .test-kok-112__content_box {
   max-width: 512px;
   width: 100%;
+}
+
+.test-kok-112__content_box {
+  background: #149BDC;
+  box-shadow: 0px 2px 8px rgb(0 0 0 / 20%);
+  border-radius: 30px;
+  color: white !important;
 }
 
 .test-kok-112__content_box:nth-child(2) {
