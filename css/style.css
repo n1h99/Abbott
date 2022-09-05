@@ -7270,6 +7270,10 @@ select {
   background-image: url("/img/calc-icon_cardio.svg");
 }
 
+.calc_card_image--none {
+  background-image: none !important;
+}
+
 .calc_card_image--hover {
   opacity: 0;
   transition: all 0.3s ease;
