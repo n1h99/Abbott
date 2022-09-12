@@ -11820,7 +11820,7 @@ select {
 }
 
 .table__question {
-  width: 5%;
+  width: 5% !important;
 }
 
 @media (max-width: 1199.99px) {
