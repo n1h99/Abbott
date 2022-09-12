@@ -7267,7 +7267,7 @@ select {
 .calc_card_image {
   width: 55px;
   height: 55px;
-  background-image: url("/img/calc-icon_cardio.svg");
+  background-image: url("/local/build/img/calc-icon_cardio.svg");
 }
 
 .calc_card_image--none {
@@ -11278,7 +11278,7 @@ select {
 }
 
 .test-kok__container_top {
-  background: url("/img/test-kok_bg.png");
+  background: url("/local/build/img/test-kok_bg.png");
   background-repeat: repeat;
   background-size: cover;
   min-height: 546px;
@@ -12229,7 +12229,7 @@ select {
   }
 
   .test-kok__container_top {
-    background: url("/img/test-kok_bg-media.png") 100% 75%;
+    background: url("/local/build/img/test-kok_bg-media.png") 100% 75%;
     background-repeat: repeat;
     background-size: cover;
     min-height: 709px;
