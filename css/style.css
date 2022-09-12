@@ -11819,6 +11819,10 @@ select {
   margin-top: 0;
 }
 
+.table__question {
+  width: 5%;
+}
+
 @media (max-width: 1199.99px) {
   .calc-farm__information {
     max-width: 800px;
