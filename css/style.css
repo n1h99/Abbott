@@ -6281,7 +6281,7 @@ select {
   font-weight: 700;
   line-height: 120%;
   margin: 44px 0 35px;
-  text-align: center;
+  text-align: left;
 }
 
 .event__title-two {
