@@ -4519,4 +4519,14 @@ const AcceptCookies = () => {
     }
 }
 
+const gastPopupClose = () => {
+    document.getElementById('gastOverlay').style.display='none'
+}
+
+const gastPopup = () => {
+    document.getElementById('gastOverlay').style.display='block'
+}
+
+gastPopup()
+
 
