@@ -4389,7 +4389,7 @@ document.querySelectorAll('.docks__items').forEach((item) =>
         } else {
             document
                 .querySelectorAll('.docks__inner')
-                .forEach((child) => child.classList.remove('docks-active'))
+                // .forEach((child) => child.classList.remove('docks-active'))
             parentTwo.classList.toggle('docks-active');
         }
     })
