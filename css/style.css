@@ -10837,13 +10837,6 @@ select {
   padding: 16px;
 }
 
-.calc-farm__table_tb {
-  height: 54px;
-  left: 0;
-  top: 77px;
-  border-bottom: 2px solid #F0F0F0;
-}
-
 .calc-farm__second__table table {
   border-collapse: collapse;
   border: 2px solid #F0F0F0;
