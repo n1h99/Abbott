@@ -10813,8 +10813,9 @@ select {
   width: 20%;
   left: 240px;
   top: 0;
-  padding-left: 16px;
   text-align: left;
+  padding: 16px;
+  font-weight: 700;
 }
 
 .calc-farm__table thead th{
