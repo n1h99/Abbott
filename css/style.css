@@ -12114,7 +12114,7 @@ select {
   position: absolute;
   right: 129px;
   top: 68px;
-  background-image: url(../img/test-klacid-meds_left-bg.png);
+  background-image: url("/local/build/img/test-klacid-meds_left-bg.png");
   background-repeat: no-repeat;
   width: 880px;
   z-index: 10;
@@ -12135,7 +12135,7 @@ select {
   position: absolute;
   left: 129px;
   top: 68px;
-  background-image: url(../img/test-klacid-meds_right-bg.png);
+  background-image: url("/local/build/img/test-klacid-meds_right-bg.png");
   background-repeat: no-repeat;
   width: 880px;
   z-index: 10;
