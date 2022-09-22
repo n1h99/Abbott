@@ -7149,6 +7149,7 @@ select {
   line-height: 150%;
   font-variant: small-caps;
   color: #65767c;
+  text-transform: uppercase;
 }
 
 .docks__items span:hover {
