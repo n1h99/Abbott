@@ -12359,9 +12359,9 @@ select {
   width: 100%;
   background: linear-gradient(90.2deg, #9F4FA4 0.15%, #D380B5 58.86%, #A272BD 98.35%);
   border-radius: 40px;
-  min-height: 132px;
   display: flex;
   margin-top: 20px;
+  padding: 30px;
 }
 
 .klin-olig-first_title {
@@ -12495,6 +12495,49 @@ select {
   margin-bottom: 10px;
 }
 
+.klin-olig_second_title {
+  font-family: 'Calibri';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 121.5%;
+  color: #000000;
+  text-transform: none;
+}
+
+.klin-olig_second_wrapper {
+  flex-direction: column;
+}
+
+.klin-olig_second_title {
+  max-width: 100%;
+}
+
+.klin-olig_second-list {
+  margin-left: 0;
+}
+
+.klin-olig-second_report {
+  padding: 35px 10px;
+}
+
+.klin-olig_second_desc_wrapper {
+  font-family: 'Calibri';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 110%;
+  color: #222731;
+}
+
+.klin-olig_second_desc_wrapper div {
+  margin-bottom: 10px;
+}
+
+.klin-olig_second_desc_wrapper div:last-child {
+  margin-bottom: 36px;
+}
+
 @media (max-width: 1199.99px) {
   .calc-farm__information {
     max-width: 800px;
@@ -12598,7 +12641,21 @@ select {
   .klin-olig-first_text {
     display: flex;
     align-items: center;
+    margin-left: 0;
+    text-align: center;
   }
+
+  .klin-olig-first_title {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .klin-olig-first_report {
+    flex-direction: column;
+    padding: 10px;
+  }
+
 }
 
 @media (max-width: 780px) {
@@ -12676,7 +12733,6 @@ select {
 
   .klin-olig-first_text {
     font-size: 21px;
-    margin-left: 46px;
   }
 
   .klin-olig-first_info_box {
