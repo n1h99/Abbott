@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="06995378-4560-4ed9-b915-3a56086528d8" name="megusto">
+        <fileTransfer rootFolder="/home/user" accessType="SFTP" host="10.207.136.31" port="22" sshConfigId="a447fe04-9812-4fe2-a063-892117d89153" sshConfig="user@10.207.136.31:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

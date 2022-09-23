@@ -12303,6 +12303,198 @@ select {
   margin-bottom: 0;
 }
 
+.klin-olig_first_container {
+  max-width: 1240px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.klin-olig_first_container-bg {
+  width: 100%;
+  object-fit: contain;
+}
+
+.klin-olig-first_buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 63px;
+}
+
+.klin-olig-btn {
+  margin-right: 12px;
+  max-width: 305px;
+  min-height: 85px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #9F4FA4;
+  border-radius: 30px;
+  background: #FFF;
+  font-family: 'Calibri';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 121.5%;
+  color: #9F4FA4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.klin-olig-btn:hover {
+  background: #9F4FA4;
+  color: #FFF;
+}
+
+.klin-olig-btn:last-child {
+  margin-right: 0;
+}
+
+.klin-olig-first_report {
+  font-family: 'Calibri';
+  font-style: normal;
+  color: #FFFFFF;
+  max-width: 1240px;
+  width: 100%;
+  background: linear-gradient(90.2deg, #9F4FA4 0.15%, #D380B5 58.86%, #A272BD 98.35%);
+  border-radius: 40px;
+  min-height: 132px;
+  display: flex;
+  margin-top: 20px;
+}
+
+.klin-olig-first_title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 121.5%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+
+}
+
+.klin-olig-first_text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 121.5%;
+  display: flex;
+  align-items: center;
+  max-width: 781px;
+  margin-left: 120px;
+}
+
+.klin-olig-first_info {
+  max-width: 1240px;
+  opacity: 0.6;
+  border: 2px solid #A151A5;
+  border-radius: 40px;
+  margin: 26px 0 75px 0;
+}
+
+.klin-olig-first_info_container {
+  padding: 47px 97px 59px 64px;
+}
+
+.klin-olig-first_info_wrapper {
+  display: flex;
+}
+
+.klin-olig-circle {
+  border: 2px solid #A151A5;
+  border-radius: 10px;
+  width: 8px;
+  height: 8px;
+  display: flex;
+  margin-right: 11px;
+  margin-top: 8px;
+}
+
+.klin-olig-first_info_wrapper {
+  font-family: 'Calibri';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 110%;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+
+.klin-olig-first_info_wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.klin-olig-first_info_wrapper_title {
+  max-width: 120px;
+  min-width: 120px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.klin-olig-list {
+  margin-left: 67px;
+}
+
+.klin-olig-first_info_box {
+  margin-left: 67px;
+}
+
+
+.klin-olig-first_info_wrapper li {
+  display: flex;
+  font-weight: 400;
+  text-transform: none;
+  margin-bottom: 5px;
+}
+
+.klin-olig-first_info_wrapper li:last-child {
+  margin-bottom: 0;
+}
+
+.klin-olig-first_info_box_right_photo {
+  width: 64px;
+  height: 68px;
+}
+
+.klin-olig-first_info_box_wrapper {
+  display: flex;
+  margin-bottom: 27px;
+}
+
+.klin-olig-first_info_box_second {
+  margin-top: 57px;
+}
+
+.klin-olig-first_info_box_wrapper_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+.klin-olig-first_info_box_wrapper_right div:nth-child(2) {
+  text-transform: none;
+}
+
+.klin-orig-second_title {
+  margin-bottom: auto;
+  margin-top: 5px;
+}
+
+.klin-olig-first_desc {
+  text-transform: none;
+  margin: 32px 0 9px 0;
+}
+
+.klig-olig-number {
+  text-align: end;
+  margin-bottom: 10px;
+}
+
 @media (max-width: 1199.99px) {
   .calc-farm__information {
     max-width: 800px;
@@ -12386,6 +12578,27 @@ select {
   .test-kok-second__container_content_btn {
     padding: 46px 0 33px 23px;
   }
+
+  .klin-olig-btn {
+    font-size: 16px;
+    min-height: 44px;
+    max-width: 768px;
+    margin: 0 auto 12px;
+  }
+
+  .klin-olig-btn:last-child {
+    margin-bottom: 0;
+    margin-right: auto;
+  }
+
+  .klin-olig-first_buttons {
+    flex-direction: column;
+  }
+
+  .klin-olig-first_text {
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media (max-width: 780px) {
@@ -12447,6 +12660,35 @@ select {
   .test-klacid-big img {
     max-width: 349px;
     margin: 0 auto;
+  }
+
+  .klin-olig-list {
+    margin-left: 0;
+  }
+
+  .klin-olig-first_info_wrapper {
+    flex-direction: column;
+  }
+
+  .klin-olig-first_title {
+    font-size: 22px;
+  }
+
+  .klin-olig-first_text {
+    font-size: 21px;
+    margin-left: 46px;
+  }
+
+  .klin-olig-first_info_box {
+    margin-left: 0;
+  }
+
+  .klin-orig-second_title {
+    margin-bottom: 15px;
+  }
+
+  .klin-olig-first_info_container {
+    padding: 47px 28px 59px 28px;
   }
 
 }
@@ -12884,6 +13126,12 @@ select {
 @media (max-width: 490px) {
   .test-kok_25__bottom_content__left {
     max-width: 300px;
+  }
+
+  .klin-olig-first_text {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
   }
 }
 
