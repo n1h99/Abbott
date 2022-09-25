@@ -12538,6 +12538,177 @@ select {
   margin-bottom: 36px;
 }
 
+.klig-olig-first {
+  width: 196px;
+  background: white;
+}
+
+.klig-olig-second {
+  width: 536px;
+}
+
+.klig-olig-third {
+  width: 230px;
+}
+
+.klig-olig-border {
+  border-bottom: 1px solid #E4D1D6;
+}
+
+.klig-olig-border:last-of-type {
+  border: 0;
+}
+
+.klig-olig-border-span {
+  padding-left: 12px;
+  font-family: 'Calibri';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 120%;
+  color: #000000;
+}
+
+.klig-orig-color {
+  font-weight: 700;
+  color: #9F4FA4;
+  font-size: 16px;
+  max-width: 165px;
+}
+
+.klin-olig-third_title {
+  font-family: 'Calibri';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 121.5%;
+  color: #000000;
+  margin: 71px 0 50px 0;
+}
+
+.klin-olig-third_report {
+  margin: 90px 0 60px 0;
+}
+
+table.klig-olig-table {
+  width: 1220px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  color: black;
+  overflow: auto;
+  margin-bottom: 50px;
+  white-space: normal;
+}
+
+table.klig-olig-table td, table.klig-olig-table th {
+  border: 1px solid #9F4FA4;
+  padding: 22px;
+}
+
+table.klig-olig-table td {
+  padding: 0;
+}
+
+table.klig-olig-table thead {
+  background-color: #9F4FA4;
+  color: #FFF;
+  font-family: 'Calibri';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 110%;
+  text-align: left;
+  border-bottom: 1px solid #9F4FA4;
+}
+
+table.klig-olig-table th {
+  border: 1px solid white;
+  border-bottom: 1px solid #9F4FA4;
+}
+
+.klin-olig-fourth-wrapper {
+  max-width: 1240px;
+  width: 100%;
+  max-height: 348px;
+  background-image: url(../img/klin-olig-fourth-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 36px 0 20px 62px;
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.klin-olig-fourth-wrapper_box {
+  max-width: 550px;
+  font-family: 'Calibri';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 110%;
+  color: #000000;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.klin-olig-fourth-wrapper_box_number {
+  color: #800334;
+  margin-right: 15px;
+}
+
+.klin-olig-fourth-wrapper_box:last-child {
+  margin-bottom: 0;
+}
+
+.klin-olig-fourth-wrapper_img {
+  max-width: 362px;
+  width: 100%;
+  max-height: 289px;
+}
+
+.klin-olig-fourth-wrapper_left {
+  margin-right: 30px;
+}
+
+.klin-olig-fifth-report_title {
+  margin-bottom: auto;
+}
+
+.klin-olig-fifth-report_subtitle {
+  font-family: 'Calibri';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 110%;
+  color: #FFFFFF;
+  max-width: 650px;
+  margin-left: 90px;
+  margin-bottom: 20px;
+}
+
+.klin-olig-fifth-report_text {
+  font-family: 'Calibri';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 120%;
+  color: #FFFFFF;
+  margin-left: 90px;
+}
+
+.klin-olig-fifth_report {
+  margin: 37px 0;
+}
+
+.klin-olig-fifth_report_text {
+  max-width: inherit;
+}
+
+.klin-olig-fifth-second {
+  width: 452px;
+}
+
 @media (max-width: 1199.99px) {
   .calc-farm__information {
     max-width: 800px;
@@ -12615,6 +12786,19 @@ select {
     max-width: 100%;
   }
 
+  .klin-olig-fourth-wrapper_box {
+    max-width: 410px;
+    font-size: 23px;
+  }
+
+  .klin-olig-fourth-wrapper_img {
+    max-width: 258px;
+    max-height: 192px;
+  }
+
+  .klin-olig-fourth-wrapper {
+    max-width: 930px;
+  }
 }
 
 @media (max-width: 890px) {
@@ -12644,6 +12828,15 @@ select {
     margin-left: 0;
     text-align: center;
   }
+
+  .klin-olig-fifth-report_subtitle {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+
 
   .klin-olig-first_title {
     margin-left: 0;
@@ -12728,6 +12921,10 @@ select {
   }
 
   .klin-olig-first_title {
+    font-size: 23px;
+  }
+
+  .klin-olig-fifth-report_subtitle {
     font-size: 22px;
   }
 
@@ -13177,6 +13374,29 @@ select {
     top: 0;
   }
 
+  .klin-olig-fourth-wrapper_box {
+    max-width: 410px;
+    font-size: 12px;
+  }
+
+
+  .klin-olig-fourth-wrapper {
+    padding: 15px 0 15px 8px;
+  }
+
+  .klin-olig-fourth-wrapper_img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  .klin-olig-first_info_wrapper {
+    font-size: 16px;
+  }
+
+  .klin-olig_second_desc_wrapper {
+    font-size: 16px;
+  }
+
 }
 
 @media (max-width: 490px) {
@@ -13189,6 +13409,12 @@ select {
     align-items: center;
     font-size: 14px;
   }
+
+  .klin-olig-fifth-report_subtitle {
+    font-size: 15px;
+    margin: 10px auto;
+  }
+
 }
 
 @media (max-width: 370px) {
