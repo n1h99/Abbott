@@ -12373,6 +12373,7 @@ select {
   display: flex;
   align-items: center;
   margin-left: 50px;
+  max-width: 300px;
 
 }
 
@@ -12383,7 +12384,7 @@ select {
   display: flex;
   align-items: center;
   max-width: 781px;
-  margin-left: 120px;
+  margin-left: 50px;
 }
 
 .klin-olig-first_info {
@@ -12587,7 +12588,7 @@ select {
 }
 
 .klin-olig-third_report {
-  margin: 90px 0 60px 0;
+  margin-bottom: 60px;
 }
 
 table.klig-olig-table {
