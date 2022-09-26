@@ -12710,6 +12710,17 @@ table.klig-olig-table th {
   width: 452px;
 }
 
+.klin-aste-third-report_subtitle {
+  max-width: 800px;
+  margin-left: 40px;
+  margin-bottom: 0;
+}
+
+.klin-aste-third-report_text {
+  margin-left: 40px;
+  font-weight: 400;
+}
+
 @media (max-width: 1199.99px) {
   .calc-farm__information {
     max-width: 800px;
@@ -12834,15 +12845,16 @@ table.klig-olig-table th {
     display: flex;
     align-items: center;
     text-align: center;
-    margin: 0 auto;
+    margin: 10px auto;
   }
 
 
 
   .klin-olig-first_title {
-    margin-left: 0;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
+    max-width: inherit;
   }
 
   .klin-olig-first_report {
