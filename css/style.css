@@ -12721,6 +12721,11 @@ table.klig-olig-table th {
   font-weight: 400;
 }
 
+.klin-btn_active {
+  background: #9F4FA4;
+  color: #FFF;
+}
+
 @media (max-width: 1199.99px) {
   .calc-farm__information {
     max-width: 800px;
