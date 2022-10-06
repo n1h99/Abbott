@@ -12728,12 +12728,9 @@ table.klig-olig-table th {
 
 .klin-link {
   display: contents;
+  color: inherit;
 }
 
-.klin-olig-first_text a {
-  display: contents;
-  color: #FFF;
-}
 
 @media (max-width: 1199.99px) {
   .calc-farm__information {
