@@ -12726,6 +12726,15 @@ table.klig-olig-table th {
   color: #FFF;
 }
 
+.klin-link {
+  display: contents;
+}
+
+.klin-olig-first_text a {
+  display: contents;
+  color: #FFF;
+}
+
 @media (max-width: 1199.99px) {
   .calc-farm__information {
     max-width: 800px;
