@@ -11299,7 +11299,7 @@ select {
   max-width: 693px;
   max-height: 208px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 21px;
   line-height: 121.5%;
   padding-top: 27px;
@@ -11551,7 +11551,7 @@ select {
 }
 
 .test-kok-24__back__wrapper {
-  margin: 40px 0 140px;
+  margin: 40px 0 50px;
   display: block;
 }
 
@@ -11805,6 +11805,7 @@ select {
   line-height: 110%;
   text-decoration-line: underline;
   color: #9F4FA4;
+  margin-bottom: 30px;
 }
 
 .test-kok__pills:nth-child(2n) {
@@ -12729,6 +12730,10 @@ table.klig-olig-table th {
 .klin-link {
   display: contents;
   color: inherit;
+}
+
+.test-kok-24__content_box_content {
+  font-size: 24px;
 }
 
 
