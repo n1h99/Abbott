@@ -12736,6 +12736,21 @@ table.klig-olig-table th {
   font-size: 24px;
 }
 
+.preps__table__desc {
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+.preps__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.preps__table td, th {
+  border: 1px solid #149BDC;
+  padding: 5px;
+}
+
 
 @media (max-width: 1199.99px) {
   .calc-farm__information {
