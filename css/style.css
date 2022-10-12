@@ -11393,6 +11393,7 @@ select {
   line-height: 121.5%;
   color: #149BDC;
   max-width: 600px;
+  margin-bottom: 20px;
 }
 
 .test-kok-second__container_top {
@@ -11684,7 +11685,7 @@ select {
   font-size: 16px;
   line-height: 110%;
   color: #9F4FA4;
-  padding: 32px 1px 22px 30px;
+  padding: 32px 21px 22px 5px;
   max-width: 227px;
 }
 
