@@ -12737,17 +12737,12 @@ table.klig-olig-table th {
   font-size: 24px;
 }
 
-.preps__table__desc {
-  margin: 10px 0;
-  font-weight: 700;
-}
-
-.preps__table {
+.docks__content table {
   width: 100%;
   border-collapse: collapse;
 }
 
-.preps__table td, th {
+.docks__content td, th {
   border: 1px solid #149BDC;
   padding: 5px;
 }
