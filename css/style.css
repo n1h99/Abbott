@@ -12747,6 +12747,10 @@ table.klig-olig-table th {
   padding: 5px;
 }
 
+.docks__content i {
+  font-weight: 700;
+}
+
 
 @media (max-width: 1199.99px) {
   .calc-farm__information {
