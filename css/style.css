@@ -12793,8 +12793,7 @@ table.klig-olig-table th {
 }
 
 .diabet__box__content {
-  max-height: 212px;
-  height: 100%;
+  height: fit-content;
   background-color: #FFDA00;
   padding: 17px 18px 28px 26px;
 }
@@ -12839,7 +12838,6 @@ table.klig-olig-table th {
 
 .diabet__minibox__left {
   max-width: 308px;
-  max-height: 195px;
   background-color: #FFDA00;
   padding: 17px 18px 28px 26px;
 }
