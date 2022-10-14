@@ -12751,6 +12751,113 @@ table.klig-olig-table th {
   font-weight: 700;
 }
 
+.diabet__icon {
+  margin-top: 83px;
+}
+
+.diabet {
+  margin: 50px auto 0;
+  max-width: 1225px;
+  font-family: 'Calibri', sans-serif;
+}
+
+.diabet__top {
+  display: flex;
+  max-width: 1225px;
+}
+
+.diabet__box__first {
+  background-image: url("../img/diabet__box__first.png");
+}
+
+.diabet__box__second {
+  background-image: url("../img/diabet__box__second.png");
+}
+
+.diabet__box__third {
+  background-image: url("../img/diabet__box__third.png");
+}
+
+.diabet__box {
+  max-width: 395px;
+  width: 100%;
+  min-height: 643px;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+}
+
+.diabet__box:last-child {
+  margin-right: 0;
+}
+
+.diabet__box__content {
+  max-height: 212px;
+  height: 100%;
+  background-color: #FFDA00;
+  padding: 17px 18px 28px 26px;
+}
+
+.diabet__box__content--first {
+  margin-top: auto;
+}
+
+.diabet__box__content--third {
+  margin-top: 50%;
+}
+
+.diabet__box__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.diabet__box__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+  margin: 15px 0 30px;
+}
+
+.diabet__box__button {
+  background: #FFFFFF;
+  border-radius: 100px;
+  padding: 8px 16px;
+  display: block;
+  width: fit-content;
+}
+
+.diabet__box__button span{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.diabet__minibox__left {
+  max-width: 308px;
+  max-height: 195px;
+  background-color: #FFDA00;
+  padding: 17px 18px 28px 26px;
+}
+
+.diabet__minibox__content img {
+  max-width: 296px;
+}
+
+.diabet__minibox__content {
+  display: flex;
+  margin-top: 27px;
+}
+
+.diabet__bottom__first, .diabet__bottom__second {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 @media (max-width: 1199.99px) {
   .calc-farm__information {
