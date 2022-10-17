@@ -11,8 +11,13 @@
   font-family: "Calibri";
   font-weight: 400;
   font-style: normal;
-  src: url("../fonts/Calibri/Calibri.eot");
-  src: url("../fonts/Calibri/Calibri.eot?#iefix") format("embedded-opentype"), url("../fonts/Calibri/Calibri.woff") format("woff"), url("../fonts/Calibri/Calibri.ttf") format("truetype");
+  src: url("../fonts/calibri/calibri.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/calibri/calibri.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/calibri/calibri.otf") format("opentype"), /* Open Type Font */
+  url("../fonts/calibri/calibri.svg") format("svg"), /* Legacy iOS */
+  url("../fonts/calibri/calibri.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("../fonts/calibri/calibri.woff") format("woff"), /* Modern Browsers */
+  url("../fonts/calibri/calibri.woff2") format("woff2"); /* Modern Browsers */
 }
 
 @font-face {
@@ -11603,6 +11608,7 @@ select {
   max-height: 70px;
   padding-left: 30px;
   padding-top: 25px;
+  border: none;
 }
 
 .test-kok_25__table_tb tr td {
@@ -11725,7 +11731,7 @@ select {
 }
 
 .test-kok__content__span__size {
-  padding: 6px 10px 9px 21px;
+  padding: 20px 10px 20px 42px;
 }
 
 .test-kok-first__text {
