@@ -12863,6 +12863,16 @@ table.klig-olig-table th {
   justify-content: space-between;
 }
 
+.registration__questions--reset {
+  padding-bottom: 0;
+}
+
+.registration-number {
+  text-align: end;
+  margin-bottom: 10px;
+  margin-top: 82px;
+}
+
 
 @media (max-width: 1199.99px) {
   .calc-farm__information {
