@@ -5038,6 +5038,7 @@ select {
   justify-content: center;
   min-height: 214px;
   border-radius: 4px 4px 0 0;
+  position: relative;
 }
 
 .webinar__title {
@@ -5068,7 +5069,6 @@ select {
   align-items: center;
   justify-content: center;
   border-radius: 100px;
-  background: rgba(0, 0, 0, 0.5);
 }
 
 .webinar-btn__wrap {
@@ -12871,6 +12871,56 @@ table.klig-olig-table th {
   text-align: end;
   margin-bottom: 10px;
   margin-top: 82px;
+}
+
+.webinar__icon {
+  position: absolute;
+  content: "";
+  background-repeat: no-repeat;
+  bottom: 15px;
+  left: 15px;
+  width: 60px;
+  height: 60px;
+}
+
+.nevro__video {
+  border: 8px solid #149BDC;
+}
+
+.webinar-video--nevro {
+  background: rgba(20, 155, 220, 0.2);
+}
+
+.cardio__video {
+  border: 8px solid #C80533;
+}
+
+.webinar-video--cardio {
+  background: rgba(212, 0, 48, 0.2);
+}
+
+.wh__video {
+  border: 8px solid #D380B5;
+}
+
+.webinar-video--wh {
+  background: rgba(197, 114, 173, 0.2);
+}
+
+.pulmo__video {
+  border: 8px solid #004B94;
+}
+
+.webinar-video--pulmo {
+  background: rgba(0, 75, 148, 0.2);
+}
+
+.gastro__video {
+  border: 8px solid #76A933;
+}
+
+.webinar-video--gastro {
+  background: rgba(118, 169, 51, 0.2);
 }
 
 
