@@ -12946,13 +12946,13 @@ table.klig-olig-table th {
 }
 
 .pharm__box-first {
-  background-image: url("/img/pharm__box-first.png");
+  background-image: url("/local/build/img/pharm__box-first.png");
   max-width: 817px;
   min-height: 643px;
 }
 
 .pharm__box-second {
-  background-image: url("/img/pharm__box-second.png");
+  background-image: url("/local/build/img/pharm__box-second.png");
   max-width: 400px;
   min-height: 643px;
 }
