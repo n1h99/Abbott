@@ -9622,6 +9622,7 @@ select {
 
   .tab__bottom {
     margin-top: 40px;
+    margin-right: 10px;
   }
 
   .tab-two__check-item-sec {
