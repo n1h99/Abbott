@@ -194,6 +194,7 @@ ul {
 }
 
 .intro__btn-reg {
+  margin-right: 20px;
   position: relative;
   font-size: 16px;
   font-weight: 700;
@@ -213,6 +214,10 @@ ul {
   line-height: normal;
   min-width: 214px;
   text-transform: uppercase;
+}
+
+.intro__btn-reg:last-child {
+  margin-right: 0;
 }
 
 .intro__btn.disabled {
@@ -11267,11 +11272,11 @@ select {
 
 .intro_pharm-wrapper{
   display: block;
-  max-width: 560px;
+  max-width: 455px;
 }
 
 .intro_pharm-btn-wrapper {
-  max-width: 560px;
+  max-width: 455px;
   justify-content: space-between;
   display: flex;
 }
@@ -13291,14 +13296,6 @@ table.klig-olig-table th {
     margin-top: 22px;
   }
 
-  .intro__btn-reg {
-    min-width: 180px;
-  }
-
-  .intro__btn-reg:nth-child(2) {
-    margin-left: 15px;
-  }
-
   .test-kok__container_content_box {
     max-width: 236px;
   }
@@ -13698,6 +13695,9 @@ table.klig-olig-table th {
   }
   .intro__btn-reg:nth-child(2) {
     margin-left: 0;
+  }
+  .intro__btn-reg {
+    margin-right: 0;
   }
   .intro_pharm-btn {
     margin-top: 0;
