@@ -189,12 +189,17 @@
 
 
 <!-- registration__information -->
-<section class="registration__information">
+<section class="registration-section">
     <div class="container">
+        <div class="registration__title">
+            <h2 class="section__title">Регистрация</h2>
+        </div>
 
-        <!-- information -->
-        <form id="information" class="information">
+        <form id="information" class="information registration_form" onsubmit="return o2.registration.submit(this);">
 
+            <input type="hidden" name="iblockId" value="12">
+            <input type="hidden" name="typeId" value="7">
+            <input type="hidden" name="UF_DIRECTION" value="262302">
             <!-- information__wrap -->
             <div class="information__wrap">
 
@@ -205,23 +210,22 @@
                 <div class="information__findings information__basic">
 
                     <label class="input__field">
-                        <input class="validation__element" name="name" type="name" placeholder="Имя">
+                        <input id="name" class="validation__element" name="NAME" type="name" placeholder="Имя *" required="" data-msg-required="Поле &quot;Имя&quot; не заполнено">
                         <span class="name-span">*</span>
                     </label>
 
-                    <label class="input__field ">
-                        <input class="validation__element" name="surname" type="surname" placeholder="Фамилия">
+                    <label class="input__field">
+                        <input id="surname" class="validation__element" name="LAST_NAME" type="surname" placeholder="Фамилия *" required="" data-msg-required="Поле &quot;Фамилия&quot; не заполнено">
                         <span class="surname-span">*</span>
                     </label>
 
-                    <label class="input__field ">
-                        <input class="validation__element" name="middle-name" type="middle-name" placeholder="Отчество">
+                    <label class="input__field">
+                        <input id="middle-name" name="SECOND_NAME" type="middle-name" placeholder="Отчество *" required="" class="validation__element" data-msg-required="Поле &quot;Отчество&quot; не заполнено">
                         <span class="middle-span">*</span>
                     </label>
 
                     <label class="input__field">
-                        <input id="data" type="text" placeholder="Дата рождения" onfocus="(this.type='date')"
-                               onblur="if(this.value==''){this.type='text'}">
+                        <input id="data" name="PERSONAL_BIRTHDAY" type="text" placeholder="Дата рождения" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
                     </label>
 
                 </div>
@@ -241,29 +245,27 @@
                     <div class="information__findings information__basic">
 
 
-                        <label class="input__field input-email">
-                            <input class="validation__element" id="email" name="email" type="email" placeholder="E-mail/Логин">
+                        <label class="input__field">
+                            <input id="email" name="EMAIL" type="email" required="" placeholder="E-mail/Логин *">
                             <span class="email-span">*</span>
                         </label>
 
                         <label class="input__field">
-                            <input id="mobile-phone " name="mobile-phone" type="home-phone"
-                                   placeholder="Мобильный телефон">
+                            <input id="mobile-phone " name="HOME_PHONE" type="home-phone" placeholder="Мобильный телефон">
+
                         </label>
 
 
                     </div>
 
                     <div class="information__block">
-                        <label class="input__field-width input-password">
-                            <input class="validation__element" id="password" name="password" type="password" placeholder="Пароль">
+                        <label class="input__field-width">
+                            <input id="password" autocomplete="new-password" name="PASSWORD" required="" minlength="6" type="password" placeholder="Пароль *" data-msg-required="Поле &quot;Пароль&quot; не заполнено" data-msg-equalto="Пароль должен быть не менее 6 символов длиной">
                             <span class="password-span">*</span>
                         </label>
 
-                        <label class="input__field-width input-confirm-password">
-                            <input class="validation__element" id="confirm-password" name="confirm-password" type="password"
-                                   placeholder="Подтвердите пароль">
-                            <span class="confirm-span">*</span>
+                        <label class="input__field-width">
+                            <input id="confirm-password" autocomplete="new-password" name="CONFIRM_PASSWORD" type="password" placeholder="Подтвердите пароль *" required="" minlength="6" data-msg-required="Поле &quot;Подтвердите пароль&quot; не заполнено" data-msg-equalto="Указанные пароли не совпадают">
                         </label>
                     </div>
 
@@ -280,53 +282,133 @@
                 </div>
 
                 <div class="input__field-wrap-width">
-                    <label class="input__field-width input-company">
-                        <input class="validation__element" id="company-address" name="company-address" type="company-address"
-                               placeholder="Адрес компании">
-                        <span class="adress-span">*</span>
-                    </label>
 
                     <div class="information__findings information__basic">
 
+                        <select class="select-drop js-select2 input__field select  _select-regions" name="WORK_STATE" required="" data-msg-required="Поле &quot;Регион&quot; не заполнено" onchange="o2.registration.selectRegion(this);">
+                            <option disabled="" selected="" value="">Выберите регион *</option>
+                            <option value="31">Москва</option>
+                            <option value="17">Московская</option>
+                            <option value="29">Санкт-Петербург</option>
+                            <option value="130">АР Крым</option>
+                            <option value="139">Адыгея республика</option>
+                            <option value="589">Алтай республика</option>
+                            <option value="146">Алтайский край</option>
+                            <option value="222">Амурская</option>
+                            <option value="176">Архангельская</option>
+                            <option value="74">Астраханская</option>
+                            <option value="3055">Байконур</option>
+                            <option value="50">Башкортостан республика</option>
+                            <option value="79">Белгородская</option>
+                            <option value="205">Брянская</option>
+                            <option value="157">Бурятия республика</option>
+                            <option value="313">Владимирская</option>
+                            <option value="57">Волгоградская</option>
+                            <option value="344">Вологодская</option>
+                            <option value="11">Воронежская</option>
+                            <option value="1853">Дагестан Республика</option>
+                            <option value="733">Еврейская автономная</option>
+                            <option value="137">Забайкальский край</option>
+                            <option value="39">Ивановская</option>
+                            <option value="1856">Ингушетия Республика</option>
+                            <option value="46">Иркутская</option>
+                            <option value="570">Кабардино-Балкарская республик</option>
+                            <option value="33">Калининградская</option>
+                            <option value="593">Калмыкия республика</option>
+                            <option value="124">Калужская</option>
+                            <option value="771">Камчатский край</option>
+                            <option value="634">Карачаево-Черкесская республик</option>
+                            <option value="722">Карелия Республика</option>
+                            <option value="25">Кемеровская</option>
+                            <option value="197">Кировская</option>
+                            <option value="230">Коми республика</option>
+                            <option value="276">Костромская</option>
+                            <option value="86">Краснодарский край</option>
+                            <option value="35">Красноярский край</option>
+                            <option value="350">Курганская</option>
+                            <option value="66">Курская</option>
+                            <option value="135">Ленинградская</option>
+                            <option value="41">Липецкая</option>
+                            <option value="132">Луганская</option>
+                            <option value="128">Магаданская</option>
+                            <option value="168">Марий-Эл (Марийская) республик</option>
+                            <option value="191">Мордовия республика</option>
+                            <option value="337">Мурманская</option>
+                            <option value="2337">Ненецкий автономный округ</option>
+                            <option value="106">Нижегородская</option>
+                            <option value="19">Новгородская</option>
+                            <option value="115">Новосибирская</option>
+                            <option value="37">Омская</option>
+                            <option value="93">Оренбургская</option>
+                            <option value="119">Орловская</option>
+                            <option value="110">Пензенская</option>
+                            <option value="13">Пермский край</option>
+                            <option value="95">Приморский край</option>
+                            <option value="239">Псковская</option>
+                            <option value="21">Ростовская</option>
+                            <option value="142">Рязанская</option>
+                            <option value="43">Самарская</option>
+                            <option value="70">Саратовская</option>
+                            <option value="149">Саха Республика (Якутия)</option>
+                            <option value="322">Сахалинская</option>
+                            <option value="54">Свердловская</option>
+                            <option value="15">Севастополь и район</option>
+                            <option value="193">Северная Осетия — Алания респу</option>
+                            <option value="77">Смоленская</option>
+                            <option value="27">Ставропольский край</option>
+                            <option value="155">Тамбовская</option>
+                            <option value="23">Татарстан республика</option>
+                            <option value="102">Тверская</option>
+                            <option value="72">Томская</option>
+                            <option value="161">Тульская</option>
+                            <option value="777">Тыва республика</option>
+                            <option value="183">Тюменская</option>
+                            <option value="121">Удмуртская республика</option>
+                            <option value="89">Ульяновская</option>
+                            <option value="48">Хабаровский край</option>
+                            <option value="461">Хакасия республика</option>
+                            <option value="463">Ханты-Мансийский автономный ок</option>
+                            <option value="52">Челябинская</option>
+                            <option value="2978">Чеченская республика</option>
+                            <option value="153">Чувашская республика</option>
+                            <option value="1162">Чукотский автономный округ</option>
+                            <option value="467">Ямало-Ненецкий автономный окру</option>
+                            <option value="64">Ярославская</option>
+                        </select>
 
-                        <div class="select__inner">
-                            <select class="validation__select input__field select" name="work-adress" id="work-adress" style="color: #343A40;">
-                                <option value="">Выберите место работы</option>
-                                <option value="">2</option>
-                                <option value="">2</option>
-                            </select>
-                            <span class="work-span">*</span>
-                        </div>
+                        <select class="validation__select input__field select _select-cities" name="WORK_CITY" required="" onchange="o2.registration.selectCity(this);" data-msg-required="Поле &quot;Город&quot; не заполнено">
+                            <option disabled="" selected="" value="">Населенный пункт *</option>
+                        </select>
 
-                        <label class="input__field">
-                            <input id="work-phone " name="work-phone" type="work-phone" placeholder="Рабочий телефон">
-                        </label>
+                        <select class="validation__select input__field select _select-street" name="WORK_STREET" required="" onchange="o2.registration.selectStreet(this);" data-msg-required="Поле &quot;Адрес&quot; не заполнено">
+                            <option disabled="" selected="" value="">Адрес *</option>
+                        </select>
 
-                        <label class="input__field">
-                            <input id="work-adress" name="work-adress" type="work-adress"
-                                   placeholder="Место работы если нет в списке">
-                        </label>
-
-
-                        <select class="input__field select" name="current-position" id="current-position" style="color: #343A40;">
-                            <option value="">Занимаемая должность</option>
-                            <option value="">2</option>
-                            <option value="">2</option>
+                        <select class="validation__select input__field select _select-clinics" name="WORK_COMPANY" required="" data-msg-required="Должно быть заполнено хотя бы одно из полей учреждений">
+                            <option disabled="" selected="" value="">Учреждение *</option>
                         </select>
 
 
-                        <div class="select__inner">
-                            <select class="validation__select input__field select select-speciality" name="specialization" id="specialization" style="color: #343A40;">
-                                <option value="">Специальность</option>
-                                <option value="">2</option>
-                                <option value="">2</option>
-                            </select>
-                            <span class="speciality-span">*</span>
-                        </div>
+                        <label class="input__field">
+                            <input id="work-phone" name="WORK_PHONE" type="work-phone" placeholder="Рабочий телефон">
+                        </label>
 
                         <label class="input__field">
-                            <input id="specialization" name="specialization" type="specialization"
-                                   placeholder="ВУЗ ">
+                            <input id="work-company" name="UF_WORK_COMPANY_2" type="work-adress" placeholder="Место работы если нет в списке">
+                        </label>
+
+                        <label class="input__field">
+                            <input id="work-position" name="WORK_POSITION" type="work-adress" required="" placeholder="Занимаемая должность *">
+                        </label>
+
+                        <label class="input__field">
+                            <input id="work-speciality" name="PERSONAL_PROFESSION" type="work-adress" required="" placeholder="Специальность *">
+                            <span class="speciality-span">*</span>
+                        </label>
+
+
+                        <label class="input__field">
+                            <input id="specialization" name="UF_UNIVER" type="specialization" placeholder="ВУЗ ">
                         </label>
 
 
@@ -345,18 +427,18 @@
 
                 <div class="input__field-wrap-width">
                     <label class="input__field-width">
-                        <input id="address" name="address" type="address" placeholder="Улица, дом, квартира">
+                        <input id="address" name="address" placeholder="Улица, дом, квартира">
                     </label>
 
                     <div class="information__findings information__basic">
 
 
                         <label class="input__field">
-                            <input id="index" name="index" type="index" placeholder="Индекс">
+                            <input id="index" name="index" placeholder="Индекс">
                         </label>
 
                         <label class="input__field">
-                            <input id="home-phone " name="home-phone" type="home-phone" placeholder="Домашний телефон">
+                            <input id="home-phone " name="home-phone" placeholder="Домашний телефон">
                         </label>
 
 
@@ -373,15 +455,17 @@
                     Откуда Вы узнали о сайте?
                 </div>
 
-                <div class="input__field-wrap-width">
+                <div class="information__findings">
 
-                    <select class="input__field select information__block" name="specialization" >
-                        <option value="">Случайно</option>
-                        <option value="">2</option>
-                        <option value="">2</option>
+                    <select id="UF_WHERE_LEARN" class="input__field select information__block information__block--select" name="UF_WHERE_LEARN">
+                        <option disabled="" selected="" value="">&nbsp;</option>
+                        <option>контактное лицо Эбботт</option>
+                        <option>Мероприятие</option>
+                        <option>По рекомендации</option>
                     </select>
-
-
+                    <label id="inputHidden" class="input__field input--hidden">
+                        <input id="UF_WHERE_LEARN_FIO" name="UF_WHERE_LEARN_FIO" placeholder="ФИО">
+                    </label>
                 </div>
 
             </div>
@@ -394,12 +478,10 @@
                 <div class="information__code-checkbox">
 
                     <div class="information__code-checkbox-item">
-
-                        <input type="checkbox" class="information-checkbox" id="checkbox" name="checkbox" value="yes"
-                               checked="checked">
+                        <input type="checkbox" class="information-checkbox" id="checkbox" name="checkbox" value="yes" checked="checked">
                         <label for="checkbox">
-                            Я подтверждаю свое согласие на обработку персональных данных ООО «Эбботт
-                            Лэбораториз» в соответствии с соглашением на использование персональных данных, с которым я
+                            Я подтверждаю свое согласие на обработку  ООО «Эбботт
+                            Лэбораториз» в соответствии с соглашением на использование <a target="_blank" class="information__code-checkbox--link" href="/policy/">персональных данных</a>, с которым я
                             ознакомился
                         </label>
 
@@ -407,18 +489,16 @@
 
                     <div class="information__code-checkbox-item">
 
-                        <input type="checkbox" class="information-checkbox" id="information-website"
-                               name="information-website" value="yes" checked="checked">
+                        <input type="checkbox" class="information-checkbox" id="information-website" name="information-website" value="yes" checked="checked">
                         <label for="information-website">
-                            Я соглашаюсь с официальным уведомлением
+                            Я соглашаюсь с <a target="_blank" class="information__code-checkbox--link" href="/notice/">официальным уведомлением</a>
                         </label>
 
                     </div>
 
                     <div class="information__code-checkbox-item">
 
-                        <input type="checkbox" class="information-checkbox" id="information-website-two"
-                               name="information-website-two" value="yes" checked="checked">
+                        <input type="checkbox" class="information-checkbox" id="information-website-two" name="information-website-two" value="yes" checked="checked">
                         <label for="information-website-two">
                             Я согласен на получение рекламных и информационных сообщений от ООО «Эбботт Лэбораториз»
                             посредством использования телефонной и голосовой связи, электронной почты, SMS и
@@ -431,7 +511,7 @@
 
                 <div class="btn__further-wrap">
 
-                    <button type="submit"  class="btn__further">
+                    <button class="btn__further registration_button">
                         зарегистрироваться
                     </button>
                     <div class="btn__further-modal">
@@ -454,8 +534,6 @@
 
 
         </form>
-        <!-- information -->
-
 
     </div>
 </section>
@@ -513,17 +591,24 @@
         </p>
 
         <p class="law__link">
-            Ознакомьтесь с соглашением на использование персональных данных компанией Abbott, нажав на эту <a href="#">ссылку</a>
+            Ознакомьтесь с соглашением на использование персональных данных компанией Abbott, нажав на эту <a target="_blank" href="/policy/">ссылку</a>
         </p>
 
         <p class="law__link">
-            <a href="#">Ознакомьтесь с официальным уведомлением, нажав на эту ссылку</a>
+            <a href="/notice/" target="_blank">Ознакомьтесь с официальным уведомлением, нажав на эту ссылку</a>
         </p>
 
     </div>
 
 </section>
 
+
+<section class="docks__bottom-side">
+    <div class="second__container">
+        <div class="event-info__bottom">
+            RUS2235732 (v1.0)        </div>
+    </div>
+</section>
 
 <!-- footer -->
 <footer class="footer">
