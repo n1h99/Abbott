@@ -13128,6 +13128,10 @@ table.klig-olig-table th {
   background-color: unset !important;
 }
 
+.webinar__themes-center {
+  justify-content: center;
+}
+
 @media (max-width: 1199.99px) {
   .calc-farm__information {
     max-width: 800px;
