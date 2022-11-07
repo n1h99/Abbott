@@ -13112,6 +13112,22 @@ table.klig-olig-table th {
   height: auto;
 }
 
+.select2-selection__arrow {
+  top: 10px !important;
+  right: 9px !important;
+}
+
+.select2-selection__rendered {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.select2-selection--single {
+  border-radius: unset !important;
+  border: unset !important;
+  background-color: unset !important;
+}
+
 @media (max-width: 1199.99px) {
   .calc-farm__information {
     max-width: 800px;
