@@ -4528,3 +4528,9 @@ const gastPopup = () => {
 }
 
 gastPopup()
+
+function toggleHidden(value) {
+
+    const hiddenInput = document.getElementById('inputHidden');
+    hiddenInput.style.display = value == 1 ? 'block' : 'none';
+}

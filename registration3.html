@@ -457,9 +457,9 @@
 
                 <div class="information__findings">
 
-                    <select id="UF_WHERE_LEARN" class="input__field select information__block information__block--select" name="UF_WHERE_LEARN">
+                    <select onchange="toggleHidden(this.value)" id="UF_WHERE_LEARN" class="input__field select information__block information__block--select" name="UF_WHERE_LEARN">
                         <option disabled="" selected="" value="">&nbsp;</option>
-                        <option>контактное лицо Эбботт</option>
+                        <option value="1">контактное лицо Abbott</option>
                         <option>Мероприятие</option>
                         <option>По рекомендации</option>
                     </select>
@@ -766,5 +766,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8-beta.17/jquery.inputmask.min.js" integrity="sha512-zdfH1XdRONkxXKLQxCI2Ak3c9wNymTiPh5cU4OsUavFDATDbUzLR+SYWWz0RkhDmBDT0gNSUe4xrQXx8D89JIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/header.js"></script>
 <script src="js/script.js"></script>
+
 </body>
 </html>
