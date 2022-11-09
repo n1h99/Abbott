@@ -4428,6 +4428,8 @@ document.querySelectorAll('.event__select-mobile-btn').forEach((item) =>
     })
 )
 
+
+
 let calendarInput = document.querySelector(".event__calendar-input")
 let calendarDate = document.querySelector(".event__calendar-span")
 
@@ -4527,10 +4529,7 @@ const gastPopup = () => {
     document.getElementById('gastOverlay').style.display='block'
 }
 
-gastPopup()
-
 function toggleHidden(value) {
-
     const hiddenInput = document.getElementById('inputHidden');
     hiddenInput.style.display = value == 1 ? 'block' : 'none';
 }
