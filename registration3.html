@@ -187,8 +187,6 @@
 </section>
 <!-- registration -->
 
-
-<!-- registration__information -->
 <section class="registration-section">
     <div class="container">
         <div class="registration__title">
@@ -199,7 +197,7 @@
 
             <input type="hidden" name="iblockId" value="12">
             <input type="hidden" name="typeId" value="7">
-            <input type="hidden" name="UF_DIRECTION" value="262302">
+            <input type="hidden" name="UF_DIRECTION" value="262301">
             <!-- information__wrap -->
             <div class="information__wrap">
 
@@ -225,8 +223,9 @@
                     </label>
 
                     <label class="input__field">
-                        <input id="data" name="PERSONAL_BIRTHDAY" type="text" placeholder="Дата рождения" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+                        <input id="data" name="PERSONAL_BIRTHDAY" type="text" placeholder="Дата рождения" min="1900-01-01" max="2023-01-01" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
                     </label>
+
 
                 </div>
 
@@ -251,8 +250,10 @@
                         </label>
 
                         <label class="input__field">
-                            <input id="mobile-phone " name="HOME_PHONE" type="home-phone" placeholder="Мобильный телефон">
-
+                            <input id="mobile-phone" name="HOME_PHONE" type="tel"
+                                   placeholder="Мобильный телефон"
+                                   onclick="mobPhoneCall()"
+                                   title="Введите номер телефона в формате +7 XXX XXX XX XX" required>
                         </label>
 
 
@@ -283,114 +284,119 @@
 
                 <div class="input__field-wrap-width">
 
+
+
                     <div class="information__findings information__basic">
 
                         <select class="select-drop js-select2 input__field select  _select-regions" name="WORK_STATE" required="" data-msg-required="Поле &quot;Регион&quot; не заполнено" onchange="o2.registration.selectRegion(this);">
                             <option disabled="" selected="" value="">Выберите регион *</option>
-                            <option value="31">Москва</option>
-                            <option value="17">Московская</option>
-                            <option value="29">Санкт-Петербург</option>
-                            <option value="130">АР Крым</option>
-                            <option value="139">Адыгея республика</option>
-                            <option value="589">Алтай республика</option>
-                            <option value="146">Алтайский край</option>
-                            <option value="222">Амурская</option>
-                            <option value="176">Архангельская</option>
-                            <option value="74">Астраханская</option>
-                            <option value="3055">Байконур</option>
-                            <option value="50">Башкортостан республика</option>
-                            <option value="79">Белгородская</option>
-                            <option value="205">Брянская</option>
-                            <option value="157">Бурятия республика</option>
-                            <option value="313">Владимирская</option>
-                            <option value="57">Волгоградская</option>
-                            <option value="344">Вологодская</option>
-                            <option value="11">Воронежская</option>
-                            <option value="1853">Дагестан Республика</option>
-                            <option value="733">Еврейская автономная</option>
-                            <option value="137">Забайкальский край</option>
-                            <option value="39">Ивановская</option>
-                            <option value="1856">Ингушетия Республика</option>
-                            <option value="46">Иркутская</option>
-                            <option value="570">Кабардино-Балкарская республик</option>
-                            <option value="33">Калининградская</option>
-                            <option value="593">Калмыкия республика</option>
-                            <option value="124">Калужская</option>
-                            <option value="771">Камчатский край</option>
-                            <option value="634">Карачаево-Черкесская республик</option>
-                            <option value="722">Карелия Республика</option>
-                            <option value="25">Кемеровская</option>
-                            <option value="197">Кировская</option>
-                            <option value="230">Коми республика</option>
-                            <option value="276">Костромская</option>
-                            <option value="86">Краснодарский край</option>
-                            <option value="35">Красноярский край</option>
-                            <option value="350">Курганская</option>
-                            <option value="66">Курская</option>
-                            <option value="135">Ленинградская</option>
-                            <option value="41">Липецкая</option>
-                            <option value="132">Луганская</option>
-                            <option value="128">Магаданская</option>
-                            <option value="168">Марий-Эл (Марийская) республик</option>
-                            <option value="191">Мордовия республика</option>
-                            <option value="337">Мурманская</option>
-                            <option value="2337">Ненецкий автономный округ</option>
-                            <option value="106">Нижегородская</option>
-                            <option value="19">Новгородская</option>
-                            <option value="115">Новосибирская</option>
-                            <option value="37">Омская</option>
-                            <option value="93">Оренбургская</option>
-                            <option value="119">Орловская</option>
-                            <option value="110">Пензенская</option>
-                            <option value="13">Пермский край</option>
-                            <option value="95">Приморский край</option>
-                            <option value="239">Псковская</option>
-                            <option value="21">Ростовская</option>
-                            <option value="142">Рязанская</option>
-                            <option value="43">Самарская</option>
-                            <option value="70">Саратовская</option>
-                            <option value="149">Саха Республика (Якутия)</option>
-                            <option value="322">Сахалинская</option>
-                            <option value="54">Свердловская</option>
-                            <option value="15">Севастополь и район</option>
-                            <option value="193">Северная Осетия — Алания респу</option>
-                            <option value="77">Смоленская</option>
-                            <option value="27">Ставропольский край</option>
-                            <option value="155">Тамбовская</option>
-                            <option value="23">Татарстан республика</option>
-                            <option value="102">Тверская</option>
-                            <option value="72">Томская</option>
-                            <option value="161">Тульская</option>
-                            <option value="777">Тыва республика</option>
-                            <option value="183">Тюменская</option>
-                            <option value="121">Удмуртская республика</option>
-                            <option value="89">Ульяновская</option>
-                            <option value="48">Хабаровский край</option>
-                            <option value="461">Хакасия республика</option>
-                            <option value="463">Ханты-Мансийский автономный ок</option>
-                            <option value="52">Челябинская</option>
-                            <option value="2978">Чеченская республика</option>
-                            <option value="153">Чувашская республика</option>
-                            <option value="1162">Чукотский автономный округ</option>
-                            <option value="467">Ямало-Ненецкий автономный окру</option>
-                            <option value="64">Ярославская</option>
+                            <option value="6779">Адыгея Респ</option>
+                            <option value="6354">Алтайский край</option>
+                            <option value="6396">Амурская обл</option>
+                            <option value="6362">Архангельская обл</option>
+                            <option value="6464">Астраханская обл</option>
+                            <option value="10409">Байконур г</option>
+                            <option value="6352">Башкортостан Респ</option>
+                            <option value="6398">Белгородская обл</option>
+                            <option value="6524">Брянская обл</option>
+                            <option value="6380">Владимирская обл</option>
+                            <option value="6476">Волгоградская обл</option>
+                            <option value="6623">Вологодская обл</option>
+                            <option value="6487">Воронежская обл</option>
+                            <option value="6692">Еврейская Аобл</option>
+                            <option value="6560">Забайкальский край</option>
+                            <option value="6444">Ивановская обл</option>
+                            <option value="7040">Ингушетия Респ</option>
+                            <option value="6447">Иркутская обл</option>
+                            <option value="6456">Кабардино-Балкарская Респ</option>
+                            <option value="6449">Калининградская обл</option>
+                            <option value="6725">Калужская обл</option>
+                            <option value="6677">Камчатский край</option>
+                            <option value="6935">Карачаево-Черкесская Респ</option>
+                            <option value="6376">Карелия Респ</option>
+                            <option value="6360">Кемеровская обл</option>
+                            <option value="6358">Кировская обл</option>
+                            <option value="6420">Коми Респ</option>
+                            <option value="6585">Костромская обл</option>
+                            <option value="6467">Краснодарский край</option>
+                            <option value="6410">Красноярский край</option>
+                            <option value="6603">Курганская обл</option>
+                            <option value="6422">Курская обл</option>
+                            <option value="6485">Ленинградская обл</option>
+                            <option value="6671">Липецкая обл</option>
+                            <option value="7009">Магаданская обл</option>
+                            <option value="6539">Марий Эл Респ</option>
+                            <option value="6613">Мордовия Респ</option>
+                            <option value="6389">Москва г</option>
+                            <option value="6382">Московская обл</option>
+                            <option value="6571">Мурманская обл</option>
+                            <option value="7660">Ненецкий АО</option>
+                            <option value="6378">Нижегородская обл</option>
+                            <option value="6473">Новгородская обл</option>
+                            <option value="6385">Новосибирская обл</option>
+                            <option value="6356">Омская обл</option>
+                            <option value="6393">Оренбургская обл</option>
+                            <option value="6500">Орловская обл</option>
+                            <option value="6428">Пензенская обл</option>
+                            <option value="6436">Пермский край</option>
+                            <option value="6479">Приморский край</option>
+                            <option value="6402">Псковская обл</option>
+                            <option value="6521">Республика Алтай</option>
+                            <option value="6550">Республика Бурятия</option>
+                            <option value="6511">Республика Дагестан</option>
+                            <option value="6438">Республика Калмыкия</option>
+                            <option value="7652">Республика Крым</option>
+                            <option value="6889">Республика Северная Осетия</option>
+                            <option value="6718">Республика Тыва</option>
+                            <option value="6574">Республика Хакасия</option>
+                            <option value="6453">Ростовская обл</option>
+                            <option value="6430">Рязанская обл</option>
+                            <option value="6498">Самарская обл</option>
+                            <option value="6367">Санкт-Петербург г</option>
+                            <option value="6504">Саратовская обл</option>
+                            <option value="6373">Саха /Якутия/ Респ</option>
+                            <option value="6391">Сахалинская обл</option>
+                            <option value="6369">Свердловская обл</option>
+                            <option value="8034">Севастополь г</option>
+                            <option value="6553">Смоленская обл</option>
+                            <option value="6481">Ставропольский край</option>
+                            <option value="6415">Тамбовская обл</option>
+                            <option value="6459">Татарстан Респ</option>
+                            <option value="6387">Тверская обл</option>
+                            <option value="6514">Томская обл</option>
+                            <option value="6364">Тульская обл</option>
+                            <option value="6400">Тюменская обл</option>
+                            <option value="6494">Удмуртская Респ</option>
+                            <option value="6404">Ульяновская обл</option>
+                            <option value="6406">Хабаровский край</option>
+                            <option value="6418">Ханты-Мансийский АО</option>
+                            <option value="6413">Челябинская обл</option>
+                            <option value="6533">Чеченская Респ</option>
+                            <option value="6408">Чувашия Респ</option>
+                            <option value="6928">Чукотский АО</option>
+                            <option value="6642">Ямало-Ненецкий АО</option>
+                            <option value="6441">Ярославская обл</option>
                         </select>
 
-                        <select class="validation__select input__field select _select-cities" name="WORK_CITY" required="" onchange="o2.registration.selectCity(this);" data-msg-required="Поле &quot;Город&quot; не заполнено">
-                            <option disabled="" selected="" value="">Населенный пункт *</option>
+                        <select class="validation__select input__field select _select-cities" name="WORK_CITY" disabled="" onchange="o2.registration.selectCity(this);" data-msg-required="Поле &quot;Город&quot; не заполнено">
+                            <option disabled="" selected="" value="">Выберите населенный пункт *</option>
                         </select>
 
-                        <select class="validation__select input__field select _select-street" name="WORK_STREET" required="" onchange="o2.registration.selectStreet(this);" data-msg-required="Поле &quot;Адрес&quot; не заполнено">
-                            <option disabled="" selected="" value="">Адрес *</option>
+                        <select class="validation__select input__field select _select-street" name="WORK_STREET" disabled="" onchange="o2.registration.selectStreet(this);" data-msg-required="Поле &quot;Район&quot; не заполнено">
+                            <option disabled="" selected="" value="">Выберите адрес *</option>
                         </select>
 
-                        <select class="validation__select input__field select _select-clinics" name="WORK_COMPANY" required="" data-msg-required="Должно быть заполнено хотя бы одно из полей учреждений">
-                            <option disabled="" selected="" value="">Учреждение *</option>
+                        <select class="validation__select input__field select _select-clinics" name="WORK_COMPANY" disabled="" data-msg-required="Должно быть заполнено хотя бы одно из полей Место работы">
+                            <option disabled="" selected="" value="">Выберите учреждение *</option>
                         </select>
 
 
                         <label class="input__field">
-                            <input id="work-phone" name="WORK_PHONE" type="work-phone" placeholder="Рабочий телефон">
+                            <input id="work-phone" name="WORK_PHONE" type="tel"
+                                   placeholder="Рабочий телефон"
+                                   oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1')
+                                   .replace(/^0[^.]/, '0');"
+                                   title="Введите рабочий номер телефона в формате +7 XXX XXX XX XX" required>
                         </label>
 
                         <label class="input__field">
@@ -434,11 +440,19 @@
 
 
                         <label class="input__field">
-                            <input id="index" name="index" placeholder="Индекс">
+                            <input id="index" name="index"
+                                   oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1')
+                                   .replace(/^0[^.]/, '0');"
+                                   maxlength="6"
+                                   placeholder="Индекс">
                         </label>
 
                         <label class="input__field">
-                            <input id="home-phone " name="home-phone" placeholder="Домашний телефон">
+                            <input id="home-phone"
+                                   oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1')
+                                   .replace(/^0[^.]/, '0');"
+                                   title="Введите номер домашнего телефона"
+                                   name="home-phone" placeholder="Домашний телефон">
                         </label>
 
 
@@ -459,11 +473,11 @@
 
                     <select onchange="toggleHidden(this.value)" id="UF_WHERE_LEARN" class="input__field select information__block information__block--select" name="UF_WHERE_LEARN">
                         <option disabled="" selected="" value="">&nbsp;</option>
-                        <option value="1">контактное лицо Abbott</option>
+                        <option value="1">контактное лицо Abbot</option>
                         <option>Мероприятие</option>
                         <option>По рекомендации</option>
                     </select>
-                    <label id="inputHidden" class="input__field">
+                    <label id="inputHidden" class="input__field" style="display: none">
                         <input id="UF_WHERE_LEARN_FIO" name="UF_WHERE_LEARN_FIO" placeholder="ФИО">
                     </label>
                 </div>
@@ -537,7 +551,6 @@
 
     </div>
 </section>
-<!-- registration__information -->
 
 
 <section class="law">
