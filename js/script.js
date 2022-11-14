@@ -5867,16 +5867,15 @@ const gastPopup = () => {
     document.getElementById('gastOverlay').style.display='block'
 }
 
-gastPopup()
 
 function toggleHidden(value) {
     const hiddenInput = document.getElementById('inputHidden');
     hiddenInput.style.display = value == 1 ? 'block' : 'none';
 }
 
-const mobPhoneCall = () => {
+const phoneMask = (id) => {
     MaskedInput({
-        elm: document.getElementById('mobile-phone'),
+        elm: document.getElementById(id),
         format: '+7 (___) ___-__-__',
         separator: '+7 (  )-'
     });

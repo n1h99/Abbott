@@ -252,7 +252,9 @@
                         <label class="input__field">
                             <input id="mobile-phone" name="HOME_PHONE" type="tel"
                                    placeholder="Мобильный телефон"
-                                   onclick="mobPhoneCall()"
+                                   oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1')
+                                   .replace(/^0[^.]/, '0');"
+                                   onclick="phoneMask('mobile-phone')"
                                    title="Введите номер телефона в формате +7 XXX XXX XX XX" required>
                         </label>
 
@@ -396,6 +398,7 @@
                                    placeholder="Рабочий телефон"
                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1')
                                    .replace(/^0[^.]/, '0');"
+                                   onclick="phoneMask('work-phone')"
                                    title="Введите рабочий номер телефона в формате +7 XXX XXX XX XX" required>
                         </label>
 
