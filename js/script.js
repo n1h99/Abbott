@@ -4529,6 +4529,8 @@ const gastPopup = () => {
     document.getElementById('gastOverlay').style.display='block'
 }
 
+gastPopup()
+
 function toggleHidden(value) {
     const hiddenInput = document.getElementById('inputHidden');
     hiddenInput.style.display = value == 1 ? 'block' : 'none';
