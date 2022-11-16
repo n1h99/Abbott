@@ -250,12 +250,11 @@
                         </label>
 
                         <label class="input__field">
-                            <input id="mobile-phone" name="HOME_PHONE" type="tel"
-                                   placeholder="Мобильный телефон"
-                                   oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1')
-                                   .replace(/^0[^.]/, '0');"
-                                   onclick="phoneMask('mobile-phone')"
-                                   title="Введите номер телефона в формате +7 XXX XXX XX XX" required>
+                             <input  type="text"
+                                     name="tel"
+                                     placeholder="Мобильный телефон"
+                                     title="Введите мобильный номер телефона в формате +7 XXX XXX XX XX"
+                                     pattern="^\([0-9]{3}\)\s[0-9]{3}-[0-9]{4}$">
                         </label>
 
 
@@ -394,12 +393,11 @@
 
 
                         <label class="input__field">
-                            <input id="work-phone" name="WORK_PHONE" type="tel"
-                                   placeholder="Рабочий телефон"
-                                   oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1')
-                                   .replace(/^0[^.]/, '0');"
-                                   onclick="phoneMask('work-phone')"
-                                   title="Введите рабочий номер телефона в формате +7 XXX XXX XX XX" required>
+                            <input  type="text"
+                                    name="tel"
+                                    placeholder="Рабочий телефон"
+                                    title="Введите рабочий номер телефона в формате +7 XXX XXX XX XX"
+                                    pattern="^\([0-9]{3}\)\s[0-9]{3}-[0-9]{4}$">
                         </label>
 
                         <label class="input__field">
@@ -451,11 +449,12 @@
                         </label>
 
                         <label class="input__field">
-                            <input id="home-phone"
-                                   oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1')
-                                   .replace(/^0[^.]/, '0');"
-                                   title="Введите номер домашнего телефона"
-                                   name="home-phone" placeholder="Домашний телефон">
+                            <input title="Введите номер домашнего телефона"
+                                   name="tel"
+                                   placeholder="Домашний телефон"
+                                   type="text"
+                                   pattern="^\([0-9]{3}\)\s[0-9]{3}-[0-9]{4}$"
+                            >
                         </label>
 
 
@@ -481,7 +480,7 @@
                         <option>По рекомендации</option>
                     </select>
                     <label id="inputHidden" class="input__field" style="display: none">
-                        <input id="UF_WHERE_LEARN_FIO" name="UF_WHERE_LEARN_FIO" placeholder="ФИО">
+                        <input id="UF_WHERE_LEARN_FIO" name="UF_WHERE_LEARN_FIO" placeholder="ФИО *" required>
                     </label>
                 </div>
 
@@ -779,7 +778,6 @@
 
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8-beta.17/jquery.inputmask.min.js" integrity="sha512-zdfH1XdRONkxXKLQxCI2Ak3c9wNymTiPh5cU4OsUavFDATDbUzLR+SYWWz0RkhDmBDT0gNSUe4xrQXx8D89JIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/header.js"></script>
 <script src="js/script.js"></script>
 
