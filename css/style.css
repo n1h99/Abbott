@@ -12755,6 +12755,7 @@ table.klig-olig-table th {
 .docks__content td, th {
   border: 1px solid #149BDC;
   padding: 5px;
+  max-width: 180px;
 }
 
 .docks__content i {
