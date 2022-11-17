@@ -5873,7 +5873,7 @@ function toggleHidden(value) {
     hiddenInput.style.display = value == 1 ? 'block' : 'none';
 }
 
-const phoneInputs = document.querySelectorAll('input[name="tel"]');
+const phoneInputs = document.querySelectorAll('input[class="tel"]');
 
 const prefixNumber = (str) => {
     if (str === "7") {
