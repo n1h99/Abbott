@@ -1366,6 +1366,10 @@ body.compensate-for-scrollbar {
 }
 
 @media (max-width: 576px) {
+  .pharm__bg {
+    height: unset;
+  }
+
   .fancybox-thumbs {
     width: 110px;
   }
@@ -4665,7 +4669,7 @@ select {
 }
 
 .health {
-  padding: 89px 0 64px 71px;
+  padding: 80px 0 60px 71px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -11258,6 +11262,10 @@ select {
 .article__basic-description.pulmo__gradient::after {
   background: rgb(15,50,123);
   background: linear-gradient(90deg, rgba(15,50,123,1) 41%, rgba(125,145,82,1) 74%, rgba(225,203,73,1) 94%);
+}
+
+.pharm__bg {
+  height: 389px;
 }
 
 .intro_pharm-wrapper{
