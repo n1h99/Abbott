@@ -4946,12 +4946,9 @@ select {
 .webinar__themes {
   display: flex;
   margin-bottom: 48px;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
 }
 
-.webinar__themes__nowrap {
-  flex-wrap: unset;
-}
 
 .webinar__themes-centred {
   justify-content: center;
