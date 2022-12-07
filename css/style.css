@@ -4107,6 +4107,8 @@ template, [hidden] {
   background-color: #fff;
   border-radius: 100px;
   position: relative;
+  -webkit-box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
 }
 
 .input__field-width input::placeholder {
