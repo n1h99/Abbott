@@ -252,8 +252,8 @@
                         <label class="input__field">
                              <input  type="text"
                                      required
-                                     class="tel"
-                                     name="tel"
+                                     class="mask-phone"
+                                     name="HOME_PHONE"
                                      placeholder="Мобильный телефон"
                                      title="Введите мобильный номер телефона в формате +7 XXX XXX XX XX">
                         </label>
@@ -395,8 +395,8 @@
 
                         <label class="input__field">
                             <input  type="text"
-                                    class="tel"
-                                    name="tel"
+                                    class="mask-phone"
+                                    name="WORK_PHONE"
                                     placeholder="Рабочий телефон"
                                     title="Введите рабочий номер телефона в формате +7 XXX XXX XX XX">
                         </label>
@@ -451,8 +451,8 @@
 
                         <label class="input__field">
                             <input title="Введите номер домашнего телефона"
-                                   name="tel"
-                                   class="tel"
+                                   class="mask-phone"
+                                   name="home-phone"
                                    placeholder="Домашний телефон"
                                    type="text"
                             >
@@ -778,6 +778,15 @@
     </form>
 
 </div>
+
+
+<script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
+<script>
+    $.mask.definitions['h'] = "[0|1|3|4|5|6|7|9]"
+    $(".mask-phone").mask("+7 (h99) 999-99-99");
+</script>
 
 <script src="js/header.js"></script>
 <script src="js/script.js"></script>
