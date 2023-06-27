@@ -635,10 +635,15 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 <script type="text/javascript">
-    $('input[name="dates"]').daterangepicker();
+    $('input[name="dates"]').daterangepicker({
+        locale: {
+            "applyLabel": "Применить",
+            "cancelLabel": "Отменить",
+        }
+    });
     $('input[name="dates"]').on('apply.daterangepicker', function (ev, picker) {
         document.querySelector(".event__calendar-span").style.color = "#000000"
-        document.querySelector(".event__calendar-span").innerHTML = `${picker.startDate.format('YYYY-MM-DD')} - ${picker.endDate.format('YYYY-MM-DD')}`
+        document.querySelector(".event__calendar-span").innerHTML = `${picker.startDate.format('DD.MM.YYYY')} - ${picker.endDate.format('DD.MM.YYYY')}`
     });
 </script>
 <script src="js/header.js"></script>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Template Basic Images Start -->
+  <meta property="og:image" content="path/to/image.jpg" />
+  <link rel="icon" href="img/favicon/favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/favicon.png" />
+  <!-- Template Basic Images End -->
+
+  <!-- Custom Browsers Color Start -->
+  <meta name="theme-color" content="#000" />
+  <!-- Custom Browsers Color End -->
+  <link rel="stylesheet" href="css/fullcalendar.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+<!-- header -->
+<header class="header">
+  <div class="second__container">
+
+    <div class="header__wrap header__wrap-second">
+      <div class="header__burger">
+        <img src="img/header-burger.svg" alt="">
+      </div>
+      <div class="header__close">
+        <img src="img/header-burger.svg" alt="">
+      </div>
+
+      <a href="#" class="logo logo__none-reg">
+        <img src="img/logo-1.svg" alt="Abbott">
+        <img src="img/logo-2.svg" alt="Abbott">
+      </a>
+
+      <div class="header__second-search header__second-none-reg">
+        <div class="header__second-search-btn">
+          <img src="img/header-second-search.svg" alt="">
+        </div>
+        <div class="header__second-search-content">
+          <input type="search" placeholder="Поиск материалов по сайту">
+        </div>
+      </div>
+
+      <div class="header__items-inner">
+        <div class="header__items">
+          <div class="header__menu">
+            <a href="#">
+              РАЗДЕЛЫ
+              <span class="header__items-hover"></span>
+            </a>
+          </div>
+          <div class="header__content">
+            <a href="">Кардиология</a>
+            <a href="">Неврология и психиатрия</a>
+            <a href="">Женское здоровье</a>
+            <a href="">Гастроэнтерология</a>
+          </div>
+        </div>
+        <div class="header__items">
+          <div class="header__menu">
+            <a href="#">
+              МЕРОПРИЯТИЯ
+              <span class="header__items-hover"></span>
+            </a>
+          </div>
+          <div class="header__content">
+            <a href="">Кардиология</a>
+            <a href="">Неврология и психиатрия</a>
+            <a href="">Женское здоровье</a>
+            <a href="">Гастроэнтерология</a>
+          </div>
+        </div>
+        <div class="header__items">
+          <div class="header__menu">
+            <a href="#">
+              МАТЕРИАЛЫ
+              <span class="header__items-hover"></span>
+            </a>
+          </div>
+          <div class="header__content">
+            <a href="">Кардиология</a>
+            <a href="">Неврология и психиатрия</a>
+            <a href="">Женское здоровье</a>
+            <a href="">Гастроэнтерология</a>
+          </div>
+        </div>
+        <div class="header__items">
+          <div class="header__menu">
+            <a href="#">
+              НОВОСТИ
+              <span class="header__items-hover"></span>
+            </a>
+          </div>
+          <div class="header__content">
+            <a href="">Кардиология</a>
+            <a href="">Неврология и психиатрия</a>
+            <a href="">Женское здоровье</a>
+            <a href="">Гастроэнтерология</a>
+          </div>
+        </div>
+        <div class="header__items">
+          <div class="header__menu">
+            <a href="#">
+              О ПРОЕКТЕ
+              <span class="header__items-hover"></span>
+            </a>
+          </div>
+          <div class="header__content">
+            <a href="">Кардиология</a>
+            <a href="">Неврология и психиатрия</a>
+            <a href="">Женское здоровье</a>
+            <a href="">Гастроэнтерология</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__second-search-mobile header__second-none-reg">
+        <div class="header__second-search-btn header__third-btn">
+          <img src="img/header-second-search.svg" alt="">
+        </div>
+        <div class="header__second-search-content">
+          <input type="search" placeholder="Поиск материалов по сайту">
+        </div>
+      </div>
+
+      <div class="header__second-popup header__second-none-reg">
+        <div class="header__second-btn">
+          <img src="img/header-second-btn.svg" alt="">
+        </div>
+        <div class="header__second-close">
+          <img src="img/header-second-btn.svg" alt="">
+        </div>
+        <div class="header__second-btn-content">
+          <a>Личный кабинет</a>
+          <a>Редактировать профиль</a>
+          <a>Выйти</a>
+        </div>
+      </div>
+
+      <a class="btn__lk popup-with-form" href="#popup-form">
+        <img src="img/log-in.svg" alt="">
+        Войти
+      </a>
+
+      <a href="#" class="logo__end">
+        <img src="img/logo-3.svg" alt="Pro">
+      </a>
+
+    </div>
+
+  </div>
+</header>
+<!-- header -->
+
+
+<!-- test-klacid -->
+<section class="test-klacid">
+
+  <div class="test-klacid-container">
+    <div class="test-kok-second__title">Расчет доз суспензии Клацид®¹</div>
+    <div class="test-klacid-calc">
+      <div class="test-klacid-calc_wrapper">
+        <div class="test-klacid-calc_left">
+          <div class="test-klacid-calc_left_title">
+            Введите вес ребенка
+          <div class="test-klacid_tooltip">
+            <img src="./img/test-klacid-input.svg" alt="#">
+            <span class="test-klacid_tooltiptext">Допустимый диапазон: 3-40 кг</span>
+          </div>
+          </div>
+          <div class="test-klacid-calc_left_form">
+            <form action="" method = "get">
+              <input type="number" size="4" class="klacid_disable_arrows">
+              <span class="test-klacid-calc_left_form_value">кг</span>
+            </form>
+          </div>
+        </div>
+        <div class="test-klacid-calc__right">
+          <div class="test-klacid-calc__right__box">Суточная доза: <span class="test-klacid-calc__right-light">Клацид® XX мг/5 мл</span></div>
+          <div class="test-klacid-calc__right__box">Режим дозирования: <span class="test-klacid-calc__right-light">Клацид 125мг/5мл <br>(или 250/5) ХХ мл <br>х 2 раза в день</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="test-klacid-meds">
+      <div class="test-klacid-meds_wrapper">
+        <div class="test-klacid-meds_left">
+          <img src="./img/test-klacid-meds_left.png" alt="#">
+          <span>125 мг/5 мл 100 мл</span>
+        </div>
+        <div class="test-klacid-meds_right">
+          <img src="./img/test-klacid-meds_right.png" alt="#">
+          <span>250 мг/5 мл 70 мл</span>
+        </div>
+      </div>
+    </div>
+    <div class="test-klacid-meds-info_title">
+      <div class="test-klacid-meds-info_title_wrapper">
+        <span class="test-klacid-meds-info_title_wrapper_first">Показания к применению</span>
+        <span class="test-klacid-meds-info_title_wrapper_barrier"></span>
+        <span class="test-klacid-meds-info_title_wrapper_second"><span>Рекомендованная длительность лечения Клацид</span></span>
+      </div>
+    </div>
+    <div class="test-klacid-meds-info">
+      <div class="test-klacid-meds-info_wrapper">
+        <div class="test-klacid-meds-info_box">
+          <div class="test-klacid-meds-info_box_first">Острый бактериальный бронхит¹,²</div>
+          <div class="test-klacid-meds-info_box_second">7-14 дней<sup>3</sup></div>
+        </div>
+        <div class="test-klacid-meds-info_box">
+          <div class="test-klacid-meds-info_box_first">Острый стрептококковый тонзиллофарингит¹,²</div>
+          <div class="test-klacid-meds-info_box_second">10 дней<sup>4</sup></div>
+        </div>
+        <div class="test-klacid-meds-info_box">
+          <div class="test-klacid-meds-info_box_first">Острый средний отит¹</div>
+          <div class="test-klacid-meds-info_box_second">7-10 дней<sup>5</sup></div>
+        </div>
+        <div class="test-klacid-meds-info_box">
+          <div class="test-klacid-meds-info_box_first">Острый бактериальный риносинусит¹,²</div>
+          <div class="test-klacid-meds-info_box_second">10-14 дней<sup>6</sup></div>
+        </div>
+        <div class="test-klacid-meds-info_box">
+          <div class="test-klacid-meds-info_box_first">Внебольничная пневмония¹,²</div>
+          <div class="test-klacid-meds-info_box_second">6-14 дней<sup>7</sup></div>
+        </div>
+      </div>
+    </div>
+    <div class="test-klacid-big">
+      <img src="./img/test-klacid-big.png" alt="">
+    </div>
+    <div class="test-klacid-instruction">
+      <div class="test-klacid-instruction_wrapper">
+        <div class="test-klacid-instruction_title">Список литературы:</div>
+        <div>1. ИМП лекарственного препарата Клацид®, гранулы для приготовления суспензии для приема внутрь, 125 мг/5 мл,
+          от 09.03.2022; 250 мг/5 мл от 25.05.2022</div>
+        <div>2.Инструкция по медицинскому применению лекарственного препарата Клацид®, таблетки покрытые пленочной оболочкой 250 мг от 19.01.2022</div>
+        <div>3. Клинические Рекомендации МЗ РФ «Бронхит», 27.09.2021</div>
+        <div>4. Клинические рекомендации МЗ РФ «Острый тонзиллит и фарингит (Острый тонзиллофарингит)», 27.09.2021</div>
+        <div>5. Клинические рекомендации МЗ РФ «Отит средний острый», 01.09.2021</div>
+        <div>6. Клинические рекомендации МЗ РФ. «Острый синусит», 01.09.2021</div>
+        <div>7. Клинические Рекомендации МЗ РФ «Пневмония (внебольничная)», 17.01.2022</div>
+        <div>8. N. Principi, S. et al. Recurrent Respiratory Tract Infections in Pediatric Age: A Population-Based Survey of the Therapeutic Role of Macrolides, Journal of Chemotherapy, 15:1, 53-59</div>
+      </div>
+    </div>
+    <div class="test-klacid-links">
+      <div class="test-klacid-links_wrapper">
+        <div>
+          <a href="" class="test-kok__pills">Инструкция по медицинскому применению Клацид®, 250 мг</a>
+          <img src="./img/test-klacid-link.svg" alt="">
+        </div>
+        <div>
+          <a href="" class="test-kok__pills">Инструкция по медицинскому применению Клацид®, 125 мг/5 мл</a>
+          <img src="./img/test-klacid-link.svg" alt="">
+        </div>
+        <div>
+          <a href="" class="test-kok__pills">Инструкция по медицинскому применению Клацид®, 250 мг/5 мл</a>
+          <img src="./img/test-klacid-link.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="event-info__bottom tab__bottom">
+      RUS2242237 (v1.1)
+    </div>
+  </div>
+
+
+</section>
+
+
+<!-- footer -->
+<footer class="footer">
+  <div class="container">
+
+    <div class="footer__wrap">
+
+      <div class="footer__item">
+        <a href="#" class="footer__logo">
+          <img src="img/logo__footer.svg" alt="Abbott">
+        </a>
+
+
+        <span class="footer__info-title">
+                        <span class="num">18+</span>
+                        <span class="footer__info">
+                            Информация, представленная на сайте, предназначена для просмотра только совершеннолетними
+                            лицами.
+                        </span>
+                    </span>
+      </div>
+
+      <div class="footer__title">
+
+        <div class="footer__navigation">
+          <ul>
+            <li><a href="#">О портале</a></li>
+            <li><a href="#">Регистрация</a></li>
+          </ul>
+
+          <ul>
+            <li>
+              <a href="#" style="font-weight: 700;">ABBOTT GLOBAL</a>
+            </li>
+          </ul>
+
+          <ul>
+            <li><a href="#">О нас </a></li>
+            <li><a href="#">Политика конфиденциальности </a></li>
+            <li><a href="#">Обратная связь</a></li>
+            <li><a href="#">Условия онлайн использования</a></li>
+            <li><a href="#">Карта сайта</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__description">
+
+          <p>
+            RUS2143803 от 09.09.2020.
+          </p>
+
+          <p>
+            Материал разработан при поддержке компании ООО "Эбботт Лэбораториз" в целях повышения
+            осведомлённости
+            пациентов о состоянии здоровья. Информация в материале не заменяет консультации специалиста
+            здравоохранения. Обратитесь к лечащему врачу.
+          </p>
+
+          <p>
+            При использовании интернет-ресурса https://______.ru в порядке ст. 9 Федерального закона от
+            27.07.2006 N
+            152-ФЗ «О персональных данных» (далее – ФЗ «О персональных данных») пользователь сайта
+            https://______.ru
+            даёт согласие ООО "Эбботт Лэбораториз" на автоматизированную обработку в т.ч., но, не
+            ограничиваясь на
+            передачу в сторонние сервисы анализа посетителей Yandex.Metrika; Yandex Webmaster;
+            GoogleAnalytics; Google
+            Tag Manager обработку данных о посетителе (а именно, cookies, IP-адрес, URL страницы,
+            заголовок
+            и реферер
+            страницы, предполагаемое географическое положение, часовой пояс, возраст, пол, версия и язык
+            браузера,
+            разрешение дисплея, версия операционной системы и вспомогательного программного обеспечения,
+            учет
+            взаимодействия с сайтом, модель устройства, поисковые системы, глубину просмотра, список
+            скачанных файлов,
+            интересы посетителя, список посещённых страниц и проведённое время на сайте).
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <span class="footer__info-medical">
+                Информация предназначена для медицинских и фармацевтических работников
+            </span>
+
+  </div>
+</footer>
+<!-- footer -->
+
+
+
+<script src="js/header.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
